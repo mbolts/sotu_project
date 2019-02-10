@@ -2,17 +2,18 @@
 
 from jinja2 import StrictUndefined
 
-from flask import Flask
+from flask import Flask, render_template, redirect
 from flask_debugtoolbar import DebugToolbarExtension
 
-from model import connect_to_db, db
+from model import connect_to_db, db, President, Year, Speech
 
 
 
 app = Flask(__name__)
 
 # Required to use Flask sessions and the debug toolbar
-# from secrets.shh import app.secret_key
+from secrets import secret_key
+app.secret_key = secret_key
 
 # Normally, if you use an undefined variable in Jinja2, it fails
 # silently. This is horrible. Fix this so that, instead, it raises an
@@ -23,7 +24,10 @@ app.jinja_env.undefined = StrictUndefined
 @app.route('/')
 def index():
     """Homepage."""
-    return "<html><body>Placeholder for the homepage.</body></html>"
+
+    presidents = President.query.all()
+
+    return render_template("homepage.html", presidents=presidents)
 
 
 if __name__ == "__main__":

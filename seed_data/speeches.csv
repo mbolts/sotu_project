@@ -187,9 +187,9 @@
 1973,,,,
 1974,30-Jan-1974,Richard Nixon,Message,./speech_text/Nixon_1974.txt
 1974,30-Jan-1974,Richard Nixon,Address ,./speech_text/Nixon_1974.txt
-1975,15-Jan-1975,Gerald R. Ford,Address,./speech_text/Ford_1975.txt
-1976,19-Jan-1976,Gerald R. Ford,Address,./speech_text/Ford_1976.txt
-1977,12-Jan-1977,Gerald R. Ford,Address  ,./speech_text/Ford_1977.txt
+1975,15-Jan-1975,Gerald Ford,Address,./speech_text/Ford_1975.txt
+1976,19-Jan-1976,Gerald Ford,Address,./speech_text/Ford_1976.txt
+1977,12-Jan-1977,Gerald Ford,Address  ,./speech_text/Ford_1977.txt
 1978,19-Jan-1978,Jimmy Carter,Message,./speech_text/Carter_1978.txt
 1978,19-Jan-1978,Jimmy Carter,Address,./speech_text/Carter_1978.txt
 1979,23-Jan-1979,Jimmy Carter,Address,./speech_text/Carter_1979.txt
@@ -205,17 +205,17 @@
 1987,27-Jan-1987,Ronald Reagan,Address,./speech_text/Reagan_1987.txt
 1988,25-Jan-1988,Ronald Reagan,Address,./speech_text/Reagan_1988.txt
 1989,,,,
-1990,31-Jan-1990,George Bush,Address ,./speech_text/HWBush_1990.txt
-1991,29-Jan-1991,George Bush,Address ,./speech_text/HWBush_1991.txt
-1992,28-Jan-1992,George Bush,Address ,./speech_text/HWBush_1992.txt
+1990,31-Jan-1990,George H. W. Bush,Address ,./speech_text/HWBush_1990.txt
+1991,29-Jan-1991,George H. W. Bush,Address ,./speech_text/HWBush_1991.txt
+1992,28-Jan-1992,George H. W. Bush,Address ,./speech_text/HWBush_1992.txt
 1993,,,,
-1994,25-Jan-1994,William J. Clinton,Address ,./speech_text/Clinton_1994.txt
-1995,24-Jan-1995,William J. Clinton,Address ,./speech_text/Clinton_1995.txt
-1996,23-Jan-1996,William J. Clinton,Address ,./speech_text/Clinton_1996.txt
-1997,4-Feb-1997,William J. Clinton,Address ,./speech_text/Clinton_1997.txt
-1998,27-Jan-1998,William J. Clinton,Address ,./speech_text/Clinton_1998.txt
-1999,19-Jan-1999,William J. Clinton,Address ,./speech_text/Clinton_1999.txt
-2000,27-Jan-2000,William J. Clinton,Address ,./speech_text/Clinton_2000.txt
+1994,25-Jan-1994,Bill Clinton,Address ,./speech_text/Clinton_1994.txt
+1995,24-Jan-1995,Bill Clinton,Address ,./speech_text/Clinton_1995.txt
+1996,23-Jan-1996,Bill Clinton,Address ,./speech_text/Clinton_1996.txt
+1997,4-Feb-1997,Bill Clinton,Address ,./speech_text/Clinton_1997.txt
+1998,27-Jan-1998,Bill Clinton,Address ,./speech_text/Clinton_1998.txt
+1999,19-Jan-1999,Bill Clinton,Address ,./speech_text/Clinton_1999.txt
+2000,27-Jan-2000,Bill Clinton,Address ,./speech_text/Clinton_2000.txt
 2001,,,,
 2002,29-Jan-2002,George W. Bush,Address,./speech_text/Bush_2002.txt
 2003,28-Jan-2003,George W. Bush,Address,./speech_text/Bush_2003.txt
@@ -233,5 +233,5 @@
 2015,20-Jan-2015,Barack Obama,Address,./speech_text/Obama_2015.txt
 2016,12-Jan-2016,Barack Obama,Address,./speech_text/Obama_2016.txt
 2017,,,,
-2018,30-Jan-2018,Donald J. Trump,Address,./speech_text/Trump_2018.txt
-2019,5-Feb-2019,Donald J. Trump,Address,./speech_text/Trump_2019.txt
+2018,30-Jan-2018,Donald Trump,Address,./speech_text/Trump_2018.txt
+2019,5-Feb-2019,Donald Trump,Address,./speech_text/Trump_2019.txt

@@ -1,4 +1,4 @@
 env/
 *.pyc
 __pycache__
-secrets.shh
+secrets.py

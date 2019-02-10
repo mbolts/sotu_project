@@ -22,8 +22,17 @@ class President(db.Model):
 
     pres_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     # year = db.Column(db.Integer, db.ForeignKey('years.year'))
+    name = db.Column(db.String(100))
+    party_affiliation = db.Column(db.String(100))
     dob = db.Column(db.DateTime)
     word_counts = db.Column(db.JSON)
+
+
+    speeches = db.relationship('Speech',
+                                backref='president')
+
+    def __repr__(self):
+        return f"<President name={self.name} pres_id={self.pres_id}>"    
 
 
 class Year(db.Model):
@@ -32,9 +41,9 @@ class Year(db.Model):
     __tablename__ = "years"
 
     year = db.Column(db.Integer, primary_key=True, autoincrement=False)
-    # speech_id = db.Column(db.Integer, 
-    #                       db.ForeignKey('speeches.speech_id'), 
-    #                       )
+    speech_id = db.Column(db.Integer, 
+                          db.ForeignKey('speeches.speech_id'), 
+                          )
     # speeches = db.relationship('Speech')
 
 class Speech(db.Model):
@@ -47,11 +56,13 @@ class Speech(db.Model):
     #                  db.ForeignKey('years.year'),
     #                  )
     date = db.Column(db.DateTime)
-    president = db.Column(db.String(100))
+    pres_id = db.Column(db.Integer,
+                          db.ForeignKey('presidents.pres_id'))
     delivery = db.Column(db.String(20))
     text = db.Column(db.Text)
 
-    # year = db.relationship('Year')
+    year = db.relationship('Year',
+                            backref='speeches')
 
     def __repr__(self):
         return f"<Speech date={self.date} president={self.president}>"
