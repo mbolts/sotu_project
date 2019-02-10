@@ -21,8 +21,10 @@ def load_speeches():
     # https://www.presidency.ucsb.edu/documents/presidential-documents-archive-guidebook/annual-messages-congress-the-state-the-union
     # https://www.kaggle.com/rtatman/state-of-the-union-corpus-1989-2017
 
+    file = open("seed_data/speeches.csv")
+
     # Read u.user file and insert data
-    for row in open("seed_data/speeches.csv"):
+    for row in file:
         row = row.rstrip()
 
         year, date, president, delivery, text = row.split(",")
@@ -66,6 +68,8 @@ def load_speeches():
         # We need to add to the session or it won't ever be stored
         db.session.add(speech)
 
+    file.close()
+
     # Once we're done, we should commit our work
     db.session.commit()
 
@@ -75,29 +79,39 @@ def load_years():
 
     print('Years')
 
-    Year.query.delete()
+    # Year.query.delete()
 
     years = []
 
     for row in open("seed_data/speeches.csv"):
         row = row.rstrip()
+        print('row is', row)
 
         year = row.split(",")[0]
         year = year[-4:]
-
-        years.append(year)
+        year = int(year)
+        print('year is', year)
+        print('years are', years)
 
         if year in years:
             continue
 
+        years.append(year)
+
         year = Year(year=year,
                     )
+        
+        # print('after years are', years)
+
+        # print('year is', year)
+        # print()
 
         # We need to add to the session or it won't ever be stored
         db.session.add(year)
+        db.session.commit()
 
     # Once we're done, we should commit our work
-    db.session.commit()
+    # db.session.commit()
 
 def load_presidents():
     """Load presidents into database."""
@@ -143,8 +157,8 @@ if __name__ == "__main__":
     db.create_all()
 
     # Import different types of data
-    load_presidents()
+    # load_presidents()
     load_years()
-    load_speeches()
+    # load_speeches()
 
 

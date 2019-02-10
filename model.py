@@ -27,7 +27,8 @@ class President(db.Model):
     dob = db.Column(db.DateTime)
     word_counts = db.Column(db.JSON)
 
-
+    years = db.relationship('Year',
+                            backref='president')
     speeches = db.relationship('Speech',
                                 backref='president')
 
@@ -44,6 +45,9 @@ class Year(db.Model):
     speech_id = db.Column(db.Integer, 
                           db.ForeignKey('speeches.speech_id'), 
                           )
+    pres_id = db.Column(db.Integer,
+                        db.ForeignKey('presidents.pres_id'),
+                        )
     # speeches = db.relationship('Speech')
 
 class Speech(db.Model):
