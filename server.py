@@ -12,7 +12,7 @@ from model import connect_to_db, db
 app = Flask(__name__)
 
 # Required to use Flask sessions and the debug toolbar
-from secrets.shh import app.secret_key
+# from secrets.shh import app.secret_key
 
 # Normally, if you use an undefined variable in Jinja2, it fails
 # silently. This is horrible. Fix this so that, instead, it raises an

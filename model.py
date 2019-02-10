@@ -10,7 +10,7 @@ def connect_to_db(app):
     """Connect the database to our Flask app."""
 
     # Configure to use our PstgreSQL database
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///sotu'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql:///SOTU'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db.app = app
     db.init_app(app)
@@ -21,7 +21,7 @@ class President(db.Model):
     __tablename__ = "presidents"
 
     pres_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    year = db.Column(db.Integer, db.ForeignKey('years.year'), nullable=False)
+    # year = db.Column(db.Integer, db.ForeignKey('years.year'))
     dob = db.Column(db.DateTime)
     word_counts = db.Column(db.JSON)
 
@@ -31,11 +31,11 @@ class Year(db.Model):
 
     __tablename__ = "years"
 
-    year = db.Column(db.Integer, primary_key=True)
-    speech_id = db.Column(db.Integer, 
-                          db.ForeignKey('speeches.speech_id'), 
-                          nullable=False)
-
+    year = db.Column(db.Integer, primary_key=True, autoincrement=False)
+    # speech_id = db.Column(db.Integer, 
+    #                       db.ForeignKey('speeches.speech_id'), 
+    #                       )
+    # speeches = db.relationship('Speech')
 
 class Speech(db.Model):
     """Speech."""
@@ -43,9 +43,18 @@ class Speech(db.Model):
     __tablename__ = "speeches"
 
     speech_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    year = db.Column(db.Integer)
+    # year = db.Column(db.Integer,
+    #                  db.ForeignKey('years.year'),
+    #                  )
+    date = db.Column(db.DateTime)
     president = db.Column(db.String(100))
+    delivery = db.Column(db.String(20))
     text = db.Column(db.Text)
+
+    # year = db.relationship('Year')
+
+    def __repr__(self):
+        return f"<Speech date={self.date} president={self.president}>"
 
 
 ###############################################################################
