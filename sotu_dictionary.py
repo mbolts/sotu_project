@@ -1,40 +1,92 @@
 import sys
 import os
 
-path = './speech_text'
-file_list = []
+import time
+from model import Speech
+import spacy
+
+nlp = spacy.load('en')
+
+
+# path = './speech_text'
+# file_list = []
 
 
 # Open all the files in the SOTU folder, add the read-in file and year 
 # as a list to the file_list
-for filename in os.listdir(path):
-    print('filename is', filename)
-    # print('type of name', type(filename))
-    file = open('./speech_text/' + filename)
-    file_list.extend([[file.read(), filename[-8:-4]]])
+# for filename in os.listdir(path):
+#     print('filename is', filename)
+#     # print('type of name', type(filename))
+#     file = open('./speech_text/' + filename)
+#     file_list.extend([[file.read(), filename[-8:-4]]])
 
-# for file in file_list
 
+
+def create_speech_list(speeches):
+    """ Create a list with all of the speech file paths """
+    file_list = []
+
+    for speech in speeches:
+        file_list.append(speech.text)
+
+    return file_list
 
 
 def open_file(file):
-    # file = sys.argv[1] + '.txt'
 
     f = open(file)
-    # year = sys.argv[1][-4:]
 
     return f.read()
 
-def create_dictionary(file, year):
-    sotu_dictionary = {}
-    speech = open_file(file)
-    words = speech.split()
+def create_unparsed_wc_dictionary(files):
+    start = time.time()
 
-    for word in words:
-        # print(word)
-        sotu_dictionary[word] = sotu_dictionary.get(word, [year])
+    unparsed_wc_dictionary = {}
 
-    return sotu_dictionary
+    for file in files:
+
+        speech = open_file(file)
+        words = speech.split()
+
+        for word in words:
+            # print(word)
+            unparsed_wc_dictionary[word] = unparsed_wc_dictionary.get(word, 1) + 1
+
+    end = time.time()
+    print('Time Elapsed: ', end - start)
+
+    return unparsed_wc_dictionary
+
+def create_master_doc(files):
+    """ Create a master file for the full speech corpus """
+
+    master_doc = ''
+
+    for file in files:
+        speech = open_file(file)
+
+        master_doc += '\n' + speech
+
+    return master_doc
+
+def create_pres_corpus(files):
+
+    pres_speeches = ''
+
+    for file in files:
+
+        speech = open_file(file)
+
+        pres_speeches += '\n' + speech
+
+    return pres_speeches
+
+def create_decade_corpus(files, year):
+
+    decade_speeches = ''
+
+    
+
 
 
 # create_dictionary(file_list[0], file_list[1])

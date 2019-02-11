@@ -31,6 +31,7 @@ def load_speeches():
         # print('year is', year)
         # print('type is', type(year))
         year = year[-4:]
+        year = int(year)
         # print('text is', text)
         # print('type of text', type(text))
         # print(text[:5])
@@ -41,21 +42,24 @@ def load_speeches():
 
         if pres is None:
             continue
+
         pres_id = pres.pres_id
 
 
 
-        if int(year) < 1900:
+        if year < 1900:
             date_time = datetime.datetime.strptime(date, "%b %d %Y")
             # import pdb; pdb.set_trace()
             speech = Speech(
                         date=date_time,
                         pres_id=pres_id,
                         delivery=delivery,
-                        text=text)
+                        text=text,
+                        year=year,
+                        )
 
         elif date == '':
-            speech = Speech()
+            continue
 
         else:
             date_time = datetime.datetime.strptime(date, "%d-%b-%Y")
@@ -63,7 +67,9 @@ def load_speeches():
                         date=date_time,
                         pres_id=pres_id,
                         delivery=delivery,
-                        text=text)
+                        text=text,
+                        year=year,
+                        )
 
         # We need to add to the session or it won't ever be stored
         db.session.add(speech)
@@ -79,19 +85,19 @@ def load_years():
 
     print('Years')
 
-    # Year.query.delete()
+    Year.query.delete()
 
     years = []
 
     for row in open("seed_data/speeches.csv"):
         row = row.rstrip()
-        print('row is', row)
+        # print('row is', row)
 
         year = row.split(",")[0]
         year = year[-4:]
         year = int(year)
-        print('year is', year)
-        print('years are', years)
+        # print('year is', year)
+        # print('years are', years)
 
         if year in years:
             continue
@@ -108,7 +114,7 @@ def load_years():
 
         # We need to add to the session or it won't ever be stored
         db.session.add(year)
-        db.session.commit()
+    db.session.commit()
 
     # Once we're done, we should commit our work
     # db.session.commit()
@@ -137,17 +143,17 @@ def load_presidents():
     db.session.commit()
 
 
-def set_val_user_id():
-    """Set value for the next user_id after seeding database"""
+# def set_val_user_id():
+#     """Set value for the next user_id after seeding database"""
 
-    # Get the Max user_id in the database
-    result = db.session.query(func.max(User.user_id)).one()
-    max_id = int(result[0])
+#     # Get the Max user_id in the database
+#     result = db.session.query(func.max(User.user_id)).one()
+#     max_id = int(result[0])
 
-    # Set the value for the next user_id to be max_id + 1
-    query = "SELECT setval('users_user_id_seq', :new_id)"
-    db.session.execute(query, {'new_id': max_id + 1})
-    db.session.commit()
+#     # Set the value for the next user_id to be max_id + 1
+#     query = "SELECT setval('users_user_id_seq', :new_id)"
+#     db.session.execute(query, {'new_id': max_id + 1})
+#     db.session.commit()
 
 
 if __name__ == "__main__":
@@ -157,8 +163,10 @@ if __name__ == "__main__":
     db.create_all()
 
     # Import different types of data
-    # load_presidents()
-    load_years()
-    # load_speeches()
+    load_years()    
+    load_presidents()
+    load_speeches()    
+
+
 
 

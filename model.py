@@ -1,5 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 
+# import sotu_dictionary
+
 # This is the connection to the PostgreSQL database; we're getting this through
 # the Flask-SQLAlchemy helper library. On this, we can find the `session`
 # object, where we do most of our interactions (like committing, etc.)
@@ -28,9 +30,9 @@ class President(db.Model):
     word_counts = db.Column(db.JSON)
 
     years = db.relationship('Year',
-                            backref='president')
+                            backref=db.backref("president"))
     speeches = db.relationship('Speech',
-                                backref='president')
+                                backref=db.backref("president"))
 
     def __repr__(self):
         return f"<President name={self.name} pres_id={self.pres_id}>"    
@@ -42,13 +44,23 @@ class Year(db.Model):
     __tablename__ = "years"
 
     year = db.Column(db.Integer, primary_key=True, autoincrement=False)
-    speech_id = db.Column(db.Integer, 
-                          db.ForeignKey('speeches.speech_id'), 
-                          )
+    # speech_id = db.Column(db.Integer, 
+    #                       db.ForeignKey('speeches.speech_id'), 
+    #                       )
     pres_id = db.Column(db.Integer,
                         db.ForeignKey('presidents.pres_id'),
                         )
-    # speeches = db.relationship('Speech')
+    speeches = db.relationship('Speech')
+
+    def get_century(self):
+
+        return int(self.year / 100) * 100
+
+    def get_decade(self):
+
+        short_year = self.year - self.get_century()
+
+        return int(self.year / 10) * 10
 
 class Speech(db.Model):
     """Speech."""
@@ -56,17 +68,16 @@ class Speech(db.Model):
     __tablename__ = "speeches"
 
     speech_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    # year = db.Column(db.Integer,
-    #                  db.ForeignKey('years.year'),
-    #                  )
+    year = db.Column(db.Integer,
+                     db.ForeignKey('years.year'),
+                     )
     date = db.Column(db.DateTime)
     pres_id = db.Column(db.Integer,
                           db.ForeignKey('presidents.pres_id'))
     delivery = db.Column(db.String(20))
     text = db.Column(db.Text)
 
-    year = db.relationship('Year',
-                            backref='speeches')
+    # year = db.relationship('Year',)
 
     def __repr__(self):
         return f"<Speech date={self.date} president={self.president}>"
