@@ -30,7 +30,7 @@ class President(db.Model):
     word_counts = db.Column(db.JSON)
 
     years = db.relationship('Year',
-                            backref=db.backref("president"))
+                            )
     speeches = db.relationship('Speech',
                                 backref=db.backref("president"))
 
@@ -50,7 +50,9 @@ class Year(db.Model):
     pres_id = db.Column(db.Integer,
                         db.ForeignKey('presidents.pres_id'),
                         )
+    
     speeches = db.relationship('Speech')
+    presidents = db.relationship('President')
 
     def get_century(self):
 

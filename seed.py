@@ -89,23 +89,42 @@ def load_years():
 
     years = []
 
-    for row in open("seed_data/speeches.csv"):
+    file = open("seed_data/speeches.csv")
+
+    for row in file:
         row = row.rstrip()
         # print('row is', row)
 
-        year = row.split(",")[0]
+        year, x, president = row.split(",")[:3]
         year = year[-4:]
         year = int(year)
-        # print('year is', year)
-        # print('years are', years)
 
-        if year in years:
+        pres = President.query.filter_by(name=president).first()
+
+        if pres is None or year in years:
+            # print('pres is none and', year, 'in', years)
             continue
 
-        years.append(year)
+        elif pres is None and year not in years:
+            # print('pres is none')
+            year = Year(year=year,
+                        )
 
-        year = Year(year=year,
-                    )
+            years.append(year)
+            # db.session.add(year)
+
+        else:
+
+            pres_id = pres.pres_id
+
+            # print('year is', year)
+            # print('years are', years)
+
+            years.append(year)
+
+            year = Year(year=year,
+                        pres_id=pres_id,
+                        )
         
         # print('after years are', years)
 
@@ -114,10 +133,11 @@ def load_years():
 
         # We need to add to the session or it won't ever be stored
         db.session.add(year)
-    db.session.commit()
+
+    file.close()
 
     # Once we're done, we should commit our work
-    # db.session.commit()
+    db.session.commit()
 
 def load_presidents():
     """Load presidents into database."""
@@ -126,7 +146,9 @@ def load_presidents():
 
     President.query.delete()
 
-    for row in open("seed_data/presidents.csv"):
+    file = open("seed_data/presidents.csv")
+
+    for row in file:
         row = row.rstrip()
 
         name, party_affiliation = row.split(',')[:2]
@@ -140,20 +162,9 @@ def load_presidents():
 
         db.session.add(president)
 
+    file.close()
+
     db.session.commit()
-
-
-# def set_val_user_id():
-#     """Set value for the next user_id after seeding database"""
-
-#     # Get the Max user_id in the database
-#     result = db.session.query(func.max(User.user_id)).one()
-#     max_id = int(result[0])
-
-#     # Set the value for the next user_id to be max_id + 1
-#     query = "SELECT setval('users_user_id_seq', :new_id)"
-#     db.session.execute(query, {'new_id': max_id + 1})
-#     db.session.commit()
 
 
 if __name__ == "__main__":
@@ -163,8 +174,9 @@ if __name__ == "__main__":
     db.create_all()
 
     # Import different types of data
-    load_years()    
     load_presidents()
+    load_years()    
+
     load_speeches()    
 
 
