@@ -26,13 +26,33 @@ class President(db.Model):
     # year = db.Column(db.Integer, db.ForeignKey('years.year'))
     name = db.Column(db.String(100))
     party_affiliation = db.Column(db.String(100))
-    dob = db.Column(db.DateTime)
-    word_counts = db.Column(db.JSON)
+    date_of_birth = db.Column(db.DateTime)
+    state_of_birth = db.Column(db.String(30))
+    # word_counts = db.Column(db.JSON)
 
     years = db.relationship('Year',
                             )
     speeches = db.relationship('Speech',
                                 backref=db.backref("president"))
+
+    def decade_of_birth(self):
+         
+        return int(self.date_of_birth.year / 10) * 10
+
+    def speech_text(self):
+
+        pres_speeches = ''
+
+        for speech in self.speeches:
+
+            path = speech.text
+            text = open(path)
+
+            pres_speeches += '\n' + text.read()
+
+            text.close()
+
+        return pres_speeches
 
     def __repr__(self):
         return f"<President name={self.name} pres_id={self.pres_id}>"    
@@ -50,7 +70,7 @@ class Year(db.Model):
     pres_id = db.Column(db.Integer,
                         db.ForeignKey('presidents.pres_id'),
                         )
-    
+
     speeches = db.relationship('Speech')
     presidents = db.relationship('President')
 
@@ -60,9 +80,9 @@ class Year(db.Model):
 
     def get_decade(self):
 
-        short_year = self.year - self.get_century()
-
         return int(self.year / 10) * 10
+
+    
 
 class Speech(db.Model):
     """Speech."""

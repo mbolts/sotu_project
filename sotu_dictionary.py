@@ -1,26 +1,14 @@
-import sys
-import os
-
 import time
-from model import Speech
+from model import connect_to_db, db
+from model import Speech, President, Year
 import spacy
+from flask_sqlalchemy import SQLAlchemy
+from server import app
+connect_to_db(app)
 
-nlp = spacy.load('en')
+NLP = spacy.load('en')
 
-
-# path = './speech_text'
-# file_list = []
-
-
-# Open all the files in the SOTU folder, add the read-in file and year 
-# as a list to the file_list
-# for filename in os.listdir(path):
-#     print('filename is', filename)
-#     # print('type of name', type(filename))
-#     file = open('./speech_text/' + filename)
-#     file_list.extend([[file.read(), filename[-8:-4]]])
-
-
+SPEECHES = Speech.query.all()
 
 def create_speech_list(speeches):
     """ Create a list with all of the speech file paths """
@@ -33,6 +21,7 @@ def create_speech_list(speeches):
 
 
 def open_file(file):
+    """ Utility function to open and read files """
 
     f = open(file)
 
@@ -69,51 +58,31 @@ def create_master_doc(files):
 
     return master_doc
 
-def create_pres_corpus(files):
-
-    pres_speeches = ''
-
-    for file in files:
-
-        speech = open_file(file)
-
-        pres_speeches += '\n' + speech
-
-    return pres_speeches
 
 def create_decade_corpus(files, year):
 
     decade_speeches = ''
 
-    
+    decade = year[:-1]
+
+    for file in files:
+
+        if decade in file:
+
+            speech = open_file(file)
+
+            decade_speeches += '\n' + speech
+
+    return decade_speeches
 
 
 
-# create_dictionary(file_list[0], file_list[1])
 
-# import spacy
-
-# nlp = spacy.load('en')
-
-# file = open('Adams_1797.txt')
-
-# adams_1797 = file.read()
-# adams_1797 = nlp(adams_1797)
-# adams_1797_sents = list(adams_1797.sents)
-
-# adams_dict = {}
-
-
-# for token in adams_1797:
-
-#     if token.text == '\n' or token.text == '\n\n':
-#         continue
-
-#     adams_dict[token.text] = [token, token.pos_, token.dep_]
-
-# import spacy
-# from spacy import displacy
-
-# nlp = spacy.load('en')
-# doc = nlp(u'Apple is looking at buying U.K. startup for $1 billion')
-# displacy.serve(doc, style='dep')
+###############################################################################
+if __name__ == "__main__":
+    # As a convenience, if we run this module interactively, it will leave
+    # you in a state of being able to work with the database directly.
+    from flask_sqlalchemy import SQLAlchemy
+    from server import app
+    connect_to_db(app)
+    print("Connected to DB.")

@@ -151,13 +151,17 @@ def load_presidents():
     for row in file:
         row = row.rstrip()
 
-        name, party_affiliation = row.split(',')[:2]
+        name, party_affiliation, dob, state = row.split(',')[:4]
+
+        datetime_dob = datetime.datetime.strptime(dob, "%B %d %Y")
 
         if name.endswith('Washington'):
             name = name[-17:]
 
         president = President(name=name,
                               party_affiliation=party_affiliation,
+                              date_of_birth=datetime_dob,
+                              state_of_birth=state,
                               )
 
         db.session.add(president)
@@ -171,13 +175,12 @@ if __name__ == "__main__":
     connect_to_db(app)
 
     # In case tables haven't been created, create them
-    db.create_all()
+    # db.create_all()
 
     # Import different types of data
-    load_presidents()
-    load_years()    
-
-    load_speeches()    
+    # load_presidents()
+    # load_years()
+    # load_speeches()    
 
 
 
