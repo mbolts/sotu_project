@@ -1,12 +1,10 @@
-import time
+
 from model import connect_to_db, db
 from model import Speech, President, Year
-import spacy
 from flask_sqlalchemy import SQLAlchemy
 from server import app
 connect_to_db(app)
 
-NLP = spacy.load('en')
 
 SPEECHES = Speech.query.all()
 
@@ -28,7 +26,6 @@ def open_file(file):
     return f.read()
 
 def create_unparsed_wc_dictionary(files):
-    start = time.time()
 
     unparsed_wc_dictionary = {}
 
@@ -41,8 +38,6 @@ def create_unparsed_wc_dictionary(files):
             # print(word)
             unparsed_wc_dictionary[word] = unparsed_wc_dictionary.get(word, 1) + 1
 
-    end = time.time()
-    print('Time Elapsed: ', end - start)
 
     return unparsed_wc_dictionary
 
