@@ -17,11 +17,13 @@ SPEECHES = Speech.query.all()
 
 for speech in SPEECHES:
 
-    path_ending = speech.text.split('/')[2][:-3]
+    path_ending = speech.text.split('/')[2][:-4]
 
     speech_doc = create_parsed_file(speech.text)
 
-    speech_doc.to_disk('./speech_doc/' + path_ending + 'doc')
+    speech_doc.to_disk('./speech_doc/' + path_ending)
+
+    print(path_ending)
 
 
 

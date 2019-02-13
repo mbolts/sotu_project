@@ -1,5 +1,5 @@
 ﻿1790,Jan 08 1790,George Washington,Address,./speech_text/Washington_1790.txt
-1790,Dec 08 1790,George Washington,Address,./speech_text/Washington_1790.txt
+1790,Dec 08 1790,George Washington,Address,./speech_text/Washington_1790_2.txt
 1791,Oct 25 1791,George Washington,Address,./speech_text/Washington_1791.txt
 1792,Nov 06 1792,George Washington,Address,./speech_text/Washington_1792.txt
 1793,Dec 03 1793,George Washington,Address,./speech_text/Washington_1793.txt
@@ -186,10 +186,10 @@
 1972,20-Jan-1972,Richard Nixon,Address,./speech_text/Nixon_1972.txt
 1973,,,,
 1974,30-Jan-1974,Richard Nixon,Message,./speech_text/Nixon_1974.txt
-1974,30-Jan-1974,Richard Nixon,Address ,./speech_text/Nixon_1974.txt
+1974,30-Jan-1974,Richard Nixon,Address,./speech_text/Nixon_1974.txt
 1975,15-Jan-1975,Gerald Ford,Address,./speech_text/Ford_1975.txt
 1976,19-Jan-1976,Gerald Ford,Address,./speech_text/Ford_1976.txt
-1977,12-Jan-1977,Gerald Ford,Address  ,./speech_text/Ford_1977.txt
+1977,12-Jan-1977,Gerald Ford,Address ,./speech_text/Ford_1977.txt
 1978,19-Jan-1978,Jimmy Carter,Message,./speech_text/Carter_1978.txt
 1978,19-Jan-1978,Jimmy Carter,Address,./speech_text/Carter_1978.txt
 1979,23-Jan-1979,Jimmy Carter,Address,./speech_text/Carter_1979.txt
@@ -197,25 +197,25 @@
 1980,21-Jan-1980,Jimmy Carter,Message,./speech_text/Carter_1980.txt
 1980,23-Jan-1980,Jimmy Carter,Address,./speech_text/Carter_1980.txt
 1981,16-Jan-1981,Jimmy Carter,Message,./speech_text/Carter_1981.txt
-1982,26-Jan-1982,Ronald Reagan,Address  ,./speech_text/Reagan_1982.txt
-1983,25-Jan-1983,Ronald Reagan,Address ,./speech_text/Reagan_1983.txt
-1984,25-Jan-1984,Ronald Reagan,Address ,./speech_text/Reagan_1984.txt
-1985,6-Feb-1985,Ronald Reagan,Address ,./speech_text/Reagan_1985.txt
+1982,26-Jan-1982,Ronald Reagan,Address,./speech_text/Reagan_1982.txt
+1983,25-Jan-1983,Ronald Reagan,Address,./speech_text/Reagan_1983.txt
+1984,25-Jan-1984,Ronald Reagan,Address,./speech_text/Reagan_1984.txt
+1985,6-Feb-1985,Ronald Reagan,Address,./speech_text/Reagan_1985.txt
 1986,4-Feb-1986,Ronald Reagan,Address,./speech_text/Reagan_1986.txt
 1987,27-Jan-1987,Ronald Reagan,Address,./speech_text/Reagan_1987.txt
 1988,25-Jan-1988,Ronald Reagan,Address,./speech_text/Reagan_1988.txt
 1989,,,,
-1990,31-Jan-1990,George H. W. Bush,Address ,./speech_text/HWBush_1990.txt
-1991,29-Jan-1991,George H. W. Bush,Address ,./speech_text/HWBush_1991.txt
-1992,28-Jan-1992,George H. W. Bush,Address ,./speech_text/HWBush_1992.txt
+1990,31-Jan-1990,George H. W. Bush,Address,./speech_text/HWBush_1990.txt
+1991,29-Jan-1991,George H. W. Bush,Address,./speech_text/HWBush_1991.txt
+1992,28-Jan-1992,George H. W. Bush,Address,./speech_text/HWBush_1992.txt
 1993,,,,
-1994,25-Jan-1994,Bill Clinton,Address ,./speech_text/Clinton_1994.txt
-1995,24-Jan-1995,Bill Clinton,Address ,./speech_text/Clinton_1995.txt
-1996,23-Jan-1996,Bill Clinton,Address ,./speech_text/Clinton_1996.txt
-1997,4-Feb-1997,Bill Clinton,Address ,./speech_text/Clinton_1997.txt
-1998,27-Jan-1998,Bill Clinton,Address ,./speech_text/Clinton_1998.txt
-1999,19-Jan-1999,Bill Clinton,Address ,./speech_text/Clinton_1999.txt
-2000,27-Jan-2000,Bill Clinton,Address ,./speech_text/Clinton_2000.txt
+1994,25-Jan-1994,Bill Clinton,Address,./speech_text/Clinton_1994.txt
+1995,24-Jan-1995,Bill Clinton,Address,./speech_text/Clinton_1995.txt
+1996,23-Jan-1996,Bill Clinton,Address,./speech_text/Clinton_1996.txt
+1997,4-Feb-1997,Bill Clinton,Address,./speech_text/Clinton_1997.txt
+1998,27-Jan-1998,Bill Clinton,Address,./speech_text/Clinton_1998.txt
+1999,19-Jan-1999,Bill Clinton,Address,./speech_text/Clinton_1999.txt
+2000,27-Jan-2000,Bill Clinton,Address,./speech_text/Clinton_2000.txt
 2001,,,,
 2002,29-Jan-2002,George W. Bush,Address,./speech_text/Bush_2002.txt
 2003,28-Jan-2003,George W. Bush,Address,./speech_text/Bush_2003.txt

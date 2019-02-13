@@ -45,7 +45,9 @@ def load_speeches():
 
         pres_id = pres.pres_id
 
+        path_ending = text.split('/')[2][:-4]
 
+        doc_path = './speech_doc/' + path_ending
 
         if year < 1900:
             date_time = datetime.datetime.strptime(date, "%b %d %Y")
@@ -55,6 +57,7 @@ def load_speeches():
                         pres_id=pres_id,
                         delivery=delivery,
                         text=text,
+                        doc_path=doc_path,
                         year=year,
                         )
 
@@ -68,6 +71,7 @@ def load_speeches():
                         pres_id=pres_id,
                         delivery=delivery,
                         text=text,
+                        doc_path=doc_path,
                         year=year,
                         )
 
@@ -175,12 +179,12 @@ if __name__ == "__main__":
     connect_to_db(app)
 
     # In case tables haven't been created, create them
-    # db.create_all()
+    db.create_all()
 
     # Import different types of data
-    # load_presidents()
-    # load_years()
-    # load_speeches()    
+    load_presidents()
+    load_years()
+    load_speeches()    
 
 
 
