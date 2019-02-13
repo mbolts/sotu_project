@@ -23,7 +23,11 @@ def open_file(file):
 
     f = open(file)
 
-    return f.read()
+    file = f.read()
+
+    f.close()
+
+    return file
 
 def create_unparsed_wc_dictionary(files):
 

@@ -7,10 +7,6 @@ from flask_debugtoolbar import DebugToolbarExtension
 
 from model import connect_to_db, db, President, Year, Speech
 
-import nlp_functions
-import sotu_dictionary
-
-
 
 app = Flask(__name__)
 

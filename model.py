@@ -98,6 +98,7 @@ class Speech(db.Model):
                           db.ForeignKey('presidents.pres_id'))
     delivery = db.Column(db.String(20))
     text = db.Column(db.Text)
+    # text_doc_path = db.Column(db.Text)
 
     # year = db.relationship('Year',)
 
