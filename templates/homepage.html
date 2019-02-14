@@ -3,7 +3,7 @@
 
 <h1>State of the Union</h1>
 
-<h2>Presidents</h2>
+<h3>View Speeches of Specific Presidents:</h3>
 
 <form action="/speeches" method="GET">
 
@@ -12,8 +12,32 @@
   <option value="{{ president.name }}">{{ president.name }}</option>
 {% endfor %}
 </select>
-<br>
+
 <input type="submit" name="submit">
+<br><br>
+
+<h3>Compare the Speeches of Two Presidents</h3>
 
 </form>
+
+<form action="/comparison" method="GET">
+    <select name="pres_1">
+    {% for president in presidents %}
+      <option value="{{ president.pres_id }}">{{ president.name }}</option>
+    {% endfor %}
+    </select>
+
+    <select name="pres_2">
+    {% for president in presidents %}
+      <option value="{{ president.pres_id }}">{{ president.name }}</option>
+    {% endfor %}
+    </select>
+
+    <input type="submit" name="submit">
+
+</form>
+
+
+
+
 {% endblock %}

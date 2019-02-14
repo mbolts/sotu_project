@@ -112,10 +112,31 @@ def normalize_text(textfile):
     return normalized_text
 
 
+def create_lemma_file(doc):
+    """ Create a text file of just the lemmas, excluding stop words """
+
+    lemma_file = ''
+
+    for token in doc:
+
+        if (token.is_punct or 
+            '\n' in token.text or 
+            token.is_stop or
+            token.like_num):
+                continue
+
+        lemma_file += f'{token.lemma_} '
+
+    return lemma_file
 
 
+def get_jaccard_sim(str1, str2):
 
+    a = set(str1.split())
+    b = set(str2.split())
+    c = a.intersection(b)
 
+    return float(len(c)) / (len(a) + len(b) - len(c))
 
 
 

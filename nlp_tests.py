@@ -8,6 +8,8 @@ from server import app
 connect_to_db(app)
 # print("Connected to DB.")
 
+vocab = NLP.vocab
+
 # All the speech filepaths
 SPEECHES = Speech.query.all()
 
@@ -19,6 +21,10 @@ test_string = """The State of the Union Address is an annual message delivered b
 
 # List of Speech objects that Ike made
 ike_speeches = President.query.filter_by(name='Dwight D. Eisenhower').one().speeches
+
+ike_speech = ike_speeches[0]
+
+ike_doc = Doc(vocab).from_disk(ike_speech.doc_path)
 
 # Create a spaCy object out of each speech
 

@@ -51,6 +51,24 @@ def show_speech(speech_id):
     return render_template("speech_text.html", speech=speech_text)
 
 
+@app.route('/comparison', methods=['GET'])
+def compare_presidents():
+
+    print('\n\n\n\n\n\n\n')
+
+    pres_1 = request.args.get('pres_1')
+    print('pres_1 is', pres_1, 'type is ', type(pres_1))
+    pres_2 = request.args.get('pres_2')
+    print('pres_2 is', pres_2, 'type is ', type(pres_2))
+
+    pres_1 = President.query.get(pres_1)
+    pres_2 = President.query.get(pres_2)
+
+    return render_template('comparison.html', pres_1=pres_1, pres_2=pres_2)
+
+
+
+
 #################################################################
 if __name__ == "__main__":
     # We have to set debug=True here, since it has to be True at the

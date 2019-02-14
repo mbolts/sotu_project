@@ -5,6 +5,16 @@
 
 <h2>Speeches of {{ president.name }}</h2>
 
+{% if not president.speeches %}
+<div>
+    <p>
+        Unfortunately, {{ president.name }} was not in office long 
+        enough to give any State of the Union speeches.
+    </p>
+
+</div>
+
+{% endif %}
 <div>
 {% for speech in president.speeches %}
   <a href="/speech/{{ speech.speech_id }}"><p name="{{speech.speech_id}}" value="{{ speech.date }}">{{ speech.date.strftime('%B %d, %Y') }}</p></a>
