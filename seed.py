@@ -23,6 +23,8 @@ def load_speeches():
 
     file = open("seed_data/speeches.csv")
 
+    i = 0
+
     # Read u.user file and insert data
     for row in file:
         row = row.rstrip()
@@ -47,7 +49,7 @@ def load_speeches():
 
         path_ending = text.split('/')[2][:-4]
 
-        doc_path = './speech_doc/' + path_ending
+        doc_path = './speech_doc/' + path_ending + '_' + str(i)
 
         if year < 1900:
             date_time = datetime.datetime.strptime(date, "%b %d %Y")
@@ -74,6 +76,8 @@ def load_speeches():
                         doc_path=doc_path,
                         year=year,
                         )
+
+        i += 1
 
         # We need to add to the session or it won't ever be stored
         db.session.add(speech)

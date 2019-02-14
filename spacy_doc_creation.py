@@ -15,13 +15,18 @@ SPEECHES = Speech.query.all()
 
 # Create the parsed files and save to speech_doc folder
 
+i = 0
+
 for speech in SPEECHES:
 
     path_ending = speech.text.split('/')[2][:-4]
 
     speech_doc = create_parsed_file(speech.text)
 
-    speech_doc.to_disk('./speech_doc/' + path_ending)
+    speech_doc.to_disk('./speech_doc/' + path_ending + '_' + str(i))
+    speech_doc.vocab.to_disk('./speech_doc/' + path_ending + '_v_' + str(i))
+
+    i += 1
 
     print(path_ending)
 

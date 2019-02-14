@@ -45,7 +45,7 @@ def create_unparsed_wc_dictionary(files):
 
     return unparsed_wc_dictionary
 
-def create_master_doc(files):
+def create_master_doc_from_files(files):
     """ Create a master file for the full speech corpus """
 
     master_doc = ''

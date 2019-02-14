@@ -5,8 +5,10 @@
 </head>
 
 <body>
-  State of the Union
-  <hr>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="./static/d3-cloud/build/d3.layout.cloud.js"></script>
+
+
   {% with messages = get_flashed_messages() %}
       {% for message in messages %}
           <div class="alert alert-warning">{{ message }}</div>

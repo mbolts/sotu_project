@@ -2,7 +2,7 @@
 
 from jinja2 import StrictUndefined
 
-from flask import Flask, render_template, redirect
+from flask import (Flask, render_template, redirect, request, flash, session, jsonify)
 from flask_debugtoolbar import DebugToolbarExtension
 
 from model import connect_to_db, db, President, Year, Speech
@@ -29,6 +29,29 @@ def index():
     return render_template("homepage.html", presidents=presidents)
 
 
+@app.route('/speeches', methods=['GET'])
+def show_speeches():
+    """ Display all of the speeches given by the selected president """
+
+    president_name = request.args.get('president')
+    president = President.query.filter_by(name=president_name).one()
+
+    return render_template("speeches.html", president=president)
+
+
+@app.route('/speech/<int:speech_id>')
+def show_speech(speech_id):
+    """ Display all of the speeches given by the selected president """
+
+    speech = Speech.query.filter_by(speech_id=speech_id).one()
+
+    speech_text = open(speech.text)
+    speech_text = speech_text.read()
+
+    return render_template("speech_text.html", speech=speech_text)
+
+
+#################################################################
 if __name__ == "__main__":
     # We have to set debug=True here, since it has to be True at the
     # point that we invoke the DebugToolbarExtension

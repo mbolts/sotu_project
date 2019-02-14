@@ -4,6 +4,7 @@ from spacy.vocab import Vocab
 
 NLP = spacy.load('en')
 
+
 NLP.Defaults.stop_words = {
     'hence', 'a', 'anything', 'sometimes', 'though', 'off', 'others', 
     'sixty', 'whereafter', 'everywhere', 'forty', 'get', 'has', 'his', 
@@ -86,7 +87,7 @@ def create_lemma_wc_dict(parsed_file):
 
     return parsed_dict
 
-def create_master_doc(files):
+def create_master_doc_from_speech(files):
     """ Create a master file for the passed in Speech objects """
 
     master_doc = ''

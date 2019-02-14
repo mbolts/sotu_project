@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>State of the Union</h1>
+
+<h2>Speeches of {{ president.name }}</h2>
+
+<div>
+{% for speech in president.speeches %}
+  <a href="/speech/{{ speech.speech_id }}"><p name="{{speech.speech_id}}" value="{{ speech.date }}">{{ speech.date.strftime('%B %d, %Y') }}</p></a>
+{% endfor %}
+</div>
+
+
+{% endblock %}

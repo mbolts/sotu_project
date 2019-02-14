@@ -5,12 +5,15 @@
 
 <h2>Presidents</h2>
 
-<select>
+<form action="/speeches" method="GET">
+
+<select name="president">
 {% for president in presidents %}
   <option value="{{ president.name }}">{{ president.name }}</option>
 {% endfor %}
 </select>
-<!-- <p><a href="/movies">View all movies</a></p>
-</select> -->
+<br>
+<input type="submit" name="submit">
 
+</form>
 {% endblock %}
