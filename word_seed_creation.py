@@ -3,7 +3,7 @@
 
 from nlp_functions import *
 from word_count import *
-from model import President, Year, Speech
+from model import President, Year, Speech, Word
 from model import connect_to_db, db
 from flask_sqlalchemy import SQLAlchemy
 from server import app
@@ -16,12 +16,13 @@ all_speeches = Speech.query.all()
 one_speech = [Speech.query.first()]
 
 
+
 # Create the parsed files and save to speech_doc folder
 
 
 vocab = NLP.vocab
 
-word_csv = open("words.csv", "a")
+# word_csv = open("words.csv", "a")
 
 
 def find_word_first_appearance(speeches):
@@ -37,13 +38,14 @@ def find_word_first_appearance(speeches):
             text = token.text.lower()
             # print('text is ', text, 'speech.year is ', speech.year)
 
-            if (token.is_punct or 
-                '\n' in text or
-                token.like_num):
-                continue
-
             if word_dict.get(text):
                 continue
+
+            if not token.is_alpha:
+                continue
+
+            if text.startswith('-'):
+                text = text[1:]
 
             word_dict[text] = speech.date
 

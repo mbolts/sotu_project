@@ -188,16 +188,16 @@ def load_words():
 
     file = open("seed_data/words.csv")
 
+    # i = 0
+
     for row in file:
         row = row.rstrip()
 
-        print(row)
+        # print(row, 'counter = ', i)
 
         text, first_use, freq_corpus = row.split(',')
 
         datetime_first_use = datetime.datetime.strptime(first_use[:-9], "%Y-%m-%d")
-
-        print('datetime_first_use ', datetime_first_use)
 
         speech = Speech.query.filter_by(date=datetime_first_use).one()
 
@@ -207,6 +207,8 @@ def load_words():
                       )
 
         db.session.add(word)
+
+        # i += 1
 
     file.close()
 

@@ -118,6 +118,13 @@ class Word(db.Model):
                 db.ForeignKey('speeches.speech_id'))
     freq_corpus = db.Column(db.Integer)
 
+    def get_first_use_president(self):
+
+        speech_obj = Speech.query.get(self.first_use)
+        pres = President.query.get(speech_obj.pres_id)
+
+        return pres
+
 
     def __repr__(self):
         return f"<Word={self.text} word_id={self.word_id}>"
