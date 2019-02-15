@@ -24,8 +24,8 @@ history of the questions arising made the issue depend, more than
 ordinarily in such cases, upon the care and skill with which our case was
 presented, and I should be wanting in proper recognition of a great
 patriotic service if I did not refer to the lucid historical analysis of
-the facts and the signal ability and force of the argument--six days in
-length--presented to the Court in support of our case by Mr. Elihu Root. As
+the facts and the signal ability and force of the argument -- six days in
+length -- presented to the Court in support of our case by Mr. Elihu Root. As
 Secretary of State, Mr. Root had given close study to the intricate facts
 bearing on the controversy, and by diplomatic correspondence had helped to
 frame the issues. At the solicitation of the Secretary of State and myself,
@@ -336,7 +336,7 @@ Finally conditions were such that it became imperative to refund the debt
 and place the finances of the Republic upon a sound basis. Last year a
 group of American bankers undertook to do this and to advance funds for
 railway and other improvements contributing directly to the country's
-prosperity and commerce--an arrangement which has long been desired by this
+prosperity and commerce -- an arrangement which has long been desired by this
 Government. Negotiations to this end have been under way for more than a
 year and it is now confidently believed that a short time will suffice to
 conclude an arrangement which will be satisfactory to the foreign
@@ -615,7 +615,7 @@ Canal as promptly as possible, and, therefore, the ordinary motive for
 cutting down the expense of the Government does not apply to appropriations
 for this purpose. It will be noted that the estimates for the Panama Canal
 for the ensuing year are more than fifty-six millions of dollars, an
-increase of twenty millions over the amount appropriated for this year--a
+increase of twenty millions over the amount appropriated for this year -- a
 difference due to the fact that the estimates for 1912 include something
 over nineteen millions for the fortification of the Canal. Against the
 estimated expenditures of $630,494,013.12, the Treasury has estimated
@@ -718,9 +718,9 @@ Interior Department - 189,151,875.00 - 191,224,182.90 - 193,948,582.02 -
 Post-Office Department proper - 1,697,490.00 - 1,695,690.00 - 1,695,690.00
 - 2,085,005.33 - + 1,800.00 - - 387,515.33 - - 389,315.33
 
-Deficiency in postal revenues - --------------- - 10,634,122.63 -
+Deficiency in postal revenues -  --  --  --  --  --  --  -- - - 10,634,122.63 -
 10,634,122.63 - 10,634,122.63 - -10,634,122.65 - -10,634,122.63 -
------------------
+ --  --  --  --  --  --  --  -- -
 
 Department of Agriculture - 19,681,066.00 - 17,681,136.00 - 17,753,931.24 -
 17,821,836.00 - + 1,927,134.76 - + 1,859,230.00 - - 67,904.76

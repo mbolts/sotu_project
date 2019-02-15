@@ -3,7 +3,7 @@ To the Congress of the United States:
 Once again it is my Constitutional duty to assess the state of the Union.
 
 On each such previous occasion during these past eight years I have
-outlined a forward course designed to achieve our mutual objective--a
+outlined a forward course designed to achieve our mutual objective -- a
 better America in a world of peace. This time my function is different.
 
 The American people, in free election, have selected new leadership which
@@ -49,8 +49,8 @@ world recognizes the catastrophic nature of nuclear war; yet it sees the
 wondrous potential of nuclear peace.
 
 During the period, the United States has forged ahead under a constructive
-foreign policy. The continuing goal is peace, liberty, and well-being--for
-others as well as ourselves. The aspirations of all peoples are one--peace
+foreign policy. The continuing goal is peace, liberty, and well-being -- for
+others as well as ourselves. The aspirations of all peoples are one -- peace
 with justice in freedom. Peace can only be attained collectively as peoples
 everywhere unite in their determination that liberty and well-being come to
 all mankind.
@@ -68,7 +68,7 @@ precarious peace. While building a new economic vitality without inflation,
 we have also increased public expenditures to keep abreast of the needs of
 a growing population and its attendant new problems, as well as our added
 international responsibilities. We have worked toward these ends in a
-context of shared responsibility--conscious of the need for maximum scope
+context of shared responsibility -- conscious of the need for maximum scope
 to private effort and for State and local, as well as Federal, governmental
 action.
 
@@ -84,7 +84,7 @@ Since the signing of the Korean Armistice in 1953, Americans have lived in
 peace in highly troubled times.
 
 During the 1956 Suez crisis, the United States government strongly
-supported United Nations' action--resulting in the ending of the
+supported United Nations' action -- resulting in the ending of the
 hostilities in Egypt.
 
 Again in 1958, peace was preserved in the Middle East despite new discord.
@@ -104,7 +104,7 @@ been settled.
 Despite constant threats to its integrity, West Berlin has remained free.
 
 Important advances have been made in building mutual security
-arrangements--which lie at the heart of our hopes for future peace and
+arrangements -- which lie at the heart of our hopes for future peace and
 security in the world. The Southeast Asia Treaty Organization has been
 established; the NATO alliance has been militarily strengthened; the
 Organization of American States has been further developed as an instrument
@@ -199,7 +199,7 @@ Aircraft which fly at speeds faster than sound were still in a
 developmental stage eight years ago. Today American fighting planes go
 twice the speed of sound. And either our B-58 Medium Range Jet Bomber or
 our B-52 Long Range Jet Bomber can carry more explosive power than was used
-by all combatants in World War II--Allies and Axis combined.
+by all combatants in World War II -- Allies and Axis combined.
 
 Eight years ago we had no nuclear-powered ships. Today 49 nuclear warships
 have been authorized. Of these, 14 have been commissioned, including three
@@ -311,14 +311,14 @@ businesses.
 Many major improvements in the Nation's transportation system have been
 made:
 
---After long years of debate, the dream of a great St. Lawrence Seaway,
+ -- After long years of debate, the dream of a great St. Lawrence Seaway,
 opening the heartland of America to ocean commerce, has been fulfilled.
 
---The new Federal Aviation Agency is fostering greater safety in air
+ -- The new Federal Aviation Agency is fostering greater safety in air
 travel.
 
---The largest public construction program in history--the 41,000 mile
-national system of Interstate and Defense highways--has been pushed rapidly
+ -- The largest public construction program in history -- the 41,000 mile
+national system of Interstate and Defense highways -- has been pushed rapidly
 forward. Twenty-five percent of this system is now open to traffic.
 
 Efforts to help every American build a better life have included also a
@@ -411,7 +411,7 @@ Despite the difficulties of administering Congressional programs which
 apply outmoded prescriptions and which aggravate rather than solve
 problems, the past eight years brought notable advances in agriculture.
 
-Total agricultural assets are approximately $200 billion--up $36 billion in
+Total agricultural assets are approximately $200 billion -- up $36 billion in
 eight years.
 
 Farm owner equities are at the near record high of $174 billion.
@@ -468,7 +468,7 @@ free, sound, and profitable.
 NATURAL RESOURCES
 
 New emphasis has been placed on the care of our national parks. A ten year
-development program of our National Park System--Mission 66--was initiated
+development program of our National Park System -- Mission 66 -- was initiated
 and 633,000 acres of park land have been added since 1953.
 
 Appropriations for fish and wildlife operations have more than doubled.
@@ -479,10 +479,10 @@ Our Nation's forests have been improved at the most rapid rate in history.
 
 The largest sustained effort in water resources development in our history
 has taken place. In the field of reclamation alone, over 50 new projects,
-or project units, have been authorized since 1953--including the billion
+or project units, have been authorized since 1953 -- including the billion
 dollar Colorado River Storage Project. When all these projects have been
 completed they will have a storage capacity of nearly 43 million
-acre-feet--an increase of 50 percent over the Bureau of Reclamation's
+acre-feet -- an increase of 50 percent over the Bureau of Reclamation's
 storage capacity in mid-1953. In addition, since 1953 over 450 new
 navigation flood control and multiple purpose projects of the Corps of
 Engineers have been started, costing nearly 6 billion dollars.
@@ -597,12 +597,12 @@ of housing, voting, and education.
 
 Segregation has been abolished in the Armed Forces, in Veterans' Hospitals,
 in all Federal employment, and throughout the District of
-Columbia--administratively accomplished progress in this field that is
+Columbia -- administratively accomplished progress in this field that is
 unmatched in America's recent history.
 
 This pioneering work in civil rights must go on. Not only because
 discrimination is morally wrong, but also because its impact is more than
-national--it is world-wide.
+national -- it is world-wide.
 
 HEALTH AND WELFARE
 
@@ -655,10 +655,10 @@ to the Blind, and Aid to the Totally and Permanently Disabled.
 
 HOUSING AND URBAN DEVELOPMENT
 
-More houses have been built during the past eight years--over nine
-million--than during any previous eight years in history.
+More houses have been built during the past eight years -- over nine
+million -- than during any previous eight years in history.
 
-An historic new approach--Urban Renewal--now replaces piecemeal thrusts at
+An historic new approach -- Urban Renewal -- now replaces piecemeal thrusts at
 slum pockets and urban blight. Communities engaged in urban renewal have
 doubled and renewal projects have more than tripled since 1953. An
 estimated 68 projects in 50 cities will be completed by the end of the
@@ -734,7 +734,7 @@ us.
 CONCLUSION
 
 In concluding my final message to the Congress, it is fitting to look back
-to my first--to the aims and ideals I set forth on February 2, 1953: To use
+to my first -- to the aims and ideals I set forth on February 2, 1953: To use
 America's influence in world affairs to advance the cause of peace and
 justice, to conduct the affairs of the Executive Branch with integrity and
 efficiency, to encourage creative initiative in our economy, and to work
@@ -751,7 +751,7 @@ conserving our natural resources; reducing governmental interference in the
 affairs of the farmer; strengthening and improving services by the
 Department of Labor, and the vigilant guarding of civil and social fights.
 
-I do not close this message implying that all is well--that all problems
+I do not close this message implying that all is well -- that all problems
 are solved. For progress implies both new and continuing problems and,
 unlike Presidential administrations, problems rarely have terminal dates.
 

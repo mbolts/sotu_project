@@ -137,7 +137,7 @@ are what it makes us. We may doubt the wisdom of the law, we may not
 approve of its provisions, but we can not violate it merely because it
 seems to confine our powers within limits narrower than we could wish.
 It is not a question of individual or class or sectional interest, much
-less of party predominance, but of duty--of high and sacred duty--which
+less of party predominance, but of duty -- of high and sacred duty -- which
 we are all sworn to perform. If we can not support the Constitution
 with the cheerful alacrity of those who love and believe in it, we must
 give to it at least the fidelity of public servants who act under
@@ -191,7 +191,7 @@ other civil functionaries of the State and appoint others without
 regard to State law; to organize and operate all the political
 machinery of the States; to regulate the whole administration of their
 domestic and local affairs according to the mere will of strange and
-irresponsible agents, sent among them for that purpose--these are
+irresponsible agents, sent among them for that purpose -- these are
 powers not granted to the Federal Government or to any one of its
 branches. Not being granted, we violate our trust by assuming them as
 palpably as we would by acting in the face of a positive interdict; for
@@ -341,7 +341,7 @@ value and who are indifferent as to its results, it will only serve as
 a means of placing power in the hands of the unprincipled and
 ambitious, and must eventuate in the complete destruction of that
 liberty of which it should be the most powerful conservator. I have
-therefore heretofore urged upon your attention the great danger--to be
+therefore heretofore urged upon your attention the great danger -- to be
 apprehended from an untimely extension of the elective franchise to any
 new class in our country, especially when the large majority of that
 class, in wielding the power thus placed in their hands, can not be
@@ -358,7 +358,7 @@ the Constitution are the only conditions upon which he can be admitted
 to citizenship; he must prove in addition a good moral character, and
 thus give reasonable ground for the belief that he will be faithful to
 the obligations which he assumes as a citizen of the Republic. Where a
-people--the source of all political power--speak by their suffrages
+people -- the source of all political power -- speak by their suffrages
 through the instrumentality of the ballot box, it must be carefully
 guarded against the control of those who are corrupt in principle and
 enemies of free institutions, for it can only become to our political
@@ -406,7 +406,7 @@ The great difference between the two races in physical, mental, and
 moral characteristics will prevent an amalgamation or fusion of them
 together in one homogeneous mass. If the inferior obtains the
 ascendency over the other, it will govern with reference only to its
-own interests for it will recognize no common interest--and create such
+own interests for it will recognize no common interest -- and create such
 a tyranny as this continent has never yet witnessed. Already the
 Negroes are influenced by promises of confiscation and plunder. They
 are taught to regard as an enemy every white man who has any respect
@@ -469,8 +469,8 @@ insecurity, by the terror of confiscation, and the dread of Negro
 supremacy. The Southern trade, from which the North would have derived
 so great a profit under a government of law, still languishes, and can
 never be revived until it ceases to be fettered by the arbitrary power
-which makes all its operations unsafe. That rich country--the richest
-in natural resources the world ever saw--is worse than lost if it be
+which makes all its operations unsafe. That rich country -- the richest
+in natural resources the world ever saw -- is worse than lost if it be
 not soon placed under the protection of a free constitution. Instead of
 being, as it ought to be, a source of wealth and power, it will become
 an intolerable burden upon the rest of the nation.
@@ -517,9 +517,9 @@ certainly, if carried out, produce immediate and irreparable injury to
 the organic structure of the Government, and if there be neither
 judicial remedy for the wrongs it inflicts nor power in the people to
 protect themselves without the official aid of their elected
-defender--if, for instance, the legislative department should pass an
+defender -- if, for instance, the legislative department should pass an
 act even through all the forms of law to abolish a coordinate
-department of the Government--in such a case the President must take
+department of the Government -- in such a case the President must take
 the high responsibilities of his office and save the life of the nation
 at all hazards. The so-called reconstruction acts, though as plainly
 unconstitutional as any that can be imagined, were not believed to be
@@ -734,18 +734,18 @@ from our commercial statistics.
 The production of precious metals in the United States from 1849 to
 1857, inclusive, amounted to $579,000,000; from 1858 to 1860,
 inclusive, to $137,500,000, and from 1861 to 1867, inclusive, to
-$457,500,000--making the grand aggregate of products since 1849
+$457,500,000 -- making the grand aggregate of products since 1849
 $1,174,000,000. The amount of specie coined from 1849 to 1857
 inclusive, was $439,000,000; from 1858 to 1860, inclusive,
-$125,000,000, and from 1861 to 1867, inclusive, $310,000,000--making
+$125,000,000, and from 1861 to 1867, inclusive, $310,000,000 -- making
 the total coinage since 1849 $874,000,000. From 1849 to 1857,
 inclusive, the net exports of specie amounted to $271,000,000; from
 1858 to 1860, inclusive, to $148,000,000, and from 1861 to 1867,
-inclusive, $322,000,000--making the aggregate of net exports since 1849
+inclusive, $322,000,000 -- making the aggregate of net exports since 1849
 $741,000,000. These figures show an excess of product over net exports
 of $433,000,000. There are in the Treasury $111,000,000 in coin,
 something more than $40,000,000 in circulation on the Pacific Coast,
-and a few millions in the national and other banks--in all about
+and a few millions in the national and other banks -- in all about
 $160,000,000. This, however, taking into account the specie in the
 country prior to 1849 leaves more than $300,000,000 which have not been
 accounted for by exportation, and therefore may yet remain in the
@@ -784,7 +784,7 @@ which in all their business transactions will be uniform in value at
 home and abroad. Every man of property or industry, every man who
 desires to preserve what he honestly possesses or to obtain what he can
 honestly earn, has a direct interest in maintaining a safe circulating
-medium--such a medium as shall be real and substantial, not liable to
+medium -- such a medium as shall be real and substantial, not liable to
 vibrate with opinions, not subject to be blown up or blown down by the
 breath of speculation, but to be made stable and secure. A disordered
 currency is one of the greatest political evils. It undermines the
@@ -792,11 +792,11 @@ virtues necessary for the support of the social system and encourages
 propensities destructive of its happiness; it wars against industry,
 frugality, and economy, and it fosters the evil spirits of extravagance
 and speculation. It has been asserted by one of our profound and most
-gifted statesmen that--Of all the contrivances for cheating the
+gifted statesmen that -- Of all the contrivances for cheating the
 laboring classes of mankind, none has been more effectual than that
 which deludes them with paper money. This is the most effectual of
 inventions to fertilize the rich man's fields by the sweat of the poor
-man's brow. Ordinary tyranny, oppression, excessive taxation--these
+man's brow. Ordinary tyranny, oppression, excessive taxation -- these
 bear lightly on the happiness of the mass of the community compared
 with a fraudulent currency and the robberies committed by depreciated
 paper. Our own history has recorded for our instruction enough, and
@@ -860,8 +860,8 @@ aggregate strength of our military force on the 30th of September last
 was 56,315. The total estimate for military appropriations is
 $77,124,707, including a deficiency in last year's appropriation of
 $13,600,000. The payments at the Treasury on account of the service of
-the War Department from January 1 to October 29, 1867--a period of ten
-months--amounted to $109,807,000. The expenses of the military
+the War Department from January 1 to October 29, 1867 -- a period of ten
+months -- amounted to $109,807,000. The expenses of the military
 establishment, as well as the numbers of the Army, are now three times
 as great as they have ever been in time of peace, while the
 discretionary, power is vested in the Executive to add millions to this
@@ -1028,7 +1028,7 @@ reservations and limitations incompatible with the rights, interest,
 and honor of our country. It is not to be apprehended that Great
 Britain will persist in her refusal to satisfy these just and
 reasonable claims, which involve the sacred principle of
-nonintervention--a principle henceforth not more important to the
+nonintervention -- a principle henceforth not more important to the
 United States than to all other commercial nations.
 
 The West India islands were settled and colonized by European States

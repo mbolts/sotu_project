@@ -21,7 +21,7 @@ and no efforts on my part consistent with the preservation of our rights
 and the honor of the country shall be spared to maintain a position so
 consonant to our institutions. We have faithfully sustained the foreign
 policy with which the United States, under the guidance of their first
-President, took their stand in the family of nations--that of regulating
+President, took their stand in the family of nations -- that of regulating
 their intercourse with other powers by the approved principles of private
 life; asking and according equal rights and equal privileges; rendering and
 demanding justice in all cases; advancing their own and discussing the
@@ -52,7 +52,7 @@ Government of Great Britain in respect to our northeastern boundary. It is
 with unfeigned regret that the people of the United States must look back
 upon the abortive efforts made by the Executive, for a period of more than
 half a century, to determine what no nation should suffer long to remain in
-dispute--the true line which divides its possessions from those of other
+dispute -- the true line which divides its possessions from those of other
 powers. The nature of the settlements on the borders of the United States
 and of the neighboring territory was for a season such that this, perhaps,
 was not indispensable to a faithful performance of the duties of the
@@ -256,8 +256,8 @@ deeply to have found in the recent communications of that Government so
 little reason to hope that any future efforts of mine for the
 accomplishment of those desirable objects would be successful.
 
-Although the larger number--and many of them aggravated cases of personal
-wrongs--have been now for years before the Mexican Government, and some of
+Although the larger number -- and many of them aggravated cases of personal
+wrongs -- have been now for years before the Mexican Government, and some of
 the causes of national complaint, and those of the most offensive
 character, admitted of immediate, simple, and satisfactory replies, it is
 only within a few days past that any specific communication in answer to
@@ -319,7 +319,7 @@ will prove ample for defraying all charges imposed on it during 1838.
 
 The report of the Secretary of the Treasury will afford you a more minute
 exposition of all matters connected with the administration of the finances
-during the current year--a period which for the amount of public moneys
+during the current year -- a period which for the amount of public moneys
 disbursed and deposited with the States, as well as the financial
 difficulties encountered and overcome, has few parallels in our history.
 
@@ -342,7 +342,7 @@ for me again in to recur to them. In respect to the last, you have had an
 opportunity since your adjournment not only to test still further the
 expediency of the measure by the continued practical operation of such
 parts of it as are now in force, but also to discover what should ever be
-sought for and regarded with the utmost deference--the opinions and wishes
+sought for and regarded with the utmost deference -- the opinions and wishes
 of the people.
 
 The national will is the supreme law of the Republic, and on all subjects
@@ -383,8 +383,8 @@ or in the pecuniary transactions of individuals and corporations so long as
 a connection exists between them which, like the past, offers such strong
 inducements to make them the subjects of political agitation. Indeed, I am
 more than ever convinced of the dangers to which the free and unbiased
-exercise of political opinion--the only sure foundation and safeguard of
-republican government--would be exposed by any further increase of the
+exercise of political opinion -- the only sure foundation and safeguard of
+republican government -- would be exposed by any further increase of the
 already overgrown influence of corporate authorities. I can not, therefore,
 consistently with my views of duty, advise a renewal of a connection which
 circumstances have dissolved.
@@ -461,7 +461,7 @@ intermingled with the affairs of individuals. Thus arranged, although it
 would not give to the Government that entire control over its own funds
 which I desire to secure to it by the plan I have proposed, it would, it
 must be admitted, in a great degree accomplish one of the objects which has
-recommended that plan to my judgment--the separation of the fiscal concerns
+recommended that plan to my judgment -- the separation of the fiscal concerns
 of the Government from those of individuals or corporations.
 
 With these observations I recommend the whole matter to your dispassionate
@@ -481,7 +481,7 @@ continued its corporate power two years more for the sole purpose of
 closing its affairs, with authority "to use the corporate name, style, and
 capacity for the purpose of suits for a final settlement and liquidation of
 the affairs and acts of the corporation, and for the sale and disposition
-of their estate--real, personal, and mixed--but for no other purpose or in
+of their estate -- real, personal, and mixed -- but for no other purpose or in
 any other manner whatsoever." Just before the banking privileges ceased,
 its effects were transferred by the bank to a new State institution, then
 recently incorporated, in trust, for the discharge of its debts and the
@@ -570,7 +570,7 @@ naturally given rise to numerous plans for the improvement of the existing
 system. The distinctive features of the policy that has hitherto prevailed
 are to dispose of the public lands at moderate prices, thus enabling a
 greater number to enter into competition for their purchase and
-accomplishing a double object--of promoting their rapid settlement by the
+accomplishing a double object -- of promoting their rapid settlement by the
 purchasers and at the same time increasing the receipts of the Treasury; to
 sell for cash, thereby preventing the disturbing influence of a large mass
 of private citizens indebted to the Government which they have a voice in
@@ -658,7 +658,7 @@ their relative value, so far as can be accomplished without departing from
 the rule heretofore observed requiring fixed prices in cases of private
 entries. The difficulty of the subject seems to lie in the mode of
 ascertaining what that value is. Would not the safest plan be that which
-has been adopted by many of the States as the basis of taxation--an actual
+has been adopted by many of the States as the basis of taxation -- an actual
 valuation of lands and classification of them into different rates? Would
 it not be practicable and expedient to cause the relative value of the
 public lands in the old districts which have been for a certain length of
@@ -684,7 +684,7 @@ purchasers, but many persons possessed of greater means would be content to
 settle on a larger quantity of the poorer lands rather than emigrate
 farther west in pursuit of a smaller quantity of better lands. Such a
 measure would also seem to be more consistent with the policy of the
-existing laws--that of converting the public domain into cultivated farms
+existing laws -- that of converting the public domain into cultivated farms
 owned by their occupants. That policy is not best promoted by sending
 emigration up the almost interminable streams of the West to occupy in
 groups the best spots of land, leaving immense wastes behind them and

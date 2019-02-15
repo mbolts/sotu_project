@@ -30,121 +30,121 @@ RECORD OF PROGRESS
 When I took office, our Nation faced a number of serious domestic and
 international problems:
 
---no national energy policy existed, and our dependence on foreign oil was
+ -- no national energy policy existed, and our dependence on foreign oil was
 rapidly increasing;
 
---public trust in the integrity and openness of the government was low;
+ -- public trust in the integrity and openness of the government was low;
 
---the Federal government was operating inefficiently in administering
+ -- the Federal government was operating inefficiently in administering
 essential programs and policies;
 
---major social problems were being ignored or poorly addressed by the
+ -- major social problems were being ignored or poorly addressed by the
 Federal government;
 
---our defense posture was declining as a result of a defense budget which
+ -- our defense posture was declining as a result of a defense budget which
 was continuously shrinking in real terms;
 
---the strength of the NATO Alliance needed to be bolstered;
+ -- the strength of the NATO Alliance needed to be bolstered;
 
---tensions between Israel and Egypt threatened another Middle East war;
+ -- tensions between Israel and Egypt threatened another Middle East war;
 and
 
---America's resolve to oppose human rights violations was under serious
+ -- America's resolve to oppose human rights violations was under serious
 question.
 
 Over the past 48 months, clear progress has been made in solving the
 challenges we found in January of 1977:
 
---almost all of our comprehensive energy program have been enacted, and the
+ -- almost all of our comprehensive energy program have been enacted, and the
 Department of Energy has been established to administer the program;
 confidence in the government's integrity has been restored, and respect for
 the government's openness and fairness has been renewed;
 
---the government has been made more effective and efficient: the Civil
+ -- the government has been made more effective and efficient: the Civil
 Service system was completely reformed for the first time this century;
 
---14 reorganization initiatives have been proposed to the Congress,
+ -- 14 reorganization initiatives have been proposed to the Congress,
 approved, and implemented;
 
---two new Cabinet departments have been created to consolidate and
+ -- two new Cabinet departments have been created to consolidate and
 streamline the government's handling of energy and education problems;
 
---inspectors general have been placed in each Cabinet department to combat
+ -- inspectors general have been placed in each Cabinet department to combat
 fraud, waste and other abuses;
 
---the regulatory process has been reformed through creation of the
+ -- the regulatory process has been reformed through creation of the
 Regulatory Council, implementation of Executive Order 12044 and its
 requirement for cost-impact analyses, elimination of unnecessary
 regulation, and passage of the Regulatory Flexibility Act;
 
---procedures have been established to assure citizen participation in
+ -- procedures have been established to assure citizen participation in
 government;
 
---and the airline, trucking, rail and communications industries are being
+ -- and the airline, trucking, rail and communications industries are being
 deregulated;
 
---critical social problems, many long ignored by the Federal government,
+ -- critical social problems, many long ignored by the Federal government,
 have been addressed directly;
 
---an urban policy was developed and implemented to reverse the decline
+ -- an urban policy was developed and implemented to reverse the decline
 in our urban areas;
 
---the Social Security System was refinanced to put it on a sound financial
+ -- the Social Security System was refinanced to put it on a sound financial
 basis;
 
---the Humphrey-Hawkins Full Employment Act was enacted;
+ -- the Humphrey-Hawkins Full Employment Act was enacted;
 
---Federal assistance for education was expanded by more than 75 percent;
+ -- Federal assistance for education was expanded by more than 75 percent;
 
---the minimum wage was increased to levels needed to ease the effects of
+ -- the minimum wage was increased to levels needed to ease the effects of
 inflation;
 
---affirmative action has been pursued aggressively; more blacks, Hispanics
+ -- affirmative action has been pursued aggressively; more blacks, Hispanics
 and women have been appointed to senior government positions and to
 judgeships than at any other time in our history;
 
---the ERA ratification deadline was extended to aid the ratification effort;
+ -- the ERA ratification deadline was extended to aid the ratification effort;
 
---and minority business procurement by the Federal government has more than
+ -- and minority business procurement by the Federal government has more than
 doubled;
 
---the Nation's first sectoral policies were put in place, for the auto and
+ -- the Nation's first sectoral policies were put in place, for the auto and
 steel industries, with my Administration demonstrating the value of
 cooperation between the government, business and labor;
 
---reversing previous trends, real defense spending has increased every year
+ -- reversing previous trends, real defense spending has increased every year
 since 1977;
 
---the real increase in FY 1980 defense spending is well above 3 percent
+ -- the real increase in FY 1980 defense spending is well above 3 percent
 and I expect FY 1981 defense spending to be even higher;
 
---looking ahead, the defense program I am proposing is premised on a real
+ -- looking ahead, the defense program I am proposing is premised on a real
 increase in defense spending over the next five years of 20 percent or
 more;
 
---the NATO Alliance has proven its unity in responding to the situations in
+ -- the NATO Alliance has proven its unity in responding to the situations in
 Eastern Europe and Southwest Asia and in agreeing on the issues to be
 addressed in the review of the Helsinki Final Act currently underway in
 Madrid;
 
---the peace process in the Middle East established at Camp David and by the
+ -- the peace process in the Middle East established at Camp David and by the
 Peace Treaty between Egypt and Israel is being buttressed on two fronts:
 steady progress in the normalization of Egyptian-Israeli relations in many
 fields, and the commitment of both Egypt and Israel, with United States'
 assistance, to see through to successful conclusion the autonomy
 negotiations for the West Bank and Gaza;
 
---the Panama Canal Treaties have been put into effect, which has helped to
+ -- the Panama Canal Treaties have been put into effect, which has helped to
 improve relations with Latin America;
 
---we have continued this Nation's strong commitment to the pursuit of human
+ -- we have continued this Nation's strong commitment to the pursuit of human
 rights throughout the world, evenhandedly and objectively;
 
---our commitment to a worldwide human rights policy has remained firm;
+ -- our commitment to a worldwide human rights policy has remained firm;
 
---and many other countries have given high priority to it;
+ -- and many other countries have given high priority to it;
 
---our resolve to oppose aggression, such as the illegal invasion of the
+ -- our resolve to oppose aggression, such as the illegal invasion of the
 Soviet Union into Afghanistan, has been supported by tough action.
 
 I. ENSURING ECONOMIC STRENGTH ECONOMY
@@ -162,11 +162,11 @@ Nevertheless, the economy has proved to be remarkably resilient. Real
 output has grown at an average rate of 3 percent per year since I took
 office, and employment has grown by 10 percent. We have added about 8
 million productive private sector jobs to the economy. However,
-unacceptably high inflation--the most difficult economic problem I have
-faced--persists.
+unacceptably high inflation -- the most difficult economic problem I have
+faced -- persists.
 
-This inflation--which threatens the growth, productivity, and stability of
-our economy--requires that we restrain the growth of the budget to the
+This inflation -- which threatens the growth, productivity, and stability of
+our economy -- requires that we restrain the growth of the budget to the
 maximum extent consistent with national security and human compassion. I
 have done so in my earlier budgets, and in my FY '82 budget. However, while
 restraint is essential to any appropriate economic policy, high inflation
@@ -262,7 +262,7 @@ more abundant fuels, and to reduce our trade deficit. The essential human
 needs for our citizens must be given the highest priority. The Federal
 Government must lead the way in investment in the Nation's technological
 future. The Federal Government has an obligation to nurture and protect our
-environment--the common resource, birthright, and sustenance of the
+environment -- the common resource, birthright, and sustenance of the
 American people.
 
 My 1982 budget continues to support these principles. It also proposes
@@ -277,8 +277,8 @@ off all growth.
 
 Careful budget policy should be supplemented by other measures designed to
 reduce inflation at lower cost in lost output and employment. These other
-steps include measures to increase investment--such as the tax proposals
-included in my 1982 budget--and measures to increase competition and
+steps include measures to increase investment -- such as the tax proposals
+included in my 1982 budget -- and measures to increase competition and
 productivity in our economy. Voluntary incomes policies can also directly
 influence wages and prices in the direction of moderation and thereby bring
 inflation down faster and at lower cost to the economy. Through a tax-based
@@ -309,7 +309,7 @@ economic stimulus program:
 
 425,000 public service jobs were created A $1 billion youth employment
 initiative funded 200,000 jobs the doubling of the Job Corps to 44,000
-slots began and 1 million summer youth jobs were approved--a 25 percent
+slots began and 1 million summer youth jobs were approved -- a 25 percent
 increase.
 
 In 1978:
@@ -410,13 +410,13 @@ hamper U.S. export growth. And we must ensure that countries do not
 manipulate investment, or impose investment performance requirements which
 distort trade and cost us jobs in this country.
 
-In short, we must continue to seek free--but fair--trade. That is the
+In short, we must continue to seek free -- but fair -- trade. That is the
 policy my Administration has pursued from the beginning, even in areas
 where foreign competition has clearly affected our domestic industry. In
 the steel industry, for instance, we have put Trigger Price Mechanism into
 place to help prevent the dumping of steel. That action has strengthened
-the domestic steel industry. In the automobile industry, we have worked--
-without resort to import quotas--to strengthen the industry's ability to
+the domestic steel industry. In the automobile industry, we have worked -- 
+without resort to import quotas -- to strengthen the industry's ability to
 modernize and compete effectively.
 
 SMALL BUSINESS
@@ -488,7 +488,7 @@ achieve that policy has been long and difficult, but the accomplishments of
 the past four years make clear that our country is finally serious about
 the problems caused by our overdependence on foreign oil. Our progress
 should not be lost. We must rely on and encourage multiple forms of energy
-production--coal, crude oil, natural gas, solar, nuclear, synthetics--and
+production -- coal, crude oil, natural gas, solar, nuclear, synthetics -- and
 energy conservation. The framework put in place over the last four years
 will enable us to do this.
 
@@ -500,7 +500,7 @@ the past four years, our country finally has a national energy policy:
 Under my program of phased decontrol, domestic crude oil price controls
 will end September 30, 1981. As a result exploratory drilling activities
 have reached an all-time high; Prices for new natural gas are being
-decontrolled under the Natural Gas Policy Act--and natural gas production
+decontrolled under the Natural Gas Policy Act -- and natural gas production
 is now at an all time high; the supply shortages of several years ago have
 been eliminated; The windfall profits tax on crude oil has been enacted
 providing $227 billion over ten years for assistance to low-income
@@ -516,12 +516,12 @@ production is now at its highest level in history; A gasoline rationing
 plan has been approved by Congress for possible use in the event of a
 severe energy supply shortage or interruption; Gasohol production has been
 dramatically increased, with a program being put in place to produce 500
-million gallons of alcohol fuel by the end of this year--an amount that
+million gallons of alcohol fuel by the end of this year -- an amount that
 could enable gasohol to meet the demand for 10 percent of all unleaded
 gasoline; New energy conservation incentives have been provided for
 individuals, businesses and communities and conservation has increased
-dramatically. The U.S. has reduced oil imports by 25 percent--or 2 million
-barrels per day--over the past four years.
+dramatically. The U.S. has reduced oil imports by 25 percent -- or 2 million
+barrels per day -- over the past four years.
 
 INCREASED DEVELOPMENT OF DOMESTIC ENERGY SOURCES
 
@@ -595,7 +595,7 @@ oil equivalent, about the level of total oil production now occurring in
 Alaska. Over the same period, Federal support for conservation and solar
 energy has increased by more than 3000 percent, to $3.3 billion in FY 1981,
 including the tax credits for solar energy and energy conservation
-investments--these credits are expected to amount to $1.2 billion in FY
+investments -- these credits are expected to amount to $1.2 billion in FY
 1981 and $1.5 billion in FY 1982.
 
 COMMITMENT TO NUCLEAR SAFETY AND SECURITY
@@ -699,7 +699,7 @@ program efficiency, accountability and uniformity; and strong cost
 controls and health system reforms would be implemented, including
 greater incentives for Health Maintenance Organizations.
 
-I urge the new Congress to compare my Plan with the alternatives--programs
+I urge the new Congress to compare my Plan with the alternatives -- programs
 which either do too little to improve the health care needs of Americans
 most in need or programs which would impose substantial financial burdens
 on the American taxpayers. I hope the Congress will see the need for and
@@ -865,7 +865,7 @@ EDUCATION
 
 The American people have always recognized that education is one of the
 soundest investments they can make. The dividends are reflected in every
-dimension of our national life--from the strength of our economy and
+dimension of our national life -- from the strength of our economy and
 national security to the vitality of our music, art, and literature. Among
 the accomplishments that have given me the most satisfaction over the last
 four years are the contributions that my Administration has been able to
@@ -887,7 +887,7 @@ strengthened.
 
 Our collaboration with the Congress has resulted in numerous other
 important legislative accomplishments for education. A little over two
-years ago, I signed into law on the same day two major bills--one
+years ago, I signed into law on the same day two major bills -- one
 benefiting elementary and secondary education and the other, postsecondary
 education. The Education Amendments of 1978 embodied nearly all of my
 Administration's proposals for improvements in the Elementary and Secondary
@@ -905,7 +905,7 @@ Just three and a half months ago, my Administration and the Congress
 successfully concluded over two years of work on a major reauthorization
 bill that further expands benefits to postsecondary education. Reflected in
 the Education Amendments of 1980 are major Administration recommendations
-for improvements in the Higher Education Act--including proposals for
+for improvements in the Higher Education Act -- including proposals for
 better loan access for students; a new parent loan program; simplified
 application procedures for student financial aid; a strengthened Federal
 commitment to developing colleges, particularly the historically Black
@@ -942,13 +942,13 @@ would direct $2 billion into education and job training programs designed
 to alleviate youth unemployment through improved linkages between the
 schools and the work place. This legislation generated bipartisan support;
 but unfortunately, action on it was not completed in the final, rushed days
-of the 96th Congress. I urge the new Congress--as it undertakes broad
+of the 96th Congress. I urge the new Congress -- as it undertakes broad
 efforts to strengthen the economy as well as more specific tasks like
-reauthorizing the Vocational Education Act--to make the needs of our
+reauthorizing the Vocational Education Act -- to make the needs of our
 nation's unemployed youth a top priority for action. Only by combining a
 basic skills education program together with work training and employment
 incentives can we make substantial progress in eliminating one of the most
-severe social problems in our nation--youth unemployment, particularly
+severe social problems in our nation -- youth unemployment, particularly
 among minorities. I am proud of the progress already made through passage
 of the Youth Employment and Demonstration Project Act of 1977 and the
 substantial increase in our investment in youth employment programs. The
@@ -1212,8 +1212,8 @@ ELDERLY AND HANDICAPPED TRANSPORTATION
 Transportation policies in the 1980's must pay increasing attention to the
 needs of the elderly and handicapped. By 1990, the number of people over 65
 will have grown from today's 19 million to 27 million. During the same
-period, the number of handicapped--people who have difficulty using
-transit as well as autos, including the elderly--is expected to increase
+period, the number of handicapped -- people who have difficulty using
+transit as well as autos, including the elderly -- is expected to increase
 from 9 to 11 million, making up 4.5 percent of the population.
 
 We must not retreat from a policy that affords a significant and growing
@@ -1245,7 +1245,7 @@ the Mississippi River delay grain shipments to the Gulf of Mexico.
 
 We have made some progress:
 
---To further develop the nation's waterways, my Administration began
+ -- To further develop the nation's waterways, my Administration began
 construction of a new 1,200 foot lock at the site of Lock and Dam 26 on the
 Mississippi River. When opened in 1987, the new lock will have a capacity
 of 86 million tons per year, an 18 percent increase over the present
@@ -1258,7 +1258,7 @@ Alton, Illinois. These efforts will help alleviate delays in transporting
 corn, soybeans and other goods along the Mississippi River to the Gulf of
 Mexico.
 
---The Department of Transportation's new Small Community and Rural
+ -- The Department of Transportation's new Small Community and Rural
 Transportation Policy will target federal assistance for passenger
 transportation, roads and highways, truck service, and railroad freight
 service to rural areas. This policy implements and expands upon the earlier
@@ -1352,20 +1352,20 @@ Chessie Railroad which is reactivating Pier 15 in Newport News and has
 established a berth near its Curtis Bay Pier in Baltimore to decrease
 delays in vessel berthing, public activities will include:
 
---A $26.5 million plan developed by the State of Pennsylvania and Conrail
+ -- A $26.5 million plan developed by the State of Pennsylvania and Conrail
 to increase Conrail's coal handling capacity at Philadelphia;
 
---A proposal by the State of Virginia to construct a steam coal port on
+ -- A proposal by the State of Virginia to construct a steam coal port on
 the Craney Island Disposal area in Portsmouth harbor;
 
---Plans by Mobile, Alabama, which operates the only publicly owned coal
+ -- Plans by Mobile, Alabama, which operates the only publicly owned coal
 terminal in the U.S. to enlarge its capacity at McDuffie Island to 10
 million tons ground storage and 100 car unit train unloading capability;
 
---Development at New Orleans of steam coal facilities that are expected to
+ -- Development at New Orleans of steam coal facilities that are expected to
 add over 20 million tons of annual capacity by 1983; and
 
---The Corps of Engineers, working with other interested Federal agencies,
+ -- The Corps of Engineers, working with other interested Federal agencies,
 will determine which ports should be dredged, to what depth and on what
 schedule, in order to accommodate larger coal carrying vessels.
 
@@ -1427,9 +1427,9 @@ comprehensive and detailed international agreement which seeks the
 advancement of women.
 
 On women's issues, I have sought the counsel of men and women in and out of
-government and from all regions of our country. I established two panels--
+government and from all regions of our country. I established two panels -- 
 the President's Advisory Committee for Women and the Interdepartmental Task
-Force on Women--to advise me on these issues. The mandate for both groups
+Force on Women -- to advise me on these issues. The mandate for both groups
 expired on December 31, but they have left behind a comprehensive review of
 the status of women in our society today. That review provides excellent
 guidance for the work remaining in our battle against sex discrimination.
@@ -1537,8 +1537,8 @@ REFUGEES
 We cannot hope to build a just and humane society at home if we ignore the
 humanitarian claims of refugees, their lives at stake, who have nowhere
 else to turn. Our country can be proud that hundreds of thousands of people
-around the world would risk everything they have--including their own
-lives--to come to our country.
+around the world would risk everything they have -- including their own
+lives -- to come to our country.
 
 This Administration initiated and implemented the first comprehensive
 reform of our refugee and immigration policies in over 25 years. We also
@@ -1776,18 +1776,18 @@ efficiently.
 
 As a result of the policy and the accompanying legislation, we have:
 
---Created the position of Under Secretary of Agriculture for Small
+ -- Created the position of Under Secretary of Agriculture for Small
 Community and Rural Development to provide overall leadership.
 
---Established a White House Working Group to assist in the implementation
+ -- Established a White House Working Group to assist in the implementation
 of the policy.
 
---Worked with more than 40 governors to form State rural development
+ -- Worked with more than 40 governors to form State rural development
 councils to work in partnership with the White House Working Group, and the
 Federal agencies, to better deliver State and Federal programs to rural
 areas.
 
---Directed the White House Working Group to annually review existing and
+ -- Directed the White House Working Group to annually review existing and
 proposed policies, programs, and budget levels to determine their adequacy
 in meeting rural needs and the fulfilling of the policy's objectives and
 principles.
@@ -1859,7 +1859,7 @@ mission agencies. In this way, we can harness the American genius for
 innovation to meet the economic, energy, health, and security challenges
 that confront our nation.
 
---International Relations and National Security. Science and technology
+ -- International Relations and National Security. Science and technology
 are becoming increasingly important elements of our national security and
 foreign policies. This is especially so in the current age of sophisticated
 defense systems and of growing dependence among all countries on modern
@@ -1895,7 +1895,7 @@ technological assistance is a key linkage between the U.S. and the
 developing world, a linkage that has been under-utilized in the past and
 one which we must continue to work to strengthen.
 
---Space Policy. The Administration has established a framework for a
+ -- Space Policy. The Administration has established a framework for a
 strong and evolving space program for the 1980's.
 
 The Administration's space policy reaffirmed the separation of military
@@ -1910,14 +1910,14 @@ complexity of Apollo is inappropriate. As the Shuttle development phases
 down, however, there will be added flexibility to consider new space
 applications, space science and new space exploration activities.
 
---Technology Development. The Shuttle dominates our technology development
+ -- Technology Development. The Shuttle dominates our technology development
 effort and correctly so. It represents one of the most sophisticated
 technological challenges ever undertaken, and as a result, has encountered
 technical problems. Nonetheless, the first manned orbital flight is now
 scheduled for March, 1981. I have been pleased to support strongly the
 necessary funds for the Shuttle throughout my Administration.
 
---Space Applications. Since 1972, the U.S. has conducted experimental
+ -- Space Applications. Since 1972, the U.S. has conducted experimental
 civil remote sensing through Landsat satellites, thereby realizing many
 successful applications. Recognizing this fact, I directed the
 implementation of an operational civil land satellite remote sensing
@@ -1927,7 +1927,7 @@ observations from space can meet common civil and military data
 requirements, a National Oceanic Satellite System has been proposed as a
 major FY 1981 new start.
 
---Space Science Exploration. The goals of this Administration's policy in
+ -- Space Science Exploration. The goals of this Administration's policy in
 space science have been to: (1) continue a vigorous program of planetary
 exploration to understand the origin and evolution of the solar system; (2)
 utilize the space telescope and free-flying satellites to usher in a new
@@ -1963,21 +1963,21 @@ We have also reactivated the Federal Council on the Arts and Humanities.
 It is my hope that during the coming years the new Administration and the
 Congress will:
 
---Continue support of institutions promoting development and understanding
+ -- Continue support of institutions promoting development and understanding
 of the arts;
 
---Encourage business participants in a comprehensive effort to achieve a
+ -- Encourage business participants in a comprehensive effort to achieve a
 truly mixed economy of support for the arts;
 
---Explore a variety of mechanisms to nurture the creative talent of our
+ -- Explore a variety of mechanisms to nurture the creative talent of our
 citizens and build audiences for their work;
 
---Support strong, active National Endowments for the Arts;
+ -- Support strong, active National Endowments for the Arts;
 
---Seek greater recognition for the rich cultural tradition of the nation's
+ -- Seek greater recognition for the rich cultural tradition of the nation's
 minorities;
 
---Provide grants for the arts in low-income neighborhoods.
+ -- Provide grants for the arts in low-income neighborhoods.
 
 THE HUMANITIES
 
@@ -1997,7 +1997,7 @@ underlying important personal, social, and national questions raised in our
 society by its multiple links to and increasing dependence on technology,
 and by the diverse heritage of our many regions and ethnic groups. The
 humanities cast light on the broad issue of the role in a society of men
-and women of imagination and energy--those individuals who through their
+and women of imagination and energy -- those individuals who through their
 own example define "the spirit of the age," and in so doing move nations.
 Our Government's support for the humanities, within the framework laid down
 by the Congress, is a recognition of their essential nourishment of the
@@ -2009,19 +2009,19 @@ Fiscal Year 1981.
 
 In the allocation of this funding, special emphasis will be given to:
 
---Humanities education in the nation's schools, in response to the great
+ -- Humanities education in the nation's schools, in response to the great
 needs that have arisen in this area;
 
---Scholarly research designed to increase our understanding of the
+ -- Scholarly research designed to increase our understanding of the
 cultures, traditions, and historical forces at work in other nations and in
 our own;
 
---Drawing attention to the physical disintegration of the raw material of
-our cultural heritage--books, manuscripts, periodicals, and other
-documents--and to the development of techniques to prevent the destruction
+ -- Drawing attention to the physical disintegration of the raw material of
+our cultural heritage -- books, manuscripts, periodicals, and other
+documents -- and to the development of techniques to prevent the destruction
 and to preserve those materials; and
 
---The dissemination of quality programming in the humanities to
+ -- The dissemination of quality programming in the humanities to
 increasingly large American audiences through the use of radio and
 television.
 
@@ -2249,17 +2249,17 @@ V. PROTECTING BASIC RIGHTS AND LIBERTIES
 I am extremely proud of the advances we have made in ensuring equality and
 protecting the basic freedoms of all Americans.
 
---The Equal Employment Opportunity Commission (EEOC) and the Office of
+ -- The Equal Employment Opportunity Commission (EEOC) and the Office of
 Federal Contract Compliance (OFCCP) have been reorganized and strengthened
 and a permanent civil rights unit has been established in OMB.
 
---To avoid fragmented, inconsistent and duplicative enforcement of civil
+ -- To avoid fragmented, inconsistent and duplicative enforcement of civil
 rights laws, three agencies have been given coordinative and
 standard-setting responsibilities in discrete areas: EEOC for all
 employment-related activities, HUD for all those relating to housing, and
 the Department of Justice for all other areas.
 
---With the enactment of the Right to Financial Privacy Act and a bill
+ -- With the enactment of the Right to Financial Privacy Act and a bill
 limiting police search of newsrooms, we have begun to establish a sound,
 comprehensive, privacy program.
 
@@ -2270,15 +2270,15 @@ states.
 The Congress must give early attention to a number of important bills which
 remain. These bills would:
 
---strengthen the laws against discrimination in housing. Until it is
+ -- strengthen the laws against discrimination in housing. Until it is
 enacted, the 1968 Civil Rights Act's promise of equal access to housing
 will remain unfulfilled;
 
---establish a charter for the FBI and the intelligence agencies. The
+ -- establish a charter for the FBI and the intelligence agencies. The
 failure to define in law the duties and responsibilities of these agencies
 has made possible some of the abuses which have occurred in recent years;
 
---establish privacy safeguards for medical research, bank, insurance, and
+ -- establish privacy safeguards for medical research, bank, insurance, and
 credit records; and provide special protection for election fund transfer
 systems.
 
@@ -2416,13 +2416,13 @@ the Administration's June 6, 1978 Water Policy Reform Message to the
 Congress. This Message established a new national water resources policy
 with the following objectives:
 
---to give priority emphasis to water conservation;
+ -- to give priority emphasis to water conservation;
 
---to consider environmental requirements and values more fully and along
+ -- to consider environmental requirements and values more fully and along
 with economic factors in the planning and management of water projects and
 programs;
 
---to enhance cooperation between state and federal agencies in water
+ -- to enhance cooperation between state and federal agencies in water
 resources planning and management.
 
 In addition, the Executive Office of the President established 11 policy
@@ -2509,29 +2509,29 @@ our commitment to preserving and enhancing the quality of our environment.
 It is my hope that when our descendants look back on the 1980's they will
 be able to affirm:
 
---that we kept our commitment to the restoration of environmental
+ -- that we kept our commitment to the restoration of environmental
 quality;
 
---that we protected the public health from the continuing dangers of toxic
+ -- that we protected the public health from the continuing dangers of toxic
 chemicals, from pollution, from hazardous and radioactive waste, and that
 we made our communities safer, healthier and better places to live;
 
---that we preserved America's wilderness areas and particularly its last
+ -- that we preserved America's wilderness areas and particularly its last
 great frontier, Alaska, for the benefit of all Americans in perpetuity;
 
---that we put this nation on a path to a sustainable energy future, one
+ -- that we put this nation on a path to a sustainable energy future, one
 based increasingly on renewable resources and on energy conservation;
 
---that we moved to protect America's countryside and coastland from
+ -- that we moved to protect America's countryside and coastland from
 mismanagement and irresponsibility;
 
---that we redirected the management of the nation's water resources toward
+ -- that we redirected the management of the nation's water resources toward
 water conservation, sound development and environmental protection;
 
---that we faced squarely such worldwide problems as the destruction of
+ -- that we faced squarely such worldwide problems as the destruction of
 forests, acid rain, carbon dioxide build-up and nuclear proliferation; and
 
---that we protected the habitat and the existence of our own species on
+ -- that we protected the habitat and the existence of our own species on
 this earth.
 
 AGRICULTURE THE FARM ECONOMY
@@ -2648,13 +2648,13 @@ the most extensive and intensive change in human history.
 
 My policies have been directed in particular at three areas of change:
 
---the steady growth and increased projection abroad of Soviet military
+ -- the steady growth and increased projection abroad of Soviet military
 power, power that has grown faster than our own over the past two decades.
 
---the overwhelming dependence of Western nations, which now increasingly
+ -- the overwhelming dependence of Western nations, which now increasingly
 includes the United States, on vital oil supplies from the Middle East.
 
---the pressures of change in many nations of the developing world, in Iran
+ -- the pressures of change in many nations of the developing world, in Iran
 and uncertainty about the future stability of many developing countries.
 
 As a result of those fundamental facts, we face some of the most serious
@@ -2685,29 +2685,29 @@ peoples.
 There have been encouraging developments in recent years, as well as
 matters requiring continued vigilance and concern:
 
---Our alliances with the world's most advanced and democratic states from
+ -- Our alliances with the world's most advanced and democratic states from
 Western Europe through Japan are stronger than ever.
 
---We have helped to bring about a dramatic improvement in relations
+ -- We have helped to bring about a dramatic improvement in relations
 between Egypt and Israel and an historic step towards a comprehensive
 Arab-Israeli settlement.
 
---Our relations with China are growing closer, providing a major new
+ -- Our relations with China are growing closer, providing a major new
 dimension in our policy in Asia and the world.
 
---Across southern Africa from Rhodesia to Namibia we are helping with the
+ -- Across southern Africa from Rhodesia to Namibia we are helping with the
 peaceful transition to majority rule in a context of respect for minority
 as well as majority rights.
 
---We have worked domestically and with our allies to respond to an
+ -- We have worked domestically and with our allies to respond to an
 uncertain energy situation by conservation and diversification of energy
 supplies based on internationally agreed targets.
 
---We have unambiguously demonstrated our commitment to defend Western
+ -- We have unambiguously demonstrated our commitment to defend Western
 interests in Southwest Asia, and we have significantly increased our
 ability to do so.
 
---And over the past four years the U.S. has developed an energy program
+ -- And over the past four years the U.S. has developed an energy program
 which is comprehensive and ambitious. New institutions have been
 established such as the Synthetic Fuels Corporation and Solar Bank. Price
 decontrol for oil and gas is proceeding. American consumers have risen to
@@ -2727,27 +2727,27 @@ capabilities and objectives.
 
 I see six basic goals for America in the world over the 1980's:
 
---First, we will continue, as we have over the past four years, to build
+ -- First, we will continue, as we have over the past four years, to build
 America's military strength and that of our allies and friends. Neither the
 Soviet Union nor any other nation will have reason to question our will to
 sustain the strongest and most flexible defense forces.
 
---Second, we will pursue an active diplomacy in the world, working,
+ -- Second, we will pursue an active diplomacy in the world, working,
 together with our friends and allies, to resolve disputes through peaceful
 means and to make any aggressor pay a heavy price.
 
---Third, we will strive to resolve pressing international economic
+ -- Third, we will strive to resolve pressing international economic
 problems, particularly energy and inflation, and continue to pursue our
 still larger objective of global economic growth through expanded trade and
 development assistance and through the preservation of an open multilateral
 trading system.
 
---Fourth, we will continue vigorously to support the process of building
+ -- Fourth, we will continue vigorously to support the process of building
 democratic institutions and improving human rights protection around the
 world. We are deeply convinced that the future lies not with dictatorship
 but democracy.
 
---Fifth, we remain deeply committed to the process of mutual and
+ -- Fifth, we remain deeply committed to the process of mutual and
 verifiable arms control, particularly to the effort to prevent the spread
 and further development of nuclear weapons. Our decision to defer, but not
 abandon our efforts to secure ratification of the SALT II Treaty reflects
@@ -2755,7 +2755,7 @@ our firm conviction that the United States has a profound national
 security interest in the constraints on Soviet nuclear forces which only
 that treaty can provide.
 
---Sixth, we must continue to look ahead in order to evaluate and respond
+ -- Sixth, we must continue to look ahead in order to evaluate and respond
 to resource, environment and population challenges through the end of this
 century.
 
@@ -3175,8 +3175,8 @@ authorities are making some progress in resolving those problems, and they
 have pledged an early return to civilian government. The tradition of the
 Turkish military gives us cause to take that pledge seriously. We welcomed
 the reestablishment of Greece's links to the integrated military command
-structure of the Atlantic Alliance--a move which we had strongly
-encouraged--as a major step toward strengthening NATO's vital southern
+structure of the Atlantic Alliance -- a move which we had strongly
+encouraged -- as a major step toward strengthening NATO's vital southern
 flank at a time of international crisis and tension in adjacent areas.
 Greek reintegration exemplifies the importance which the allies place on
 cooperating in the common defense and shows that the allies can make the
@@ -3265,8 +3265,8 @@ We have taken several measures to meet these challenges.
 MIDDLE EAST
 
 In the Middle East, our determination to consolidate what has already been
-achieved in the peace process--and to buttress that accomplishment with
-further progress toward a comprehensive peace settlement--must remain a
+achieved in the peace process -- and to buttress that accomplishment with
+further progress toward a comprehensive peace settlement -- must remain a
 central goal of our foreign policy. Pursuant to their peace treaty, Egypt
 and Israel have made steady progress in the normalization of their
 relations in a variety of fields, bringing the benefits of peace directly
@@ -3313,7 +3313,7 @@ We have also embarked on a course to reinforce the trust and confidence our
 regional friends have in our ability to come to their assistance rapidly
 with American military force if needed. We have increased our naval
 presence in the Indian Ocean. We have created a Rapid Deployment Force
-which can move quickly to the Gulf--or indeed any other area of the world
+which can move quickly to the Gulf -- or indeed any other area of the world
 where outside aggression threatens. We have concluded several agreements
 with countries which are prepared to let us use their airports and naval
 facilities in an emergency. We have met requests for reasonable amounts of
@@ -3426,8 +3426,8 @@ and air facilities in the Indian Ocean.
 
 Africans have become increasingly vocal on human rights. African leaders
 have spoken out on the issue of political prisoners, and the OAU is
-drafting its own Charter on Human Rights. Three countries in Africa--
-Nigeria, Ghana, and Uganda--have returned to civilian rule during the past
+drafting its own Charter on Human Rights. Three countries in Africa -- 
+Nigeria, Ghana, and Uganda -- have returned to civilian rule during the past
 year.
 
 U.S. cooperation with Africa on all these matters represents a strong base
@@ -3487,7 +3487,7 @@ the hemisphere to all these ends, and we have eagerly and regularly sought
 the advice of the leaders of the region on a wide range of issues.
 
 Last November, I spoke to the General Assembly of the Organization of
-American States of a cause that has been closest to my heart--human
+American States of a cause that has been closest to my heart -- human
 rights. It is an issue that has found its time in the hemisphere. The cause
 is not mine alone, but an historic movement that will endure.
 
@@ -3627,8 +3627,8 @@ Under the leadership of the United States, the 21 members of the
 International Energy Agency took collective action to ensure that the oil
 shortfall stemming from the Iran-Iraq war would not be aggravated by
 competition for scarce spot market supplies. We are also working together
-to see that those nations most seriously affected by the oil disruption--
-including our key NATO allies Turkey and Portugal--can get the oil they
+to see that those nations most seriously affected by the oil disruption -- 
+including our key NATO allies Turkey and Portugal -- can get the oil they
 need. At the most recent IEA Ministerial meeting we joined the other
 members in pledging to take those policy measures necessary to slice our
 joint oil imports in the first quarter of 1981 by 2.2 million barrels.
@@ -3700,8 +3700,8 @@ previous years and which commits major coffee producers to eliminate cartel
 arrangements that manipulated future markets to raise prices. The way is
 now open to a fully-functioning International Coffee Agreement which can
 help to stabilize this major world commodity market. The results will be
-positive for both consumers--who will be less likely to suffer from sharp
-increases in coffee prices--and producers--who can undertake future
+positive for both consumers -- who will be less likely to suffer from sharp
+increases in coffee prices -- and producers -- who can undertake future
 investment with assurance of greater protection against disruptive price
 fluctuations in their exports.
 
@@ -3775,7 +3775,7 @@ nations focus on such specific problems, rather than on procedural and
 institutional questions. It will continue to work to move the North-South
 dialogue into a more constructive phase.
 
-FOOD--THE WAR ON HUNGER
+FOOD -- THE WAR ON HUNGER
 
 The War on Hunger must be a continuous urgent priority. Major portions of
 the world's population continue to be threatened by the specter of hunger
@@ -3847,17 +3847,17 @@ that can satisfy the continuing human reach for freedom and justice:
 positive developments in the ongoing struggle for fulfillment of human
 rights throughout the world. In the year we have seen:
 
---Free elections were held and democratic governments installed in Peru,
+ -- Free elections were held and democratic governments installed in Peru,
 Dominica, and Jamaica. Honduras held a free election for installation of a
 constituent assembly. An interim government was subsequently named pointing
 toward national presidential elections in 1981. Brazil continues on its
 course of political liberalization.
 
---The "Charter of Conduct" signed in Riobamba, Ecuador, by Ecuador,
+ -- The "Charter of Conduct" signed in Riobamba, Ecuador, by Ecuador,
 Colombia, Venezuela, Peru, Costa Rica, Panama and Spain, affirms the
 importance of democracy and human rights for the Andean countries.
 
---The Organization of American States, in its annual General Assembly,
+ -- The Organization of American States, in its annual General Assembly,
 approved a resolution in support of the Inter-American Human Rights
 Commission's work. The resolution took note of the Commission's annual
 report, which described the status of human rights in Chile, El Salvador,
@@ -3865,10 +3865,10 @@ Paraguay and Uruguay; and the special reports on Argentina and Haiti, which
 described human rights conditions as investigated during on-site
 inspections to these countries.
 
---The awarding of the Nobel Prize for Peace to Adolfo Perez Esquivel of
+ -- The awarding of the Nobel Prize for Peace to Adolfo Perez Esquivel of
 Argentina for his non-violent advocacy of human rights.
 
---The United States was able to rejoin the International Labor
+ -- The United States was able to rejoin the International Labor
 Organization after an absence of two years, as that U.N. body reformed its
 procedures to return to its original purpose of strengthening
 employer-employee-government relations to insure human rights for the
@@ -3949,12 +3949,12 @@ The Control of Nuclear Weapons
 Together with our friends and allies, we are striving to build a world in
 which peoples with diverse interests can live freely and prosper. But all
 that humankind has achieved to date, all that we are seeking to accomplish,
-and human existence itself can be undone in an instant--in the catastrophe
+and human existence itself can be undone in an instant -- in the catastrophe
 of a nuclear war.
 
 Thus one of the central objectives of my Administration has been to control
 the proliferation of nuclear weapons to those nations which do not have
-them, and their further development by the existing nuclear powers--
+them, and their further development by the existing nuclear powers -- 
 notably the Soviet Union and the United States.
 
 NON-PROLIFERATION
@@ -3971,20 +3971,20 @@ materials.
 
 We have been proceeding on a number of fronts:
 
---First, we have been seeking to encourage nations to accede to the
+ -- First, we have been seeking to encourage nations to accede to the
 Non-Proliferation Treaty. The U.S. is also actively encouraging other
 nations to accept full-scope safeguards on all of their nuclear activities
 and is asking other nuclear suppliers to adopt a full-scope safeguards
 requirement as a condition for future supply.
 
---Second, the International Nuclear Fuel Cycle Evaluation (INFCE), which
+ -- Second, the International Nuclear Fuel Cycle Evaluation (INFCE), which
 was completed in 1980, demonstrated that suppliers and recipients can work
 together on these technically complex and sensitive issues. While
 differences remain, the INFCE effort provides a broader international basis
 for national decisions which must balance energy needs with
 non-proliferation concerns.
 
---Finally, we are working to encourage regional cooperation and restraint.
+ -- Finally, we are working to encourage regional cooperation and restraint.
 Protocol I of the Treaty of Tlatelolco which will contribute to the
 lessening of nuclear dangers for our Latin American neighbors ought now to
 be ratified by the United States Senate.

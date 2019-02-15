@@ -39,7 +39,7 @@ REPRESENTATIVE STATES
 
 General Infant
 
-First 9 months of-- 1928 11.9 67.8 1929 12.0 65.8 1930 11.4 62.0 1931
+First 9 months of --  1928 11.9 67.8 1929 12.0 65.8 1930 11.4 62.0 1931
 11.2 60.0 1932 10.6 55.0
 
 The sickness rates from data available show the same trends. These facts
@@ -86,7 +86,7 @@ agriculture has protected the savings and insurance policies of millions
 of our citizens and has relieved millions of borrowers from duress; they
 have enabled industry and business to function and expand. The
 assistance given to Farm Loan Banks, the establishment of the Home Loan
-Banks and Agricultural Credit Associations--all in their various
+Banks and Agricultural Credit Associations -- all in their various
 ramifications have placed large sums of money at the disposal of the
 people in protection and aid. Beyond this, the extensive organization of
 the country in voluntary action has produced profound results.
@@ -100,7 +100,7 @@ etc., which will be recovered to the Treasury.
 
 Agricultural Public works 1 relief and financial loans
 
-Fiscal year ending June 30-- 1930 $410,420,000 $156,100,000 1931
+Fiscal year ending June 30 --  1930 $410,420,000 $156,100,000 1931
 574,870,000 196,700,000 1932 655,880,000 772,700,000 1933 717,260,000
 52,000,000
 
@@ -113,7 +113,7 @@ country must be the paramount duty of the Government. The result of the
 agencies we have created and the policies we have pursued has been to
 buttress our whole domestic financial structure and greatly to restore
 credit facilities. But progress in recovery requires another element as
-well--that is fully restored confidence in the future. Institutions and
+well -- that is fully restored confidence in the future. Institutions and
 men may have resources and credit but unless they have confidence
 progress is halting and insecure.
 
@@ -340,7 +340,7 @@ these changes should be directed to permanent improvement and some to
 emergency aid to our people where they wish to fight to save their farms
 and homes.
 
-I wish again to emphasize this view--that these widespread banking
+I wish again to emphasize this view -- that these widespread banking
 reforms are a national necessity and are the first requisites for
 further recovery in agriculture and business. They should have immediate
 consideration as steps greatly needed to further recovery.

@@ -10,7 +10,7 @@ def word_count_all(speeches):
     """ Get the word count for all speech objects passed in """
 
     # initialize the counter for use in the for loop
-    word_count_lemmas = Counter()
+    # word_count_lemmas = Counter()
     word_count_text = Counter()
 
     for speech in speeches:
@@ -31,16 +31,16 @@ def word_count_all(speeches):
 
             word_list.append(token.text.lower())
 
-            lemma_list.append(token.lemma_)
+            # lemma_list.append(token.lemma_)
 
 
-        word_count_lemmas += Counter(lemma_list)
+        # word_count_lemmas += Counter(lemma_list)
         word_count_text += Counter(word_list)
 
-    return word_count_lemmas, word_count_text
+    return word_count_text
 
 
-def word_freq(word_count):
+def get_word_freq(word_count):
     """ Takes in a counter object and returns a list of lists
         with the word and the freq number
      """

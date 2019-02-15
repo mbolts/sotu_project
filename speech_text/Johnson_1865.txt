@@ -90,7 +90,7 @@ one, and in that manner always retain the powers of redress.
 
 "The sovereignty of the States" is the language of the Confederacy, and
 not the language of the Constitution. The latter contains the emphatic
-words--This Constitution and the laws of the United States which shall
+words -- This Constitution and the laws of the United States which shall
 be made in pursuance thereof, and all treaties made or which shall be
 made under the authority of the United States, shall be the supreme law
 of the land, and the judges in every State shall be bound thereby,
@@ -98,14 +98,14 @@ anything in the constitution or laws of any State to the contrary
 notwithstanding. Certainly the Government of the United States is a
 limited government, and so is every State government a limited
 government. With us this idea of limitation spreads through every form
-of administration--general, State, and municipal--and rests on the
+of administration -- general, State, and municipal -- and rests on the
 great distinguishing principle of the recognition of the rights of man.
-The ancient republics absorbed the individual in the state--prescribed
+The ancient republics absorbed the individual in the state -- prescribed
 his religion and controlled his activity. The American system rests on
 the assertion of the equal right of every man to life, liberty, and the
 pursuit of happiness, to freedom of conscience, to the culture and
 exercise of all his faculties. As a consequence the State government is
-limited--as to the General Government in the interest of union, as to
+limited -- as to the General Government in the interest of union, as to
 the individual citizen in the interest of freedom.
 
 States, with proper limitations of power, are essential to the
@@ -214,7 +214,7 @@ their allegiance to the United States, to resume their functions as
 States of the Union. But it is a risk that must be taken. In the choice
 of difficulties it is the smallest risk; and to diminish and if
 possible to remove all danger, I have felt it incumbent on me to assert
-one other power of the General Government--the power of pardon. As no
+one other power of the General Government -- the power of pardon. As no
 State can throw a defense over the crime of treason, the power of
 pardon is exclusively vested in the executive government of the United
 States. In exercising that power I have taken every precaution to
@@ -306,7 +306,7 @@ suffrage, or something very near it, is the general rule. So fixed was
 this reservation of power in the habits of the people and so
 unquestioned has been the interpretation of the Constitution that
 during the civil war the late President never harbored the
-purpose--certainly never avowed the purpose--of disregarding it; and in
+purpose -- certainly never avowed the purpose -- of disregarding it; and in
 the acts of Congress during that period nothing can be found which,
 during the continuance of hostilities much less after their close,
 would have sanctioned any departure by the Executive from a policy
@@ -396,7 +396,7 @@ will be peopled by a numerous and enterprising population, which will
 vie with any in the Union in compactness, inventive genius, wealth, and
 industry.
 
-Our Government springs from and was made for the people--not the people
+Our Government springs from and was made for the people -- not the people
 for the Government. To them it owes allegiance; from them it must
 derive its courage, strength, and wisdom. But while the Government is
 thus bound to defer to the people, from whom it derives its existence,
@@ -440,7 +440,7 @@ construction of the Pacific Railroad, and furnishes information in
 reference to matters of local interest in the District of Columbia. It
 also presents evidence of the successful operation of the homestead
 act, under the provisions of which 1,160,533 acres of the public lands
-were entered during the last fiscal year--more than one-fourth of the
+were entered during the last fiscal year -- more than one-fourth of the
 whole number of acres sold or otherwise disposed of during that period.
 It is estimated that the receipts derived from this source are
 sufficient to cover the expenses incident to the survey and disposal of
@@ -581,7 +581,7 @@ accomplished by gradually funding the national circulation in
 securities that may be made redeemable at the pleasure of the
 Government.
 
-Our debt is doubly secure--first in the actual wealth and still greater
+Our debt is doubly secure -- first in the actual wealth and still greater
 undeveloped resources of the country, and next in the character of our
 institutions. The most intelligent observers among political economists
 have not failed to remark that the public debt of a country is safe in
@@ -606,7 +606,7 @@ free from taxation as the absolute wants of the Government economically
 administered will justify. No favored class should demand freedom from
 assessment, and the taxes should be so distributed as not to fall
 unduly on the poor, but rather on the accumulated wealth of the
-country. We should look at the national debt just as it is--not as a
+country. We should look at the national debt just as it is -- not as a
 national blessing, but as a heavy burden on the industry of the
 country, to be discharged without unnecessary delay.
 
@@ -764,7 +764,7 @@ Governments will at a proper time be laid before Congress.
 When, on the organization of our Government under the Constitution, the
 President of the United States delivered his inaugural address to the
 two Houses of Congress, he said to them, and through them to the
-country and to mankind, that--The preservation of the sacred fire of
+country and to mankind, that -- The preservation of the sacred fire of
 liberty and the destiny of the republican model of government are
 justly considered, perhaps, as deeply, as finally, staked on the
 experiment intrusted to the hands of the American people. And the House

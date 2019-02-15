@@ -648,7 +648,7 @@ seriously hampering proper administration.
 
 The Secretary of the Treasury points out what should be carefully noted in
 respect to this reduction in governmental expenses for the next fiscal
-year, that the economies are of two kinds--first, there is a saving in the
+year, that the economies are of two kinds -- first, there is a saving in the
 permanent administration of the Departments, bureaus, and offices of the
 Government; and, second, there is a present reduction in expenses by a
 postponement of projects and improvements that ultimately will have to be
@@ -824,7 +824,7 @@ year. This could only be accomplished by cutting off new projects and
 suspending for the period of one year all progress in military matters. For
 the same reason I have directed that the Army shall not be recruited up to
 its present authorized strength. These measures can hardly be more than
-temporary--to last until our revenues are in better condition and until the
+temporary -- to last until our revenues are in better condition and until the
 whole question of the expediency of adopting a definite military policy can
 be submitted to Congress, for I am sure that the interests of the military
 establishment are seriously in need of careful consideration by Congress.
@@ -1259,7 +1259,7 @@ I greatly regret to have to say that the investigations made in the Bureau
 of Immigration and other sources of information lead to the view that there
 is urgent necessity for additional legislation and greater executive
 activity to suppress the recruiting of the ranks of prostitutes from the
-streams of immigration into this country--an evil which, for want of a
+streams of immigration into this country -- an evil which, for want of a
 better name, has been called "The White Slave Trade." I believe it to be
 constitutional to forbid, under penalty, the transportation of persons for
 purposes of prostitution across national and state lines; and by
@@ -1324,7 +1324,7 @@ elections which are constitutionally within the control of Congress.
 FREEDMAN'S SAVINGS AND TRUST COMPANY.
 
 Recommendations have been made by my predecessors that Congress appropriate
-a sufficient sum to pay the balance--about 38 per cent.--of the amounts due
+a sufficient sum to pay the balance -- about 38 per cent. -- of the amounts due
 depositors in the Freedman's Savings and Trust Company. I renew this
 recommendation, and advise also that a proper limitation be prescribed
 fixing a period within which the claims may be presented, that assigned

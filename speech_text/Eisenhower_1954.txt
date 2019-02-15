@@ -4,11 +4,11 @@ It is a high honor again to present to the Congress my views on the state
 of the Union and to recommend measures to advance the security, prosperity,
 and well-being of the American people.
 
-All branches of this Government--and I venture to say both of our great
-parties--can support the general objective of the recommendations I make
+All branches of this Government -- and I venture to say both of our great
+parties -- can support the general objective of the recommendations I make
 today, for that objective is the building of a stronger America. A nation
 whose every citizen has good reason for bold hope; where effort is rewarded
-and prosperity is shared; where freedom expands and peace is secure--that
+and prosperity is shared; where freedom expands and peace is secure -- that
 is what I mean by a stronger America.
 
 Toward this objective a real momentum has been developed during this
@@ -147,7 +147,7 @@ can bring results beneficial to our taxpayers and our allies alike, if
 still another step is taken.
 
 This step is the creation of a healthier and freer system of trade and
-payments within the free world--a system in which our allies can earn their
+payments within the free world -- a system in which our allies can earn their
 own way and our own economy can continue to flourish. The free world can no
 longer afford the kinds of arbitrary restraints on trade that have
 continued ever since the war. On this problem I shall submit to the
@@ -219,7 +219,7 @@ uses. These data, now being related to civilian requirements and our supply
 potential, will show us the gaps in our mobilization base. Thus we shall
 have more realistic plant-expansion and stockpiling goals. We shall speed
 their attainment. This Nation is at last to have an up-to-date mobilization
-base--the foundation of a sound defense program.
+base -- the foundation of a sound defense program.
 
 Another part of this foundation is, of course, our continental transport
 system. Some of our vital heavy materials come increasingly from Canada.
@@ -251,7 +251,7 @@ The international and defense policies which I have outlined will enable us
 to negotiate from a position of strength as we hold our resolute course
 toward a peaceful world. We now turn to matters which are normally
 characterized as domestic, well realizing that what we do abroad affects
-every problem at home--from the amount of taxes to our very state of mind.
+every problem at home -- from the amount of taxes to our very state of mind.
 
 INTERNAL SECURITY
 
@@ -268,7 +268,7 @@ to a matter relating to American citizenship. The subversive character of
 the Communist Party in the United States has been clearly demonstrated in
 many ways, including court proceedings. We should recognize by law a fact
 that is plain to all thoughtful citizens-that we are dealing here with
-actions akin to treason--that when a citizen knowingly participates in the
+actions akin to treason -- that when a citizen knowingly participates in the
 Communist conspiracy he no longer holds allegiance to the United States.
 
 I recommend that Congress enact legislation to provide that a citizen of
@@ -350,9 +350,9 @@ incurred by the Government under past appropriations.
 
 Fourth, until those claims on our Government's revenues are further
 reduced, the growth in the public debt cannot be entirely stopped. Because
-of this--because the government's bills have to be paid every month, while
+of this -- because the government's bills have to be paid every month, while
 the tax money to pay them comes in with great unevenness within the fiscal
-year--and because of the need for flexibility to manage this enormous debt,
+year -- and because of the need for flexibility to manage this enormous debt,
 I find it necessary to renew my request for an increase in the statutory
 debt limit.
 
@@ -409,7 +409,7 @@ of these crops at such levels far exceeds present demand. Yet the laws
 encouraging such production are still in effect. The storage facilities of
 the Commodity Credit Corporation bulge with surplus stocks of dairy
 products, wheat, cotton, corn, and certain vegetable oils; and the
-Corporation's presently authorized borrowing authority--$6,750,000,000--is
+Corporation's presently authorized borrowing authority -- $6,750,000,000 -- is
 nearly exhausted. Some products, priced out of domestic markets, and
 others, priced out of world markets, have piled up in government hands. In
 a world in which millions of people are hungry, destruction of food would,
@@ -606,7 +606,7 @@ program in its detail.
 
 EDUCATION
 
-Youth--our greatest resource--is being seriously neglected in a vital
+Youth -- our greatest resource -- is being seriously neglected in a vital
 respect. The nation as a whole is not preparing teachers or building
 schools fast enough to keep up with the increase in our population.
 
@@ -616,8 +616,8 @@ Government should stand ready to assist states which demonstrably cannot
 provide sufficient school buildings. In order to appraise the needs, I hope
 that this year a conference on education will be held in each state,
 culminating in a national conference. From these conferences on education,
-every level of government--from the Federal Government to each local school
-board--should gain the information with which to attack this serious
+every level of government -- from the Federal Government to each local school
+board -- should gain the information with which to attack this serious
 problem.
 
 HOUSING
@@ -656,7 +656,7 @@ of those 20,000,000 veterans to whom this Nation owes so much.
 SUFFRAGE
 
 My few remaining recommendations all relate to a basic right of our
-citizens--that of being represented in the decisions of the government.
+citizens -- that of being represented in the decisions of the government.
 
 I hope that the States will cooperate with the Congress in adopting uniform
 standards in their voting laws that will make it possible for our citizens
@@ -689,7 +689,7 @@ apart from those limitations, there are things which no government can do
 or should try to do.
 
 A government can strive, as ours is striving, to maintain an economic
-system whose doors are open to enterprise and ambition--those personal
+system whose doors are open to enterprise and ambition -- those personal
 qualities on which economic growth largely depends. But enterprise and
 ambition are qualities which no government can supply. Fortunately no
 American government need concern itself on this score; our people have
@@ -699,7 +699,7 @@ A government can sincerely strive for peace, as ours is striving, and ask
 its people to make sacrifices for the sake of peace. But no government can
 place peace in the hearts of foreign rulers. It is our duty then to
 ourselves and to freedom itself to remain strong in all those
-ways--spiritual, economic, military--that will give us maximum safety
+ways -- spiritual, economic, military -- that will give us maximum safety
 against the possibility of aggressive action by others.
 
 No government can inoculate its people against the fatal materialism that

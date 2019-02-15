@@ -4,7 +4,7 @@ distinguished guests, my fellow Americans:
 I think I should start by saying thanks for inviting me back.
 
 I come before you tonight with a challenge as great as any in our peacetime
-history--and a plan of action to meet that challenge, to prepare our
+history -- and a plan of action to meet that challenge, to prepare our
 people for the bold new world of the 21st century.
 
 We have much to be thankful for. With four years of growth, we have won
@@ -19,7 +19,7 @@ to the decisive moment, to make a nation and a world better than any we
 have ever known.
 
 The new promise of the global economy, the Information Age, unimagined new
-work, life-enhancing technology--all these are ours to seize. That is our
+work, life-enhancing technology -- all these are ours to seize. That is our
 honor and our challenge. We must be shapers of events, not observers, for
 if we do not act, the moment will pass and we will lose the best
 possibilities of our future.
@@ -27,7 +27,7 @@ possibilities of our future.
 We face no imminent threat, but we do have an enemy. The enemy of our time
 is inaction.
 
-So tonight I issue a call to action--action by this Congress, action by
+So tonight I issue a call to action -- action by this Congress, action by
 our states, by our people to prepare America for the 21st century; action
 to keep our economy and our democracy strong and working for all our
 people; action to strengthen education and harness the forces of technology
@@ -41,7 +41,7 @@ The spirit we bring to our work will make all the difference.
 We must be committed to the pursuit of opportunity for all Americans,
 responsibility from all Americans in a community of all Americans. And we
 must be committed to a new kind of government: not to solve all our
-problems for us, but to give our people--all our people--the tools they
+problems for us, but to give our people -- all our people -- the tools they
 need to make the most of their own lives. And we must work together.
 
 The people of this nation elected us all. They want us to be partners, not
@@ -65,7 +65,7 @@ In two days I will propose a detailed plan to balance the budget by 2002.
 This plan will balance the budget and invest in our people while protecting
 Medicare, Medicaid, education and the environment. It will balance the
 budget and build on the vice president's efforts to make our government
-work better--even as it costs less.
+work better -- even as it costs less.
 
 It will balance the budget and provide middle-class tax relief to pay for
 education and health care, to help to raise a child, to buy and sell a
@@ -125,7 +125,7 @@ more people off the welfare rolls by the year 2000.
 Here is my plan: Tax credits and other incentives for businesses that hire
 people off welfare; Incentives for job placement firms in states to create
 more jobs for welfare recipients; Training, transportation and child care
-to help people go to work. Now I challenge every state--turn those welfare
+to help people go to work. Now I challenge every state -- turn those welfare
 checks into private sector paychecks. I challenge every religious
 congregation, every community nonprofit, every business to hire someone off
 welfare. And I'd like to say especially to every employer in our country
@@ -133,8 +133,8 @@ who ever criticized the old welfare system, you can't blame that old system
 anymore; we have torn it down. Now, do your part. Give someone on welfare
 the chance to go to work.
 
-Tonight I am pleased to announce that five major corporations--Sprint,
-Monsanto, UPS, Burger King and United Airlines--will be the first to join
+Tonight I am pleased to announce that five major corporations -- Sprint,
+Monsanto, UPS, Burger King and United Airlines -- will be the first to join
 in a new national effort to marshal America's businesses large and small to
 create jobs so that people can move from welfare to work.
 
@@ -158,11 +158,11 @@ able to read, every 12-year-old must be able to log on to the Internet,
 every 18-year-old must be able to go to college, and every adult American
 must be able to keep on learning for a lifetime.
 
-My balanced budget makes an unprecedented commitment to these goals--$51
-billion next year--but far more than money is required. I have a plan, a
+My balanced budget makes an unprecedented commitment to these goals -- $51
+billion next year -- but far more than money is required. I have a plan, a
 call to action for American education based on these 10 principles:
 
-First, a national crusade for education standards--not federal government
+First, a national crusade for education standards -- not federal government
 standards, but national standards, representing what all our students must
 know to succeed in the knowledge economy of the 21st century. Every state
 and school must shape the curriculum to reflect these standards and train
@@ -211,8 +211,8 @@ should quickly and fairly remove those few who don't measure up, and we
 should challenge more of our finest young people to consider teaching as a
 career.
 
-Third, we must do more to help all our children read. Forty percent--40
-percent--of our 8-year-olds cannot read on their own. That's why we have
+Third, we must do more to help all our children read. Forty percent -- 40
+percent -- of our 8-year-olds cannot read on their own. That's why we have
 just launched the America Reads initiative, to build a citizen army of one
 million volunteer tutors to make sure every child can read independently by
 the end of the 3rd grade. We will use thousands of AmeriCorps volunteers to
@@ -274,13 +274,13 @@ has now become a serious national concern. Therefore, my budget includes a
 new initiative: $5 billion to help communities finance $20 billion in
 school construction over the next four years.
 
-Eighth, we must make the 13th and 14th years of education--at least two
-years of college--just as universal in America by the 21st century as a
+Eighth, we must make the 13th and 14th years of education -- at least two
+years of college -- just as universal in America by the 21st century as a
 high school education is today, and we must open the doors of college to
 all Americans.
 
 To do that, I propose America's Hope Scholarship, based on Georgia's
-pioneering program--two years of a $1,500 tax credit for college tuition,
+pioneering program -- two years of a $1,500 tax credit for college tuition,
 enough to pay for the typical community college. I also propose a tax
 deduction of up to $10,000 a year for all tuition after high school, an
 expanded IRA you can withdraw from tax free for education, and the largest
@@ -312,7 +312,7 @@ children in the most isolated rural town, the most comfortable suburbs, the
 poorest inner-city schools will have the same access to the same universe
 of knowledge.
 
-That is my plan--a call to action for American education. Some may say
+That is my plan -- a call to action for American education. Some may say
 that it is unusual for a president to pay this kind of attention to
 education. Some may say it is simply because the president and his
 wonderful wife have been obsessed with this subject for more years than
@@ -381,12 +381,12 @@ conferences and a child's medical checkup. We should pass flex time so
 workers can choose to be paid for overtime in income or trade it in for
 time off to be with their families.
 
-We must continue--we must continue, step by step, to give more families
+We must continue -- we must continue, step by step, to give more families
 access to affordable quality health care. Forty million Americans still
 lack health insurance. Ten million children still lack health insurance.
 Eighty percent of them have working parents who pay taxes. That is wrong.
 
-My--my balanced budget will extend health coverage to up to 5 million of
+My -- my balanced budget will extend health coverage to up to 5 million of
 those children. Since nearly half of all children who lose their insurance
 do so because their parents lose or change a job, my budget will also
 ensure that people who temporarily lose their jobs can still afford to keep
@@ -431,7 +431,7 @@ requires child safety locks on handguns to prevent unauthorized use, and
 helps to keep our schools open after hours, on weekends and in the summer
 so our young people will have someplace to go and something to say yes to.
 
-This balanced budget includes the largest anti-drug effort ever--to stop
+This balanced budget includes the largest anti-drug effort ever -- to stop
 drugs at their source; punish those who push them; and teach our young
 people that drugs are wrong, drugs are illegal, and drugs will kill them. I
 hope you will support it.
@@ -449,7 +449,7 @@ community development banks.
 
 And together, we must pledge tonight that we will use this empowerment
 approach, including private sector tax incentives, to renew our capital
-city so that Washington is a great place to work and live--and once again
+city so that Washington is a great place to work and live -- and once again
 the proud face America shows the world!
 
 We must protect our environment in every community. In the last four years,
@@ -528,7 +528,7 @@ partnership between NATO and a democratic Russia.
 
 An expanded NATO is good for America, and a Europe in which all democracies
 define their future not in terms of what they can do to each other, but in
-terms of what they can do together for the good of all--that kind of
+terms of what they can do together for the good of all -- that kind of
 Europe is good for America.
 
 Second, America must look to the East no less than to the West.
@@ -540,7 +540,7 @@ Our prosperity requires it. More than 2 million American jobs depend upon
 trade with Asia. There, too, we are helping to shape an Asia Pacific
 community of cooperation, not conflict.
 
-Let our--let our progress there not mask the peril that remains. Together
+Let our -- let our progress there not mask the peril that remains. Together
 with South Korea, we must advance peace talks with North Korea and bridge
 the Cold War's last divide. And I call on Congress to fund our share of the
 agreement under which North Korea must continue to freeze and then
@@ -592,7 +592,7 @@ troops. They are doing a remarkable job there for America, and America must
 do right by them.
 
 Fifth, we must move strongly against new threats to our security. In the
-past four years, we agreed to ban--we led the way to a worldwide agreement
+past four years, we agreed to ban -- we led the way to a worldwide agreement
 to ban nuclear testing.
 
 With Russia, we dramatically cut nuclear arsenals and we stopped targeting
@@ -603,7 +603,7 @@ We are working with other nations with renewed intensity to fight drug
 traffickers and to stop terrorists before they act and hold them fully
 accountable if they do.
 
-Now we must rise to a new test of leadership--ratifying the Chemical
+Now we must rise to a new test of leadership -- ratifying the Chemical
 Weapons Convention. Make no mistake about it, it will make our troops safer
 from chemical attack. It will help us to fight terrorism. We have no more
 important obligations, especially in the wake of what we now know about the
@@ -612,7 +612,7 @@ Gulf War.
 This treaty has been bipartisan from the beginning, supported by Republican
 and Democratic administrations, and Republican and Democratic members of
 Congress, and already approved by 68 nations. But if we do not act by April
-the 29th, when this convention goes into force--with or without us--we
+the 29th, when this convention goes into force -- with or without us -- we
 will lose the chance to have Americans leading and enforcing this effort.
 Together we must make the Chemical Weapons Convention law so that at last
 we can begin to outlaw poisoned gas from the earth.
@@ -623,8 +623,8 @@ modernization by the year 2000. And we must take good care of our men and
 women in uniform. They are the world's finest.
 
 We must also renew our commitment to America's diplomacy and pay our debts
-and dues to international financial institutions like the World Bank--and
-to a reforming United Nations. Every dollar--every dollar we devote to
+and dues to international financial institutions like the World Bank -- and
+to a reforming United Nations. Every dollar -- every dollar we devote to
 preventing conflicts, to promoting democracy, to stopping the spread of
 disease and starvation brings a sure return in security and savings. Yet
 international affairs spending today is just 1 percent of the federal
@@ -707,7 +707,7 @@ He represents the future we can all achieve. Thank you, governor, for being
 here. Please stand up.
 
 Reverend Schuller, Congressman Tejeda, Governor Locke, along with Kristen
-Tanner and Chris Getsla, Sue Winski and Dr. Kristen Zarfos--they're all
+Tanner and Chris Getsla, Sue Winski and Dr. Kristen Zarfos -- they're all
 Americans from different roots whose lives reflect the best of what we can
 become when we are one America.
 
@@ -717,7 +717,7 @@ generations of every other strength we must build for this new century.
 Money cannot buy it, power cannot compel it, technology cannot create it.
 It can only come from the human spirit.
 
-America is far more than a place; it is an idea--the most powerful idea in
+America is far more than a place; it is an idea -- the most powerful idea in
 the history of nations, and all of us in this chamber, we are now the
 bearers of that idea, leading a great people into a new world.
 

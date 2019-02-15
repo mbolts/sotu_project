@@ -100,10 +100,27 @@ class Speech(db.Model):
     text = db.Column(db.Text)
     doc_path = db.Column(db.Text)
 
+    new_words = db.relationship('Word')
+
     # year = db.relationship('Year',)
 
     def __repr__(self):
         return f"<Speech date={self.date} president={self.president}>"
+
+class Word(db.Model):
+    """Word"""
+
+    __tablename__ = "words"
+
+    word_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
+    text = db.Column(db.String(30))
+    first_use = db.Column(db.Integer,
+                db.ForeignKey('speeches.speech_id'))
+    freq_corpus = db.Column(db.Integer)
+
+
+    def __repr__(self):
+        return f"<Word={self.text} word_id={self.word_id}>"
 
 
 ###############################################################################

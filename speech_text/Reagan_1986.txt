@@ -31,7 +31,7 @@ Tonight the American people deserve our thanks for 37 straight months of
 economic growth, for sunrise firms and modernized industries creating 9
 million new jobs in 3 years, interest rates cut in half, inflation falling
 over from 12 percent in 1980 to under 4 today, and a mighty river of good
-works--a record $74 billion in voluntary giving just last year alone. And
+works -- a record $74 billion in voluntary giving just last year alone. And
 despite the pressures of our modern world, family and community remain the
 moral core of our society, guardians of our values and hopes for the
 future. Family and community are the costars of this great American
@@ -52,9 +52,9 @@ we can be.
 We speak tonight of an agenda for the future, an agenda for a safer, more
 secure world. And we speak about the necessity for actions to steel us for
 the challenges of growth, trade, and security in the next decade and the
-year 2000. And we will do it--not by breaking faith with bedrock principles
+year 2000. And we will do it -- not by breaking faith with bedrock principles
 but by breaking free from failed policies. Let us begin where storm clouds
-loom darkest--right here in Washington, DC. This week I will send you our
+loom darkest -- right here in Washington, DC. This week I will send you our
 detailed proposals; tonight let us speak of our responsibility to redefine
 government's role: not to control, not to demand or command, not to contain
 us, but to help in times of need and, above all, to create a ladder of
@@ -124,7 +124,7 @@ Keeping America strong is as vital to the national security as controlling
 Federal spending is to our economic security. But, as I have said before,
 the most powerful force we can enlist against the Federal deficit is an
 ever-expanding American economy, unfettered and free. The magic of
-opportunity--unreserved, unfailing, unrestrained--isn't this the calling
+opportunity -- unreserved, unfailing, unrestrained -- isn't this the calling
 that unites us? I believe our tax rate cuts for the people have done more
 to spur a spirit of risk-taking and help America's economy break free than
 any program since John Kennedy's tax cut almost a quarter century ago.
@@ -166,7 +166,7 @@ forward to embrace the future. We see it not only in our recovery but in 3
 straight years of falling crime rates, as families and communities band
 together to fight pornography, drugs, and lawlessness and to give back to
 their children the safe and, yes, innocent childhood they deserve. We see
-it in the renaissance in education, the rising SAT scores for 3 years--last
+it in the renaissance in education, the rising SAT scores for 3 years -- last
 year's increase, the greatest since 1963. It wasn't government and
 Washington lobbies that turned education around; it was the American people
 who, in reaching for excellence, knew to reach back to basics. We must
@@ -183,7 +183,7 @@ As we work to make the American dream real for all, we must also look to
 the condition of America's families. Struggling parents today worry how
 they will provide their children the advantages that their parents gave
 them. In the welfare culture, the breakdown of the family, the most basic
-support system, has reached crisis proportions--in female and child
+support system, has reached crisis proportions -- in female and child
 poverty, child abandonment, horrible crimes, and deteriorating schools.
 After hundreds of billions of dollars in poverty programs, the plight of
 the poor grows more painful. But the waste in dollars and cents pales
@@ -240,7 +240,7 @@ love peace more than we Americans. But we cannot stroll into the future
 with childlike faith. Our differences with a system that openly proclaims
 and practices an alleged right to command people's lives and to export its
 ideology by force are deep and abiding. Logic and history compel us to
-accept that our relationship be guided by realism--rock-hard, cleareyed,
+accept that our relationship be guided by realism -- rock-hard, cleareyed,
 steady, and sure. Our negotiators in Geneva have proposed a radical cut in
 offensive forces by each side with no cheating. They have made clear that
 Soviet compliance with the letter and spirit of agreements is essential. If
@@ -259,11 +259,11 @@ nations if we will defend the unalienable rights of all God's children to
 follow their dreams.
 
 To those imprisoned in regimes held captive, to those beaten for daring to
-fight for freedom and democracy--for their right to worship, to speak, to
-live, and to prosper in the family of free nations--we say to you tonight:
+fight for freedom and democracy -- for their right to worship, to speak, to
+live, and to prosper in the family of free nations -- we say to you tonight:
 You are not alone, freedom fighters. America will support with moral and
 material assistance your right not just to fight and die for freedom but to
-fight and win freedom--to win freedom in Afghanistan, in Angola, in
+fight and win freedom -- to win freedom in Afghanistan, in Angola, in
 Cambodia, and in Nicaragua. This is a great moral challenge for the entire
 free world.
 
@@ -280,7 +280,7 @@ What we accomplish this year, in each challenge we face, will set our
 course for the balance of the decade, indeed, for the remainder of the
 century. After all we've done so far, let no one say that this nation
 cannot reach the destiny of our dreams. America believes, America is ready,
-America can win the race to the future--and we shall. The American dream is
+America can win the race to the future -- and we shall. The American dream is
 a song of hope that rings through night winter air; vivid, tender music
 that warms our hearts when the least among us aspire to the greatest
 things: to venture a daring enterprise; to unearth new beauty in music,
@@ -309,7 +309,7 @@ America need never fear for our future.
 
 And we see the dream born again in the joyful compassion of a 13 year old,
 Trevor Ferrell. Two years ago, age 11, watching men and women bedding down
-in abandoned doorways--on television he was watching--Trevor left his
+in abandoned doorways -- on television he was watching -- Trevor left his
 suburban Philadelphia home to bring blankets and food to the helpless and
 homeless. And now 250 people help him fulfill his nightly vigil. Trevor,
 yours is the living spirit of brotherly love.

@@ -49,8 +49,8 @@ It is important to recognize that while we seek to outlaw specific abuses,
 the American objective of today has an infinitely deeper, finer and more
 lasting purpose than mere repression. Thinking people in almost every
 country of the world have come to realize certain fundamental difficulties
-with which civilization must reckon. Rapid changes--the machine age, the
-advent of universal and rapid communication and many other new factors--have
+with which civilization must reckon. Rapid changes -- the machine age, the
+advent of universal and rapid communication and many other new factors -- have
 brought new problems. Succeeding generations have attempted to keep pace by
 reforming in piecemeal fashion this or that attendant abuse. As a result,
 evils overlap and reform becomes confused and frustrated. We lose sight,
@@ -97,7 +97,7 @@ resources of the land in which we live.
 3. The security of decent homes.
 
 I am now ready to submit to the Congress a broad program designed
-ultimately to establish all three of these factors of security--a program
+ultimately to establish all three of these factors of security -- a program
 which because of many lost years will take many future years to fulfill.
 
 A study of our national resources, more comprehensive than any previously
@@ -110,7 +110,7 @@ sub-marginal land. It recognizes that stranded populations, either in the
 country or the city, cannot have security under the conditions that now
 surround them.
 
-To this end we are ready to begin to meet this problem--the intelligent care
+To this end we are ready to begin to meet this problem -- the intelligent care
 of population throughout our Nation, in accordance with an intelligent
 distribution of the means of livelihood for that population. A definite
 program for putting people to work, of which I shall speak in a moment, is
@@ -127,7 +127,7 @@ unemployment insurance and old age insurance, of benefits for children,
 form others, for the handicapped, for maternity care and for other aspects
 of dependency and illness where a beginning can now be made.
 
-The third factor--better homes for our people--has also been the subject of
+The third factor -- better homes for our people -- has also been the subject of
 experimentation and study. Here, too, the first practical steps can be made
 through the proposals which I shall suggest in relation to giving work to
 the unemployed.
@@ -136,7 +136,7 @@ Whatever we plan and whatever we do should be in the light of these three
 clear objectives of security. We cannot afford to lose valuable time in
 haphazard public policies which cannot find a place in the broad outlines
 of these major purposes. In that spirit I come to an immediate issue made
-for us by hard and inescapable circumstance--the task of putting people to
+for us by hard and inescapable circumstance -- the task of putting people to
 work. In the spring of 1933 the issue of destitution seemed to stand apart;
 today, in the light of our experience and our new national policy, we find
 we can put people to work in ways which conform to, initiate and carry
@@ -189,9 +189,9 @@ approximately five million unemployed now on the relief rolls.
 
 About one million and a half of these belong to the group which in the past
 was dependent upon local welfare efforts. Most of them are unable for one
-reason or another to maintain themselves independently--for the most part,
+reason or another to maintain themselves independently -- for the most part,
 through no fault of their own. Such people, in the days before the great
-depression, were cared for by local efforts--by States, by counties, by
+depression, were cared for by local efforts -- by States, by counties, by
 towns, by cities, by churches and by private welfare agencies. It is my
 thought that in the future they must be cared for as they were before. I
 stand ready through my own personal efforts, and through the public
@@ -228,7 +228,7 @@ the substitution of a national chart for the giving of work.
 This new program of emergency public employment should be governed by a
 number of practical principles.
 
-(1) All work undertaken should be useful--not just for a day, or a year,
+(1) All work undertaken should be useful -- not just for a day, or a year,
 but useful in the sense that it affords permanent improvement in living
 conditions or that it creates future new wealth for the Nation.
 

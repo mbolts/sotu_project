@@ -6,7 +6,7 @@ from server import app
 connect_to_db(app)
 
 
-SPEECHES = Speech.query.all()
+all_speeches = Speech.query.all()
 
 def create_speech_list(speeches):
     """ Create a list with all of the speech file paths """

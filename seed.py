@@ -1,7 +1,7 @@
 """Utility file to seed ratings database from data in seed_data"""
 
 from sqlalchemy import func
-from model import President, Year, Speech
+from model import President, Year, Speech, Word
 
 from model import connect_to_db, db
 from server import app
@@ -49,7 +49,7 @@ def load_speeches():
 
         path_ending = text.split('/')[2][:-4]
 
-        doc_path = './speech_doc/' + path_ending + '_' + str(i)
+        doc_path = './speech_doc/' + path_ending
 
         if year < 1900:
             date_time = datetime.datetime.strptime(date, "%b %d %Y")
@@ -179,6 +179,40 @@ def load_presidents():
     db.session.commit()
 
 
+def load_words():
+    """Load presidents into database."""
+
+    print('Words')
+
+    Word.query.delete()
+
+    file = open("seed_data/words.csv")
+
+    for row in file:
+        row = row.rstrip()
+
+        print(row)
+
+        text, first_use, freq_corpus = row.split(',')
+
+        datetime_first_use = datetime.datetime.strptime(first_use[:-9], "%Y-%m-%d")
+
+        print('datetime_first_use ', datetime_first_use)
+
+        speech = Speech.query.filter_by(date=datetime_first_use).one()
+
+        word = Word(text=text,
+                      first_use=speech.speech_id,
+                      freq_corpus=float(freq_corpus),
+                      )
+
+        db.session.add(word)
+
+    file.close()
+
+    db.session.commit()
+
+
 if __name__ == "__main__":
     connect_to_db(app)
 
@@ -189,7 +223,7 @@ if __name__ == "__main__":
     load_presidents()
     load_years()
     load_speeches()    
-
+    load_words()
 
 
 

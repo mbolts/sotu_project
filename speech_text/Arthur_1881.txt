@@ -199,7 +199,7 @@ for renewed negotiation on a modified basis.
 
 Meanwhile this Government learned that Colombia had proposed to the
 European powers to join in a guaranty of the neutrality of the proposed
-Panama canal--a guaranty which would be in direct contravention of our
+Panama canal -- a guaranty which would be in direct contravention of our
 obligation as the sole guarantor of the integrity of Colombian territory
 and of the neutrality of the canal itself. My lamented predecessor felt it
 his duty to place before the European powers the reasons which make the
@@ -401,7 +401,7 @@ From sinking fund for Pacific Railway companies - 805,180.54
 
 From customs fees, fines, penalties, etc. - 1,225,514.86
 
-From fees--consular, letters patent, and lands - 2,244,983.98
+From fees -- consular, letters patent, and lands - 2,244,983.98
 
 From proceeds of sales of Government property - 262,174.00
 
@@ -443,7 +443,7 @@ Total ordinary expenditures - 260,712,887.59
 Leaving a surplus revenue of $100,069,404.98, which was applied as
 follows:
 
-To the redemption of--
+To the redemption of -- 
 
 Bonds for the sinking fund - $74,371,200.00
 

@@ -35,7 +35,7 @@ condition as a nation. A formidable foreign war; agitating collisions
 between domestic, and in some respects rival, sovereignties; temptations to
 interfere in the intestine commotions of neighboring countries; the
 dangerous influences that arise in periods of excessive prosperity, and the
-antirepublican tendencies of associated wealth--these, with other trials
+antirepublican tendencies of associated wealth -- these, with other trials
 not less formidable, have all been encountered, and thus far successfully
 resisted.
 
@@ -75,7 +75,7 @@ to come against foreign or domestic assault.
 
 This review of the results of our institutions for half a century, without
 exciting a spirit of vain exultation, should serve to impress upon us the
-great principles from which they have sprung--constant and direct
+great principles from which they have sprung -- constant and direct
 supervision by the people over every public measure, strict forbearance on
 the part of the Government from exercising any doubtful or disputed powers,
 and a cautious abstinence from all interference with concerns which
@@ -164,8 +164,8 @@ the public peace by the perpetration of similar acts within our own
 territory.
 
 By no country or persons have these invaluable principles of international
-law--principles the strict observance of which is so indispensable to the
-preservation of social order in the world--been more earnestly cherished or
+law -- principles the strict observance of which is so indispensable to the
+preservation of social order in the world -- been more earnestly cherished or
 sacredly respected than by those great and good men who first declared and
 finally established the independence of our own country. They promulgated
 and maintained them at an early and critical period in our history; they
@@ -361,7 +361,7 @@ an issue of Treasury notes as a means to enable the Government to meet the
 consequences of their indulgences, but affording at the same time
 facilities for remittance and exchange; and by steadily declining to employ
 as general depositories of the public revenues, or receive the notes of,
-all banks which refused to redeem them with specie--by these measures,
+all banks which refused to redeem them with specie -- by these measures,
 aided by the favorable action of some of the banks and by the support and
 cooperation of a large portion of the community, we have witnessed an early
 resumption of specie payments in our great commercial capital, promptly
@@ -399,7 +399,7 @@ respects but apprehension or opinion when a national bank was first
 established now stands confirmed by humiliating experience. The scenes
 through which we have passed conclusively prove how little our commerce,
 agriculture, manufactures, or finances require such an institution, and
-what dangers are attendant on its power--a power, I trust, never to be
+what dangers are attendant on its power -- a power, I trust, never to be
 conferred by the American people upon their Government, and still less upon
 individuals not responsible to them for its unavoidable abuses.
 
@@ -510,7 +510,7 @@ time and free discussion, eliciting the sentiments of the people, and aided
 by that conciliatory spirit which has ever characterized their course on
 great emergencies, were relied upon for a satisfactory settlement of the
 question. Already has this anticipation, on one important point at
-least--the impropriety of diverting public money to private purposes--been
+least -- the impropriety of diverting public money to private purposes -- been
 fully realized. There is no reason to suppose that legislation upon that
 branch of the subject would now be embarrassed by a difference of opinion,
 or fail to receive the cordial support of a large majority of our
@@ -583,7 +583,7 @@ establishments, they may be used or not in conducting the affairs of the
 Government, as public policy and the general interests of the Union may
 seem to require. The only safe or proper principle upon which their
 intercourse with the Government can be regulated is that which regulates
-their intercourse with the private citizen--the conferring of mutual
+their intercourse with the private citizen -- the conferring of mutual
 benefits. When the Government can accomplish a financial operation better
 with the aid of the banks than without it, it should be at liberty to seek
 that aid as it would the services of a private banker or other capitalist
@@ -912,7 +912,7 @@ profitable adventure; the absolute necessity of a naval force for its
 protection precisely in the degree of its extension; a due regard to the
 national rights and honor; the recollection of its former exploits, and the
 anticipation of its future triumphs whenever opportunity presents itself,
-which we may rightfully indulge from the experience of the past--all seem
+which we may rightfully indulge from the experience of the past -- all seem
 to point to the Navy as a most efficient arm of our national defense and a
 proper object of legislative encouragement.
 
@@ -1012,10 +1012,10 @@ that part of the District ceded by that State, and by this provision the
 common law in civil and criminal cases, as it prevailed in Maryland in
 1801, was established in that part of the District.
 
-In England the court of king's bench--because the Sovereign, who, according
+In England the court of king's bench -- because the Sovereign, who, according
 to the theory of the constitution, is the fountain of justice originally
 sat there in person, and is still deemed to be present in construction of
-law--alone possesses the high power of issuing the writ of mandamus, not
+law -- alone possesses the high power of issuing the writ of mandamus, not
 only to inferior jurisdictions and corporations, but also to magistrates
 and others, commanding them in the King's name to do what their duty
 requires in cases where there is a vested right and no other specific
@@ -1048,7 +1048,7 @@ the United States to compel him to perform a ministerial duty, the
 consequences are in one respect the same. The result in either case is that
 the officers of the United States stationed in different parts of the
 United States are, in respect to the performance of their official duties,
-subject to different laws and a different supervision--those in the States
+subject to different laws and a different supervision -- those in the States
 to one rule, and those in the District of Columbia to another and a very
 different one. In the District their official conduct is subject to a
 judicial control from which in the States they are exempt.

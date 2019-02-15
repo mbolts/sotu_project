@@ -77,7 +77,7 @@ A further instance of profound importance in establishing good will was the
 inauguration of regular air mail service between the United States and
 Caribbean, Central American, and South American countries.
 
-We still have marines on foreign soil--in Nicaragua, Haiti, and China. In
+We still have marines on foreign soil -- in Nicaragua, Haiti, and China. In
 the large sense we do not wish to be represented abroad in such manner.
 About 1,600 marines remain in Nicaragua at the urgent request of that
 government and the leaders of all parties pending the training of a
@@ -358,7 +358,7 @@ period of existence the board has taken definite steps toward a more
 efficient organization of agriculture, toward the elimination of waste in
 marketing, and toward the upbuilding of farmers' marketing organizations on
 sounder and more efficient lines. Substantial headway has been made in the
-organization of four of the basic commodities--grain, cotton, livestock,
+organization of four of the basic commodities -- grain, cotton, livestock,
 and wool. Support by the board to cooperative marketing organizations and
 other board activities undoubtedly have served to steady the farmers'
 market during the recent crisis and have operated also as a great stimulus
@@ -578,7 +578,7 @@ During the past year progress in civil aeronautics has been remarkable.
 This is to a considerable degree due to the wise assistance of the Federal
 Government through the establishment and maintenance of airways by the
 Department of Commerce and the mail contracts from the Post Office
-Department. The Government-improved airways now exceed 25,000 miles--more
+Department. The Government-improved airways now exceed 25,000 miles -- more
 than 14,000 miles of which will be lighted and equipped for night-flying
 operations by the close of the current year. Airport construction through
 all the States is extremely active. There are now 1,000 commercial and
@@ -590,7 +590,7 @@ operated by private enterprise. Over 6,400 planes are in commercial use,
 and 9,400 pilots are licensed by the Government. Our manufacturing capacity
 has risen to 7,500 planes per annum. The aviation companies have increased
 regular air transportation until it now totals 90,000 miles per
-day--one-fourth of which is flown by night. Mail and express services now
+day -- one-fourth of which is flown by night. Mail and express services now
 connect our principal cities, and extensive services for passenger
 transportation have been inaugurated, and others of importance are
 imminent. American air lines now reach into Canada and Mexico, to Cuba,
@@ -697,7 +697,7 @@ The development of "group" and "chain" banking presents many new problems.
 The question naturally arises as to whether if allowed to expand without
 restraint these methods would dangerously concentrate control of credit,
 and whether they would not in any event seriously threaten one of the
-fundamentals of the American credit system--which is that credit which is
+fundamentals of the American credit system -- which is that credit which is
 based upon banking deposits should be controlled by persons within those
 areas which furnish these deposits and thus be subject to the restraints of
 local interest and public opinion in those areas. To some degree, however,
@@ -1008,7 +1008,7 @@ DEPARTMENTAL REORGANIZATION
 
 This subject has been under consideration for over 20 years. It was
 promised by both political parties in the recent campaign. It has been
-repeatedly examined by committees and commissions--congressional,
+repeatedly examined by committees and commissions -- congressional,
 executive, and voluntary. The conclusions of these investigations have been
 unanimous that reorganization is a necessity of sound administration; of
 economy; of more effective governmental policies and of relief to the
@@ -1154,7 +1154,7 @@ crime, who is indifferent to it and to the punishment of the criminal, or
 to the lax performance of official duty, is himself the most effective
 agency for the breakdown of society.
 
-Law can not rise above its source in good citizenship--in what right-minded
+Law can not rise above its source in good citizenship -- in what right-minded
 men most earnestly believe and desire. If the law is upheld only by
 Government officials, then all law is at an end. Our laws are made by the
 people themselves; theirs is the right to work for their repeal; but until

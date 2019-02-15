@@ -152,7 +152,7 @@ concentrate itself in the towns. The sure result would seem to be that the
 industrial value of the island is fast diminishing and that unless there is a
 speedy and radical change in existing conditions it will soon disappear
 altogether. That value consists very largely, of course, in its capacity to
-produce sugar--a capacity already much reduced by the interruptions to tillage
+produce sugar -- a capacity already much reduced by the interruptions to tillage
 which have taken place during the last two years. It is reliably asserted that
 should these interruptions continue during the current year, and practically
 extend, as is now threatened, to the entire sugar-producing territory of the
@@ -182,7 +182,7 @@ by the raising of funds, and by other means which the spirit of our
 institutions and the tenor of our laws do not permit to be made the subject of
 criminal prosecutions. Some of them, though Cubans at heart and in all their
 feelings and interests, have taken out papers as naturalized citizens of the
-United States--a proceeding resorted to with a view to possible protection by
+United States -- a proceeding resorted to with a view to possible protection by
 this Government, and not unnaturally regarded with much indignation by the
 country of their origin. The insurgents are undoubtedly encouraged and
 supported by the widespread sympathy the people of this country always and
@@ -204,18 +204,18 @@ Cuba, the large American property interests affected, and considerations of
 philanthropy and humanity in general have led to a vehement demand in various
 quarters for some sort of positive intervention on the part of the United
 States. It was at first proposed that belligerent rights should be accorded to
-the insurgents--a proposition no longer urged because untimely and in
+the insurgents -- a proposition no longer urged because untimely and in
 practical operation dearly perilous and injurious to our own interests. It has
 since been and is now sometimes contended that the independence of the
 insurgents should be recognized; but imperfect and restricted as the Spanish
 government of the island may be, no other exists there, unless the will of the
 military officer in temporary command of a particular district can be
 dignified as a species of government. It is now also suggested that the United
-States should buy the island--a suggestion possibly worthy of consideration if
+States should buy the island -- a suggestion possibly worthy of consideration if
 there were any evidence of a desire or willingness on the part of Spain to
 entertain such a proposal. It is urged finally that, all other methods
 failing, the existing internecine strife in Cuba should be terminated by our
-intervention, even at the cost of a war between the United States and Spain--a
+intervention, even at the cost of a war between the United States and Spain -- a
 war which its advocates confidently prophesy could neither be large in its
 proportions nor doubtful in its issue.
 
@@ -247,7 +247,7 @@ accumulated that the costly possession of the gem of the Antilles may still
 hold its place in the Spanish crown. And yet neither the Government nor the
 people of the United States have shut their eyes to the course of events in
 Cuba or have failed to realize the existence of conceded grievances which have
-led to the present revolt from the authority of Spain--grievances recognized
+led to the present revolt from the authority of Spain -- grievances recognized
 by the Queen Regent and by the Cortes, voiced by the most patriotic and
 enlightened of Spanish statesmen, without regard to party, and demonstrated by
 reforms proposed by the executive and approved by the legislative branch of
@@ -258,9 +258,9 @@ discover the most promising and effective means of composing the present
 strife with honor and advantage to Spain and with the achievement of all the
 reasonable objects of the insurrection.
 
-It would seem that if Spain should offer to Cuba genuine autonomy--a measure
+It would seem that if Spain should offer to Cuba genuine autonomy -- a measure
 of home rule which, while preserving the sovereignty of Spain, would satisfy
-all rational requirements of her Spanish subjects--there should be no just
+all rational requirements of her Spanish subjects -- there should be no just
 reason why the pacification of the island might not be effected on that basis.
 Such a result would appear to be in the true interest of all concerned. It
 would at once stop the conflict which is now consuming the resources of the
@@ -278,7 +278,7 @@ promise being fulfilled.
 
 But the reasonableness of a requirement by Spain of unconditional surrender on
 the part of the insurgent Cubans before their autonomy is conceded is not
-altogether apparent. It ignores important features of the situation--the
+altogether apparent. It ignores important features of the situation -- the
 stability two years' duration has given to the insurrection; the feasibility
 of its indefinite prolongation in the nature of things, and, as shown by past
 experience, the utter and imminent ruin of the island unless the present
@@ -787,7 +787,7 @@ credited to the Pacific railroads, were $92,186,195.11, which may be
 considered as the cost of receiving, carrying, and delivering the above mail
 matter. It thus appears that though the second-class matter constituted more
 than two-thirds of the total that was carried, the revenue derived from it was
-less than one-thirtieth of the total expense. The average revenue was--
+less than one-thirtieth of the total expense. The average revenue was -- 
 
 From each pound of first-class matter .........cents 	93.0 From each pound
 of second class ...............mills 	8.5 From each pound of third class
@@ -881,7 +881,7 @@ determined to pay no speed premiums in future contracts. The premiums recently
 earned and some yet to be decided are features of the contracts made before
 this conclusion was reached.
 
-On March 4, 1893, there were in commission but two armored vessels--the
+On March 4, 1893, there were in commission but two armored vessels -- the
 double-turreted monitors Miantonomoh and Monterey. Since that date, of vessels
 theretofore authorized, there have been placed in their first commission 3
 first-class and 2 second-class battle ships, 2 armored cruisers, 1
@@ -898,8 +898,8 @@ a number of vessels are now being constructed at rates as low as those that
 prevail in European shipyards.
 
 Our manufacturing facilities are at this time ample for all possible naval
-contingencies. Three of our Government navy-yards--those at Mare Island, Cal.,
-Norfolk, Va., and Brooklyn, N. Y.--are equipped for shipbuilding, our ordnance
+contingencies. Three of our Government navy-yards -- those at Mare Island, Cal.,
+Norfolk, Va., and Brooklyn, N. Y. -- are equipped for shipbuilding, our ordnance
 plant in Washington is equal to any in the world, and at the torpedo station
 we are successfully making the highest grades of smokeless powder. The
 first-class private shipyards at Newport News, Philadelphia, and San Francisco

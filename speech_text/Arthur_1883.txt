@@ -331,7 +331,7 @@ exhibit of the financial condition of the country.
 
 It shows that the ordinary revenues from all sources for the fiscal year
 ended June 30, 1883, amounted to $398,287,581.95, whereof there was
-received--
+received -- 
 
 From customs - $214,706,496.93
 
@@ -374,7 +374,7 @@ Total - 265,408,137.54
 
 Leaving a surplus revenue of $132,879,444.41, which, with an amount drawn
 from the cash balance in the Treasury of $1,299,312.55, making
-$134,178,756.96, was applied to the redemption--
+$134,178,756.96, was applied to the redemption -- 
 
 Of bonds for the sinking fund - $44,850,700.00
 
@@ -439,7 +439,7 @@ From repayment of interest and sinking fund, Pacific Railway companies -
 
 From customs fees, fines, penalties, etc. - 298,696.78 - 901,303.22
 
-From fees--consular, letters patent, and lands - 863,209.80 - 2,436,790.20
+From fees -- consular, letters patent, and lands - 863,209.80 - 2,436,790.20
 
 From proceeds of sales of Government property - 112,562.23 - 167,437.77
 

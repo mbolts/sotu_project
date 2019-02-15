@@ -23,8 +23,7 @@ for speech in SPEECHES:
 
     speech_doc = create_parsed_file(speech.text)
 
-    speech_doc.to_disk('./speech_doc/' + path_ending + '_' + str(i))
-    speech_doc.vocab.to_disk('./speech_doc/' + path_ending + '_v_' + str(i))
+    speech_doc.to_disk('./speech_doc/' + path_ending)
 
     i += 1
 

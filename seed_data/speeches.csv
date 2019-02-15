@@ -142,6 +142,7 @@
 1930,2-Dec-1930,Herbert Hoover,Message,./speech_text/Hoover_1930.txt
 1931,8-Dec-1931,Herbert Hoover,Message,./speech_text/Hoover_1931.txt
 1932,6-Dec-1932,Herbert Hoover,Message,./speech_text/Hoover_1932.txt
+1933,,,,
 1934,3-Jan-1934,Franklin D. Roosevelt,Message,./speech_text/FDRoosevelt_1934.txt
 1935,4-Jan-1935,Franklin D. Roosevelt,Message,./speech_text/FDRoosevelt_1935.txt
 1936,3-Jan-1936,Franklin D. Roosevelt,Message,./speech_text/FDRoosevelt_1936.txt
@@ -182,19 +183,14 @@
 1969,14-Jan-1969,Lyndon B. Johnson,Message,./speech_text/LBJohnson_1969.txt
 1970,22-Jan-1970,Richard Nixon,Message,./speech_text/Nixon_1970.txt
 1971,22-Jan-1971,Richard Nixon,Message,./speech_text/Nixon_1971.txt
-1972,20-Jan-1972,Richard Nixon,Message,./speech_text/Nixon_1972.txt
 1972,20-Jan-1972,Richard Nixon,Address,./speech_text/Nixon_1972.txt
 1973,,,,
-1974,30-Jan-1974,Richard Nixon,Message,./speech_text/Nixon_1974.txt
 1974,30-Jan-1974,Richard Nixon,Address,./speech_text/Nixon_1974.txt
 1975,15-Jan-1975,Gerald Ford,Address,./speech_text/Ford_1975.txt
 1976,19-Jan-1976,Gerald Ford,Address,./speech_text/Ford_1976.txt
 1977,12-Jan-1977,Gerald Ford,Address ,./speech_text/Ford_1977.txt
-1978,19-Jan-1978,Jimmy Carter,Message,./speech_text/Carter_1978.txt
 1978,19-Jan-1978,Jimmy Carter,Address,./speech_text/Carter_1978.txt
 1979,23-Jan-1979,Jimmy Carter,Address,./speech_text/Carter_1979.txt
-1979,25-Jan-1979,Jimmy Carter,Message,./speech_text/Carter_1979.txt
-1980,21-Jan-1980,Jimmy Carter,Message,./speech_text/Carter_1980.txt
 1980,23-Jan-1980,Jimmy Carter,Address,./speech_text/Carter_1980.txt
 1981,16-Jan-1981,Jimmy Carter,Message,./speech_text/Carter_1981.txt
 1982,26-Jan-1982,Ronald Reagan,Address,./speech_text/Reagan_1982.txt
