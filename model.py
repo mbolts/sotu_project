@@ -17,18 +17,17 @@ def connect_to_db(app):
     db.app = app
     db.init_app(app)
 
+
 class President(db.Model):
     """President."""
 
     __tablename__ = "presidents"
 
     pres_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    # year = db.Column(db.Integer, db.ForeignKey('years.year'))
     name = db.Column(db.String(100))
     party_affiliation = db.Column(db.String(100))
     date_of_birth = db.Column(db.DateTime)
     state_of_birth = db.Column(db.String(30))
-    # word_counts = db.Column(db.JSON)
 
     years = db.relationship('Year',
                             )
@@ -91,9 +90,6 @@ class Year(db.Model):
     __tablename__ = "years"
 
     year = db.Column(db.Integer, primary_key=True, autoincrement=False)
-    # speech_id = db.Column(db.Integer, 
-    #                       db.ForeignKey('speeches.speech_id'), 
-    #                       )
     pres_id = db.Column(db.Integer,
                         db.ForeignKey('presidents.pres_id'),
                         )
@@ -129,10 +125,9 @@ class Speech(db.Model):
 
     new_words = db.relationship('Word')
 
-    # year = db.relationship('Year',)
-
     def __repr__(self):
         return f"<Speech date={self.date} president={self.president}>"
+
 
 class Word(db.Model):
     """Word"""

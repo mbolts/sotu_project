@@ -11,25 +11,13 @@ d3.json('/word_freq.json').then(function(data){
 // console.log(data);
 
 
-    xMinMax = d3.extent(data, function(d){
-        return parseFloat(d.first_date);
-    });
-
-    console.log(xMinMax);
-
-    yMinMax = d3.extent(data, function(d){
-        return parseFloat(d.freq);
-    });
-
-    console.log(yMinMax);
-
     xScale = d3.scaleTime()
                 .domain([new Date(1790, 0, 0), new Date(2019, 11, 30)]) // Input values to scale
                 .range([margin + 0,width - margin]) // Range of scale
                 ;
 
     yScale = d3.scaleLinear()
-                .domain([0, 300]) // Input values to scale
+                .domain([0, 845]) // Input values to scale
                 .range([margin + rValues[1], height-margin-rValues[1]]) // Range of scale
                 ;
 

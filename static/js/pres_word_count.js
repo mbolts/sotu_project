@@ -1,22 +1,54 @@
-        let margin = 30, width = 1000, height = 500, rValues = [2,15];
-        let circles, xScale, yScale, xAxis, yAxis;
+let margin = 30, width = 1000, height = 500, rValues = [2,15];
+let circles, xScale, yScale, xAxis, yAxis;
 
-        let svg = d3.select('#chart')
-            .append('svg')
-            .attr('width', width + 'px')
-            .attr('height', height + 'px');
+let svg = d3.select('#chart')
+    .append('svg')
+    .attr('width', width + 'px')
+    .attr('height', height + 'px');
 
 
-    d3.json('/word_counts.json').then(function(data){
+d3.json('/word_counts.json').then(function(data){
         console.log(data);
+
+    yMin = d3.min(data['data'], function(d) { 
+            return d.words_per; 
+        });
+            
+    yMax = d3.max(data['data'], function(d) { 
+            return d.words_per; 
+        }); 
+
+    xMin = d3.min(data['data'], function(d) { 
+            return d.first_year; 
+        });
+            
+    xMax = d3.max(data['data'], function(d) { 
+            return d.first_year; 
+        }); 
+
+    console.log(yMin, yMax);
+
+    xScale = d3.scaleLinear()
+                .domain([xMax, xMin]) // Input values to scale
+                .range([margin + 0, width - margin]) // Range of scale
+                ;
+
+    yScale = d3.scaleLinear()
+                .domain([yMax, yMin]) // Input values to scale
+                .range([margin + rValues[1], height-margin-rValues[1]]) // Range of scale
+                ;
 
         circles = svg.selectAll('.dot')
             .data(data['data'])
             .enter()
             .append('circle')
             .attr('class', 'dot')
-            .attr('cx',100)
-            .attr('cy',100)
+            .attr('cx',function(d){
+                return xScale(d.first_year);
+            })
+            .attr('cy',function(d){
+                return yScale(d.words_per);
+            })
             .attr('r',10)
             .style('opacity', 1);
     });

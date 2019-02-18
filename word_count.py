@@ -114,9 +114,27 @@ def make_json_wc():
 
     for president in presidents:
         # initiate an empty dictionary, and populate it
-        word_counts.append({'name': president.name,
-                            'words_per': president.get_word_count_per_speech(),
-                            'total': president.get_total_word_count()})
+        if len(president.years) > 0:
+
+            word_counts.append({'name': president.name,
+                                'words_per': president.get_word_count_per_speech(),
+                                'total': president.get_total_word_count(),
+                                'first_year': president.years[0].year,
+                                'party': president.party_affiliation})
+
+        elif president.name == 'William Henry Harrison':
+            word_counts.append({'name': president.name,
+                                'words_per': president.get_word_count_per_speech(),
+                                'total': president.get_total_word_count(),
+                                'first_year': 1841,
+                                'party': president.party_affiliation})            
+
+        elif president.name == 'James A. Garfield':
+            word_counts.append({'name': president.name,
+                                'words_per': president.get_word_count_per_speech(),
+                                'total': president.get_total_word_count(),
+                                'first_year': 1881,
+                                'party': president.party_affiliation})
 
     f = open('static/word_counts.json', 'w')
     f.write(json.dumps(word_counts))
