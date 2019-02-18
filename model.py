@@ -1,6 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
+import nlp
 
-# import sotu_dictionary
 
 # This is the connection to the PostgreSQL database; we're getting this through
 # the Flask-SQLAlchemy helper library. On this, we can find the `session`
@@ -35,6 +35,8 @@ class President(db.Model):
     speeches = db.relationship('Speech',
                                 backref=db.backref("president"))
 
+
+
     def decade_of_birth(self):
          
         return int(self.date_of_birth.year / 10) * 10
@@ -53,6 +55,31 @@ class President(db.Model):
             text.close()
 
         return pres_speeches
+
+    def get_word_count_per_speech(self):
+
+        speech_count = len(self.speeches)
+
+        if speech_count == 0:
+            return 0
+
+        word_count = self.get_total_word_count()
+
+        return word_count / speech_count
+
+    def get_total_word_count(self):
+
+        word_count = 0
+
+        for speech in self.speeches:
+
+            speech_tokens = nlp.Doc(nlp.vocab).from_disk(speech.doc_path)
+
+            tokens = len(speech_tokens)
+
+            word_count += tokens
+
+        return word_count
 
     def __repr__(self):
         return f"<President name={self.name} pres_id={self.pres_id}>"    
@@ -116,7 +143,7 @@ class Word(db.Model):
     text = db.Column(db.String(30))
     first_use = db.Column(db.Integer,
                 db.ForeignKey('speeches.speech_id'))
-    freq_corpus = db.Column(db.Integer)
+    freq_corpus = db.Column(db.Float)
 
     def get_first_use_president(self):
 
@@ -124,6 +151,13 @@ class Word(db.Model):
         pres = President.query.get(speech_obj.pres_id)
 
         return pres
+
+    def get_first_use_date(self):
+
+        speech_obj = Speech.query.get(self.first_use)
+        date = speech_obj.date
+
+        return date
 
 
     def __repr__(self):

@@ -3,6 +3,7 @@ from spacy.tokens import Doc
 from spacy.vocab import Vocab
 
 NLP = spacy.load('en')
+vocab = NLP.vocab
 
 
 NLP.Defaults.stop_words = {

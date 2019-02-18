@@ -1,6 +1,8 @@
-from nlp_functions import *
+import json
+import datetime
+
 from collections import Counter
-from model import President, Year, Speech
+from model import President, Year, Speech, Word
 from model import connect_to_db, db
 from flask_sqlalchemy import SQLAlchemy
 from server import app
@@ -99,8 +101,47 @@ def get_pronouns(speeches):
     return pronouns    
 
 
+def make_json_wc():
+    """
+    Create a list of dictionaries of word counts
+
+    """
+
+    word_counts = []
+
+    # get list of president objects
+    presidents = President.query.all()
+
+    for president in presidents:
+        # initiate an empty dictionary, and populate it
+        word_counts.append({'name': president.name,
+                            'words_per': president.get_word_count_per_speech(),
+                            'total': president.get_total_word_count()})
+
+    f = open('static/word_counts.json', 'w')
+    f.write(json.dumps(word_counts))
 
 
 
+def make_json_freq():
+    """
+    Create a list of dictionaries of word frequencies
+
+    """
+
+    word_freq = []
+
+    # get list of president objects
+    words = Word.query.all()
+
+    for word in words:
+        # initiate an empty dictionary, and populate it
+        word_freq.append({'word': word.text,
+                            'first_user': word.get_first_use_president().name,
+                            'first_date': word.get_first_use_date().strftime('%B %d, %Y'),
+                            'freq': word.freq_corpus})
+
+    f = open('static/word_freq.json', 'w')
+    f.write(json.dumps(word_freq))
 
 

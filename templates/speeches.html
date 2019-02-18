@@ -17,7 +17,7 @@
 {% endif %}
 <div>
 {% for speech in president.speeches %}
-  <a href="/speech/{{ speech.speech_id }}"><p name="{{speech.speech_id}}" value="{{ speech.date }}">{{ speech.date.strftime('%B %d, %Y') }}</p></a>
+  <a href="/speech/{{ speech.speech_id }}"><p name="{{speech.speech_id}}" value="{{ speech.date }}">{{ speech.date.strftime('%B %d, %Y') }}</p></a><br>
 {% endfor %}
 </div>
 

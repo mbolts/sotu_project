@@ -1,11 +1,16 @@
 """Presidential State of the Union Speeches"""
 
+import json
+
 from jinja2 import StrictUndefined
 
 from flask import (Flask, render_template, redirect, request, flash, session, jsonify)
 from flask_debugtoolbar import DebugToolbarExtension
+from flask_sqlalchemy import SQLAlchemy
 
-from model import connect_to_db, db, President, Year, Speech
+from model import connect_to_db, db, President, Year, Speech, Word
+
+
 
 
 app = Flask(__name__)
@@ -18,6 +23,8 @@ app.secret_key = secret_key
 # silently. This is horrible. Fix this so that, instead, it raises an
 # error.
 app.jinja_env.undefined = StrictUndefined
+
+
 
 
 @app.route('/')
@@ -67,7 +74,42 @@ def compare_presidents():
     return render_template('comparison.html', pres_1=pres_1, pres_2=pres_2)
 
 
+@app.route("/word_counts.json")
+def get_word_count_data():
+    """pass the word_counts to d3"""
+   
+    f = open('static/word_counts.json')
+    word_counts = f.read()
+    wc_json = json.loads(word_counts)
 
+    # render json to homepage
+    return jsonify({'data': wc_json})
+
+
+@app.route("/word_freq.json")
+def get_word_freq_data():
+    """create and pass the word_freq to d3"""
+
+    f = open('static/word_freq.json')
+    word_freq = f.read()
+    wf_json = json.loads(word_freq)
+
+    # render json to homepage
+    return jsonify({'data': wf_json})
+
+
+@app.route('/wc_visualization')
+def show_wc_visualization():
+    """Show visualization."""
+
+    return render_template("wc_visualization.html")
+
+
+@app.route('/wf_visualization')
+def show_wf_visualization():
+    """Show visualization."""
+    
+    return render_template("wf_visualization.html")
 
 #################################################################
 if __name__ == "__main__":
@@ -83,3 +125,9 @@ if __name__ == "__main__":
     DebugToolbarExtension(app)
 
     app.run(port=5000, host='0.0.0.0')
+
+    # word_counts = [(president.name, 
+    #             president.get_word_count_per_speech(),
+    #             president.get_total_word_count())
+    #             for president
+    #             in President.query.options(db.joinedload('speeches')).all()]
