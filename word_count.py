@@ -6,6 +6,7 @@ from model import President, Year, Speech, Word
 from model import connect_to_db, db
 from flask_sqlalchemy import SQLAlchemy
 from server import app
+from nlp import NLP, Doc
 connect_to_db(app)
 
 def word_count_all(speeches):
@@ -23,7 +24,7 @@ def word_count_all(speeches):
         doc = Doc(vocab).from_disk(speech.doc_path)
 
         # create lemmas word count dict
-        lemma_list = []
+        # lemma_list = []
         word_list = []
 
         for token in doc:
@@ -57,7 +58,7 @@ def get_word_freq(word_count):
 
         normalized_wc = (count * 10000) / word_total
 
-        word_frequency.append([word, normalized_wc])
+        word_frequency.append([word, normalized_wc, count])
 
     word_frequency = sorted(word_frequency, 
                             key=lambda word: word[1],
@@ -157,9 +158,38 @@ def make_json_freq():
         word_freq.append({'word': word.text,
                             'first_user': word.get_first_use_president().name,
                             'first_date': word.get_first_use_date().strftime('%B %d, %Y'),
-                            'freq': word.freq_corpus})
+                            'freq': word.freq_corpus,
+                            'count': word.count,
+                            })
 
     f = open('static/word_freq.json', 'w')
     f.write(json.dumps(word_freq))
 
+
+def make_json_freq_curated():
+    """
+    Create a list of dictionaries of word frequencies
+    excluding George Washington's speeches
+
+    """
+
+    word_freq = []
+
+    # get list of president objects
+    words = Word.query.all()
+
+    for word in words:
+        # initiate an empty dictionary, and populate it
+
+        if word.get_first_use_president().name != 'George Washington':
+
+            word_freq.append({'word': word.text,
+                                'first_user': word.get_first_use_president().name,
+                                'first_date': word.get_first_use_date().strftime('%B %d, %Y'),
+                                'freq': word.freq_corpus,
+                                'count': word.count,
+                                })
+
+    f = open('static/word_freq.json', 'w')
+    f.write(json.dumps(word_freq))
 

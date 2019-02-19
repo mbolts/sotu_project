@@ -139,6 +139,8 @@ class Word(db.Model):
     first_use = db.Column(db.Integer,
                 db.ForeignKey('speeches.speech_id'))
     freq_corpus = db.Column(db.Float)
+    count = db.Column(db.Integer)
+    
 
     def get_first_use_president(self):
 

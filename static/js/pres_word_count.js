@@ -24,9 +24,7 @@ d3.json('/word_counts.json').then(function(data){
             
     xMax = d3.max(data['data'], function(d) { 
             return d.first_year; 
-        }); 
-
-    console.log(yMin, yMax);
+        });
 
     xScale = d3.scaleLinear()
                 .domain([xMax, xMin]) // Input values to scale
@@ -50,5 +48,5 @@ d3.json('/word_counts.json').then(function(data){
                 return yScale(d.words_per);
             })
             .attr('r',10)
-            .style('opacity', 1);
+            .style('opacity');
     });

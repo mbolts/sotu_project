@@ -23,22 +23,13 @@ def load_speeches():
 
     file = open("seed_data/speeches.csv")
 
-    i = 0
-
     # Read u.user file and insert data
     for row in file:
         row = row.rstrip()
 
         year, date, president, delivery, text = row.split(",")
-        # print('year is', year)
-        # print('type is', type(year))
         year = year[-4:]
         year = int(year)
-        # print('text is', text)
-        # print('type of text', type(text))
-        # print(text[:5])
-
-        # print('President', president)
 
         pres = President.query.filter_by(name=president).first()
 
@@ -53,7 +44,6 @@ def load_speeches():
 
         if year < 1900:
             date_time = datetime.datetime.strptime(date, "%b %d %Y")
-            # import pdb; pdb.set_trace()
             speech = Speech(
                         date=date_time,
                         pres_id=pres_id,
@@ -77,8 +67,6 @@ def load_speeches():
                         year=year,
                         )
 
-        i += 1
-
         # We need to add to the session or it won't ever be stored
         db.session.add(speech)
 
@@ -101,7 +89,6 @@ def load_years():
 
     for row in file:
         row = row.rstrip()
-        # print('row is', row)
 
         year, x, president = row.split(",")[:3]
         year = year[-4:]
@@ -110,34 +97,23 @@ def load_years():
         pres = President.query.filter_by(name=president).first()
 
         if pres is None or year in years:
-            # print('pres is none and', year, 'in', years)
             continue
 
         elif pres is None and year not in years:
-            # print('pres is none')
             year = Year(year=year,
                         )
 
             years.append(year)
-            # db.session.add(year)
 
         else:
 
             pres_id = pres.pres_id
-
-            # print('year is', year)
-            # print('years are', years)
 
             years.append(year)
 
             year = Year(year=year,
                         pres_id=pres_id,
                         )
-        
-        # print('after years are', years)
-
-        # print('year is', year)
-        # print()
 
         # We need to add to the session or it won't ever be stored
         db.session.add(year)
@@ -186,29 +162,26 @@ def load_words():
 
     Word.query.delete()
 
-    file = open("seed_data/words.csv")
-
-    # i = 0
+    file = open("seed_data/words_count.csv")
 
     for row in file:
         row = row.rstrip()
 
-        # print(row, 'counter = ', i)
+        text, freq_corpus, count = row.split(',')[:3]
 
-        text, first_use, freq_corpus = row.split(',')
+        usage = row.split(',')[3]
 
-        datetime_first_use = datetime.datetime.strptime(first_use[:-9], "%Y-%m-%d")
+        first_use = datetime.datetime.strptime(usage[-12:], "'%Y-%m-%d'")
 
-        speech = Speech.query.filter_by(date=datetime_first_use).one()
+        speech = Speech.query.filter_by(date=first_use).one()
 
         word = Word(text=text,
                       first_use=speech.speech_id,
                       freq_corpus=float(freq_corpus),
+                      count=int(count),
                       )
 
         db.session.add(word)
-
-        # i += 1
 
     file.close()
 

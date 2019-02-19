@@ -10,6 +10,16 @@ let svg = d3.select('#chart')
 d3.json('/word_freq.json').then(function(data){
 // console.log(data);
 
+    yMin = d3.min(data['data'], function(d) { 
+            return d.count; 
+        });
+            
+    yMax = d3.max(data['data'], function(d) { 
+            return d.count; 
+        }); 
+
+    console.log(yMin, yMax);
+
 
     xScale = d3.scaleTime()
                 .domain([new Date(1790, 0, 0), new Date(2019, 11, 30)]) // Input values to scale
@@ -17,7 +27,7 @@ d3.json('/word_freq.json').then(function(data){
                 ;
 
     yScale = d3.scaleLinear()
-                .domain([0, 845]) // Input values to scale
+                .domain([yMax, yMin]) // Input values to scale
                 .range([margin + rValues[1], height-margin-rValues[1]]) // Range of scale
                 ;
 
@@ -31,10 +41,8 @@ d3.json('/word_freq.json').then(function(data){
             return xScale(new Date(d.first_date));
         })
         .attr('cy',function(d){
-            return yScale(d.freq);
+            return yScale(d.count);
         })
-        .attr('r', function(d){
-            return yScale(d.freq) * .1;
-        })
+        .attr('r', 3)
         .style('opacity', 1);
     });
