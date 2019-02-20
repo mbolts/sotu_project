@@ -10,6 +10,16 @@ let svg = d3.select('#chart')
 d3.json('/word_counts.json').then(function(data){
         console.log(data);
 
+    // Assign colors to the parties
+    let party = {
+        'Unaffiliated': 'grey',
+        'Federalist': 'black',
+        'Democratic-Republican': '#27c514',
+        'Democratic': 'blue',
+        'Whig': '#ffe761',
+        'Republican': 'red'
+    }
+
     yMin = d3.min(data['data'], function(d) { 
             return d.words_per; 
         });
@@ -27,13 +37,13 @@ d3.json('/word_counts.json').then(function(data){
         });
 
     xScale = d3.scaleLinear()
-                .domain([xMax, xMin]) // Input values to scale
-                .range([margin + 0, width - margin]) // Range of scale
+                .domain([xMin, xMax]) // Input values to scale
+                .range([margin + 15, width - margin - 15]) // Range of scale
                 ;
 
     yScale = d3.scaleLinear()
                 .domain([yMax, yMin]) // Input values to scale
-                .range([margin + rValues[1], height-margin-rValues[1]]) // Range of scale
+                .range([margin + 15, height-margin-15]) // Range of scale
                 ;
 
         circles = svg.selectAll('.dot')
@@ -48,5 +58,65 @@ d3.json('/word_counts.json').then(function(data){
                 return yScale(d.words_per);
             })
             .attr('r',10)
-            .style('opacity');
+            .attr('fill', function(d){
+                return party[d.party]
+            })
+            .on('mouseover', function(d){
+                html = 'President: ' + d.name + '<br>';
+                html += 'Year: ' + d.first_year + '<br>';
+                html += 'Words: ' + d.words_per + '<br>';
+                html += 'Total Words: ' + d.total;
+                d3.select('#tooltip')
+                    .style('left', d3.event.pageX-100 + 'px')
+                    .style('top', d3.event.pageY-140 + 'px')
+                    .html(html)
+                    .style('opacity', 0.85);
+            })
+
+            .on('mouseout', function(){
+                d3.select('#tooltip')
+                    .style('left', '-1000px')
+                    .style('opacity', 0)
+            });
+
+
+        // Create the x and y axis
+        xAxis = d3.axisBottom(xScale)
+                    .tickValues([xMin, xMax]);
+
+        yAxis = d3.axisLeft(yScale)
+                    .tickValues([yMin,yMax]);
+
+
+        // Add the x and y axis to the svg element and assign them a class
+        xAxisG = svg.append('g')
+                    .attr('id', 'xAxis')
+                    .attr('class', 'axis');
+
+        yAxisG = svg.append('g')
+                    .attr('id', 'yAxis')
+                    .attr('class', 'axis');
+
+        // Put the x and y axis on the screen
+        xAxisG.call(xAxis)
+                .attr('transform', 'translate(0,' + (height-margin)+ ')') // First number is x axis move, second number is y axis move
+                ;
+
+        yAxisG.call(yAxis)
+                .attr('transform', 'translate(30,0)') // First number is x axis move, second number is y axis move
+                ;
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+

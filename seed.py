@@ -162,16 +162,14 @@ def load_words():
 
     Word.query.delete()
 
-    file = open("seed_data/words_count.csv")
+    file = open("seed_data/words")
 
     for row in file:
         row = row.rstrip()
 
-        text, freq_corpus, count = row.split(',')[:3]
+        text, freq_corpus, count, date = row.split(',')
 
-        usage = row.split(',')[3]
-
-        first_use = datetime.datetime.strptime(usage[-12:], "'%Y-%m-%d'")
+        first_use = datetime.datetime.strptime(date[:-9], '%Y-%m-%d')
 
         speech = Speech.query.filter_by(date=first_use).one()
 
@@ -195,9 +193,9 @@ if __name__ == "__main__":
     db.create_all()
 
     # Import different types of data
-    load_presidents()
-    load_years()
-    load_speeches()    
+    # load_presidents()
+    # load_years()
+    # load_speeches()    
     load_words()
 
 

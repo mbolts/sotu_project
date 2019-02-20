@@ -98,6 +98,18 @@ def get_word_freq_data():
     return jsonify({'data': wf_json})
 
 
+@app.route("/word_context.json")
+def get_word_context_data():
+    """pass the word_context to d3"""
+   
+    f = open('static/word_context.json')
+    word_context = f.read()
+    wcon_json = json.loads(word_context)
+
+    # render json to homepage
+    return jsonify({'data': wcon_json})
+
+
 @app.route('/wc_visualization')
 def show_wc_visualization():
     """Show visualization."""

@@ -22,7 +22,7 @@ one_speech = [Speech.query.first()]
 
 vocab = NLP.vocab
 
-word_all_appearances_csv = open("words.csv", "a")
+word_all_appearances_csv = open("words", "a")
 
 
 def find_word_first_appearance(speeches):
@@ -83,7 +83,7 @@ def find_word_appearance(speeches):
 
 def write_words_to_file(speeches):
 
-    word_appearances = find_word_appearance(speeches)
+    word_appearances = find_word_first_appearance(speeches)
     print('word_appearance finished')
 
     word_freq = get_word_freq(word_count_all(speeches))
