@@ -61,17 +61,16 @@ def show_speech(speech_id):
 @app.route('/comparison', methods=['GET'])
 def compare_presidents():
 
-    print('\n\n\n\n\n\n\n')
-
     pres_1 = request.args.get('pres_1')
-    print('pres_1 is', pres_1, 'type is ', type(pres_1))
     pres_2 = request.args.get('pres_2')
-    print('pres_2 is', pres_2, 'type is ', type(pres_2))
 
     pres_1 = President.query.get(pres_1)
     pres_2 = President.query.get(pres_2)
 
-    return render_template('comparison.html', pres_1=pres_1, pres_2=pres_2)
+    return render_template('comparison.html', 
+                            pres_1=pres_1, 
+                            pres_2=pres_2,
+                            )
 
 
 @app.route("/word_counts.json")
@@ -108,6 +107,18 @@ def get_word_context_data():
 
     # render json to homepage
     return jsonify({'data': wcon_json})
+
+
+@app.route("/pres_sim.json")
+def get_pres_sim_data():
+    """pass the word_context to d3"""
+   
+    f = open('static/pres_sim.json')
+    pres_sim = f.read()
+    sim_json = json.loads(pres_sim)
+
+    # render json to homepage
+    return jsonify({'data': sim_json})
 
 
 @app.route('/wc_visualization')

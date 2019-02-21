@@ -28,6 +28,7 @@ class President(db.Model):
     party_affiliation = db.Column(db.String(100))
     date_of_birth = db.Column(db.DateTime)
     state_of_birth = db.Column(db.String(30))
+    pres_corpus = db.Column(db.String(50))
 
     years = db.relationship('Year',
                             )
@@ -39,6 +40,7 @@ class President(db.Model):
     def decade_of_birth(self):
          
         return int(self.date_of_birth.year / 10) * 10
+
 
     def speech_text(self):
 
@@ -55,6 +57,7 @@ class President(db.Model):
 
         return pres_speeches
 
+
     def get_word_count_per_speech(self):
 
         speech_count = len(self.speeches)
@@ -65,6 +68,7 @@ class President(db.Model):
         word_count = self.get_total_word_count()
 
         return word_count / speech_count
+
 
     def get_total_word_count(self):
 
@@ -79,6 +83,21 @@ class President(db.Model):
             word_count += tokens
 
         return word_count
+
+
+    def get_corpus_doc(self):
+
+        speeches = nlp.Doc(nlp.vocab).from_disk(self.pres_corpus)
+
+        return speeches
+
+
+    def get_similarity(self, other_pres):
+
+        sim_score = nlp.get_doc_similarity(self.get_corpus_doc(), other_pres.get_corpus_doc())
+
+        return sim_score
+
 
     def __repr__(self):
         return f"<President name={self.name} pres_id={self.pres_id}>"    

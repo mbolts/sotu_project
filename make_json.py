@@ -145,6 +145,29 @@ def get_first_use_context():
     f.write(json.dumps(word_context))
 
 
+def make_similarity_json():
+
+    presidents = President.query.all()
+
+    pres_sim = {}
+
+    for pres_1 in presidents:
+        pres_sim[pres_1.name] = {}
+        print(pres_1)
+
+        for pres_2 in presidents:
+            sim = pres_1.get_similarity(pres_2)
+
+            pres_sim[pres_1.name][pres_2.name] = sim
+
+    f = open('static/pres_sim.json', 'w')
+    f.write(json.dumps(pres_sim))
+
+    return pres_sim
+
+
+
+
 
 
 

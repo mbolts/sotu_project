@@ -14,9 +14,9 @@ d3.json('/word_counts.json').then(function(data){
     let party = {
         'Unaffiliated': 'grey',
         'Federalist': 'black',
-        'Democratic-Republican': '#27c514',
+        'Democratic-Republican': '#27c514', // green
         'Democratic': 'blue',
-        'Whig': '#ffe761',
+        'Whig': '#ffe761', // yellow
         'Republican': 'red'
     }
 

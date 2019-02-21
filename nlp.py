@@ -6,50 +6,7 @@ NLP = spacy.load('en')
 vocab = NLP.vocab
 
 
-NLP.Defaults.stop_words = {
-    'hence', 'a', 'anything', 'sometimes', 'though', 'off', 'others', 
-    'sixty', 'whereafter', 'everywhere', 'forty', 'get', 'has', 'his', 
-    'herein', 'whoever', 'between', 'only', 'anywhere', 'mine', 'they', 
-    'beforehand', 'how', 'latterly', 'twenty', 'since', 'beyond', 
-    'amount', 'as', 'again', 'call', 'may', 'about', 'name', 'fifteen', 
-    'becomes', 'for', 'see', 'can', 'yourself', 'few', 'cannot', 
-    'nevertheless', 'if', 'some', 'much', 'anyhow', 'she', 'yet', 
-    'whatever', 'against', 'own', 'themselves', 'over', 'everything', 
-    'bottom', 'ca', 'into', 'my', 'have', 'please', 'alone', 'empty', 
-    'itself', 'otherwise', 'then', 'top', 'both', 'during', 'therefore', 
-    'her', 'does', 'should', 'one', 'anyway', 'former', 'first', 
-    'hereafter', 'last', 'per', 'just', 'whether', 'whenever', 'every', 
-    'almost', 'two', 'whereas', 'are', 'above', 'seemed', 'other', 
-    'amongst', 'any', 'elsewhere', 'used', 'but', 'further', 'until', 
-    'either', 'none', 'eight', 'hereupon', 'namely', 'toward', 'among', 
-    'our', 'put', 'thence', 'upon', 'already', 'do', 'must', 'well', 
-    'onto', 'which', 'fifty', 'who', 'yours', 'always', 'us', 'these', 
-    'perhaps', 'something', 'make', 'someone', 'than', 'below', 'myself', 
-    'on', 'three', 'thereafter', 'third', 'behind', 'due', 'nowhere', 
-    'back', 'those', 'by', 'is', 'six', 'from', 'next', 'thereupon', 
-    'another', 'in', 'regarding', 'while', 'unless', 'had', 'nor', 
-    'here', 'less', 'out', 'ten', 'together', 'down', 'what', 'everyone', 
-    'and', 'several', 'without', 're', 'take', 'nothing', 'front', 
-    'full', 'whole', 'whom', 'same', 'because', 'doing', 'herself', 
-    'be', 'most', 'up', 'somehow', 'became', 'whence', 'me', 'give', 
-    'an', 'around', 'or', 'why', 'all', 'also', 'very', 'made', 'with', 
-    'really', 'will', 'show', 'was', 'no', 'becoming', 'whereby', 
-    'eleven', 'himself', 'hers', 'least', 'the', 'when', 'part', 'done', 
-    'however', 'many', 'latter', 'not', 'yourselves', 'quite', 'where', 
-    'of', 'twelve', 'before', 'after', 'we', 'it', 'become', 'hereby', 
-    'once', 'five', 'nine', 'nobody', 'else', 'neither', 'afterwards', 
-    'across', 'ever', 'its', 'move', 'him', 'ours', 'enough', 'meanwhile', 
-    'therein', 'he', 'within', 'besides', 'side', 'whose', 'moreover', 
-    'somewhere', 'am', 'seems', 'each', 'keep', 'too', 'still', 'along', 
-    'go', 'sometime', 'might', 'formerly', 'them', 'towards', 'at', 
-    'their', 'although', 'thru', 'were', 'even', 'could', 'never', 
-    'using', 'say', 'this', 'to', 'often', 'being', 'under', 'seem', 
-    'rather', 'noone', 'wherever', 'various', 'now', 'been', 'via', 
-    'whither', 'would', 'hundred', 'that', 'there', 'more', 'ourselves', 
-    'thereby', 'whereupon', 'four', 'i', 'except', 'serious', 'thus', 
-    'throughout', 'anyone', 'indeed', 'so', 'wherein', 'through', 'you', 
-    'such', 'your', 'mostly', 'beside', 'seeming', 'did',
-}
+
 
 def open_file(file):
     """ Utility function to open and read files """
@@ -131,13 +88,25 @@ def create_lemma_file(doc):
     return lemma_file
 
 
-def get_jaccard_sim(str1, str2):
+def get_doc_similarity(doc1, doc2):
+    """ Gets the similarity between two documents
 
-    a = set(str1.split())
-    b = set(str2.split())
-    c = a.intersection(b)
+        Takes in two doc objects created using spaCy
 
-    return float(len(c)) / (len(a) + len(b) - len(c))
+        Returns the built in similarity of these two docs:
+
+        Make a semantic similarity estimate. 
+        The default estimate is cosine similarity 
+        using an average of word vectors.
+
+        Returns as a float, a scalar similarity score. 
+        Higher is more similar.
+
+     """
+
+    similarity = doc1.similarity(doc2)
+
+    return similarity
 
 
 

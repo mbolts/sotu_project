@@ -27,9 +27,23 @@
 
 {% endif %}
 
+
 <div>
-Here be comparisons between {{ pres_1.name }} and {{ pres_2.name }}
+Here be comparisons between {{ pres_1.name }} and {{ pres_2.name }} :
+<br>
+
+The semantic similarity estimate between these two is: 
+{{ pres_1.get_similarity(pres_2) }}
+
 </div>
 
+
+<div id="chart"></div>
+
+
+
+<script src="./static/js/similarity.js"type="text/javascript">
+    
+</script>  
 
 {% endblock %}

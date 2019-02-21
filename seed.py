@@ -132,6 +132,8 @@ def load_presidents():
 
     file = open("seed_data/presidents.csv")
 
+    i = 1
+
     for row in file:
         row = row.rstrip()
 
@@ -142,11 +144,16 @@ def load_presidents():
         if name.endswith('Washington'):
             name = name[-17:]
 
+        doc_path = './president_doc/' + str(i) + '_' + name.split()[-1]
+
         president = President(name=name,
                               party_affiliation=party_affiliation,
                               date_of_birth=datetime_dob,
                               state_of_birth=state,
+                              pres_corpus=doc_path,
                               )
+
+        i += 1
 
         db.session.add(president)
 
@@ -193,9 +200,9 @@ if __name__ == "__main__":
     db.create_all()
 
     # Import different types of data
-    # load_presidents()
-    # load_years()
-    # load_speeches()    
+    load_presidents()
+    load_years()
+    load_speeches()    
     load_words()
 
 
