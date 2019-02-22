@@ -1,10 +1,11 @@
 let margin = 30, width = 1000, height = 500, rValues = [2,15];
 let circles, xScale, yScale, xAxis, yAxis;
 
-let svg = d3.select('#chart')
+const svg = d3.select('#chart')
     .append('svg')
     .attr('width', width + 'px')
     .attr('height', height + 'px');
+
 
 
 d3.json('/word_counts.json').then(function(data){

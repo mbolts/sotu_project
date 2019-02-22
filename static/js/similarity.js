@@ -1,97 +1,107 @@
 // let margin = 30, width = 1000, height = 500, rValues = [2,15];
 // let circles, xScale, yScale, xAxis, yAxis;
 
-// let svg = d3.select('#chart')
-//     .append('svg')
-//     .attr('width', width + 'px')
-//     .attr('height', height + 'px');
 
 
-// d3.csv('/sim_matrix.csv').then(function(data){
-//         console.log(data);
-const number_of_pres = 44    
 
-      var margin = { top: 150, right: 0, bottom: 100, left: 140 },
+d3.csv('/sim_matrix.csv').then(function(data){
+    console.log(data);
+        
+    const number_of_pres = 44    
+
+    const margin = { top: 150, right: 40, bottom: 50, left: 140 },
           gridSize = 20,
           width = gridSize * number_of_pres,
           height = gridSize * number_of_pres,          
           legendElementWidth = gridSize*2,
           buckets = 9,
           colors = ["#ffffd9","#edf8b1","#c7e9b4","#7fcdbb","#41b6c4","#1d91c0","#225ea8","#253494","#081d58"], // alternatively colorbrewer.YlGnBu[9]
-          presidents = ['George Washington', 'John Adams', 'Thomas Jefferson', 'James Madison', 'James Monroe', 'John Quincy Adams', 'Andrew Jackson', 'Martin van Buren', 'William Henry Harrison', 'John Tyler', 'James K. Polk', 'Zachary Taylor', 'Millard Fillmore', 'Franklin Pierce', 'James Buchanan', 'Abraham Lincoln', 'Andrew Johnson', 'Ulysses S. Grant', 'Rutherford B. Hayes', 'James A. Garfield', 'Chester A. Arthur', 'Grover Cleveland', 'Benjamin Harrison', 'William McKinley', 'Theodore Roosevelt', 'William Howard Taft', 'Woodrow Wilson', 'Warren G. Harding', 'Calvin Coolidge', 'Herbert Hoover', 'Franklin D. Roosevelt', 'Harry S. Truman', 'Dwight D. Eisenhower', 'John F. Kennedy', 'Lyndon B. Johnson', 'Richard Nixon', 'Gerald Ford', 'Jimmy Carter', 'Ronald Reagan', 'George H. W. Bush', 'Bill Clinton', 'George W. Bush', 'Barack Obama', 'Donald Trump'],
-          datasets = ["sim_matrix.csv"];
-
-    var svg = d3.select("#chart").append("svg")
-          .attr("width", width + margin.left + margin.right)
-          .attr("height", height + margin.top + margin.bottom)
-          .append("g")
-          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-
-    var president1Labels = svg.selectAll(".president1Label")
-          .data(presidents)
-          .enter().append("text")
-            .text(function (d) { return d; })
-            .attr("x", 0)
-            .attr("y", function (d, i) { return i * gridSize; })
-            .style("text-anchor", "end")
-            .attr("transform", "translate(-6," + gridSize / 1.5 + ")")
-            .attr("class", function (d, i) { return ((i >= 0 && i <= 4) ? "dayLabel mono axis axis-workweek" : "dayLabel mono axis"); });
+          presidents = ['George Washington', 'John Adams', 'Thomas Jefferson', 'James Madison', 'James Monroe', 'John Quincy Adams', 'Andrew Jackson', 'Martin van Buren', 'William Henry Harrison', 'John Tyler', 'James K. Polk', 'Zachary Taylor', 'Millard Fillmore', 'Franklin Pierce', 'James Buchanan', 'Abraham Lincoln', 'Andrew Johnson', 'Ulysses S. Grant', 'Rutherford B. Hayes', 'James A. Garfield', 'Chester A. Arthur', 'Grover Cleveland', 'Benjamin Harrison', 'William McKinley', 'Theodore Roosevelt', 'William Howard Taft', 'Woodrow Wilson', 'Warren G. Harding', 'Calvin Coolidge', 'Herbert Hoover', 'Franklin D. Roosevelt', 'Harry S. Truman', 'Dwight D. Eisenhower', 'John F. Kennedy', 'Lyndon B. Johnson', 'Richard Nixon', 'Gerald Ford', 'Jimmy Carter', 'Ronald Reagan', 'George H. W. Bush', 'Bill Clinton', 'George W. Bush', 'Barack Obama', 'Donald Trump'];
+        
+    const svg = d3.select('#chart')
+        .append('svg')
+        .attr('width', width + margin.left + margin.right + 'px')
+        .attr('height', height + margin.top + margin.bottom + 'px')
+        .append('g')
+        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
 
-      var president2Labels = svg.selectAll(".president2Label")
+    const president1Labels = svg.selectAll(".president1Label")
           .data(presidents)
           .enter()
-            .append("text")
-            .text(function(d) { return d; })
+          .append("text")
+            .text(function (d){ 
+                return d; })
             .attr("x", 0)
-            .attr("y", function (d, i) { return i * gridSize; })
+            .attr("y", function (d, i){
+                return i * gridSize; })
+            .style("text-anchor", "end")
+            .attr("transform", "translate(-6," + gridSize / 1.5 + ")")
+            .attr("class", function (d){
+                "president1Label mono axis"; });
+
+
+    const president2Labels = svg.selectAll(".president2Label")
+          .data(presidents)
+          .enter()
+          .append("text")
+            .text(function(d){ 
+                return d; })
+            .attr("x", 0)
+            .attr("y", function (d, i){ 
+                return i * gridSize; })
             .style("text-anchor", "left")
             .attr("transform", "translate(" + gridSize / 2 + ", 0), rotate(-90)")
-            .attr("class", function(d, i) { return ((i >= 7 && i <= 16) ? "timeLabel mono axis axis-worktime" : "timeLabel mono axis"); });
+            .attr("class", function(d, i){ 
+                return "president2Label mono axis"; });
 
 
-      var heatmapChart = function(csvFile) {
-        d3.csv(csvFile,
-        function(d) {
-          return {
-            pres_1: +d.pres_1,
-            pres_2: +d.pres_2,
-            value: +d.sim
-          };
-        }).then(
-        function(data) {
-            console.log(data);
-          var colorScale = d3.scaleQuantile()
-              .domain([0.93, 1])
-              .range(colors);
+    // const heatmapChart = function(csvFile) {
+    //     d3.csv(csvFile,
+    //     function(d) {
+    //       return {
+    //         pres_1: +d.pres_1,
+    //         pres_2: +d.pres_2,
+    //         value: +d.sim
+    //       };
+    //     }).then(
+    //     function(data) {
+    //         console.log(data);
+    const colorScale = d3.scaleSequential(d3.interpolateYlGnBu)
+                        .domain([0.93, 1]);
+                        // .range();
 
-          var cards = svg.selectAll(".hour")
-              .data(data, function(d) {return d.pres_1+':'+d.pres_2;});
+    const cards = svg.selectAll(".similarity")
+              .data(data, function(d){
+                return d.pres_1+':'+d.pres_2;});
 
           cards.append("title");
 
           cards.enter().append("rect")
-              .attr("x", function(d) { return (d.pres_2 - 1) * gridSize; })
-              .attr("y", function(d) { return (d.pres_1 - 1) * gridSize; })
+              .attr("x", function(d){
+                return (d.pres_2 - 1) * gridSize; })
+              .attr("y", function(d){ 
+                return (d.pres_1 - 1) * gridSize; })
               .attr("rx", 4)
               .attr("ry", 4)
-              // .attr("class", "hour bordered")
+              .attr("class", "similarity bordered")
               .attr("width", gridSize)
               .attr("height", gridSize)
               .style("fill", function(d){
-                return colorScale(d.value);
+                return colorScale(d.sim);
               });
 
           // cards.transition().duration(1000)
           //     .style("fill", function(d) { return colorScale(d.value); });
 
-          cards.select("title").text(function(d) { return d.value; });
+          cards.select("title")
+                .text(function(d){ 
+                    return d.value; });
           
           cards.exit().remove();
 
-          var legend = svg.selectAll(".legend")
-              .data([0].concat(colorScale.quantiles()), function(d) { return d; });
+    const legend = svg.selectAll(".legend")
+              .data(data.concat(colorScale.quantiles()), function(d) { return d; });
 
           legend.enter().append("g")
               .attr("class", "legend");
@@ -111,23 +121,7 @@ const number_of_pres = 44
 
           legend.exit().remove();
 
-        });  
-      };
-
-      heatmapChart(datasets[0]);
-      
-      var datasetpicker = d3.select("#dataset-picker").selectAll(".dataset-button")
-        .data(datasets);
-
-      datasetpicker.enter()
-        .append("input")
-        .attr("value", function(d){ return "Dataset " + d })
-        .attr("type", "button")
-        .attr("class", "dataset-button")
-        .on("click", function(d) {
-          heatmapChart(d);
         });
-
 
 
 
