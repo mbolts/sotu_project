@@ -1,5 +1,6 @@
 import json
 import datetime
+import numpy as np
 
 from model import President, Year, Speech, Word
 from model import connect_to_db, db
@@ -98,7 +99,7 @@ def make_json_wc():
                                 'party': president.party_affiliation})
 
     f = open('static/word_counts.json', 'w')
-    f.write(json.dumps(word_counts))
+    f.write(json.dumps(word_countsm))
 
 
 def get_first_use_context():
@@ -167,10 +168,44 @@ def make_similarity_json():
 
 
 
+def make_similarity_json_2():
+
+    presidents = President.query.all()
+
+    pres_sim = []
+
+    for pres_1 in presidents:
+        pres_sim.append({'name': pres_1.name,
+            'similarity': [{pres_2.name: pres_1.get_similarity(pres_2)
+                            for pres_2 in presidents}][0],
+            'party': pres_1.party_affiliation,
+            'birth_decade': pres_1.decade_of_birth(),
+            'pres_id': pres_1.pres_id})
+        print(pres_1)
+
+    f = open('static/pres_sim_2.json', 'w')
+    f.write(json.dumps(pres_sim))
+
+    return pres_sim
 
 
+def make_similarity_matrix():    
 
+    presidents = President.query.all()
 
+    ordered_names = [president.name for president in presidents]
+
+    with open('static/pres_sim.json') as f:
+
+        pres_sim = json.load(f)
+
+        sim_matrix = []
+
+        for pres in ordered_names:
+            sim_matrix.append([pres_sim[pres][name]
+                                for name in ordered_names])
+
+    return sim_matrix
 
 
 

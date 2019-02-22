@@ -121,6 +121,18 @@ def get_pres_sim_data():
     return jsonify({'data': sim_json})
 
 
+@app.route("/pres_sim_2.json")
+def get_pres_sim_2_data():
+    """pass the word_context to d3"""
+   
+    f = open('static/pres_sim_2.json')
+    pres_sim = f.read()
+    sim_json = json.loads(pres_sim)
+
+    # render json to homepage
+    return jsonify({'data': sim_json})
+
+
 @app.route('/wc_visualization')
 def show_wc_visualization():
     """Show visualization."""

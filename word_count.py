@@ -87,8 +87,8 @@ def lemma_word_count_all(speeches):
                 or token.text == "$"):
                 continue
 
-            if token.is_stop:
-                continue
+            # if token.is_stop:
+            #     continue
 
             if token.lemma_ in BORING_WORDS:
                 continue

@@ -8,11 +8,11 @@ let svg = d3.select('#chart')
 
 
 d3.json('/pres_sim.json').then(function(data){
-        console.log(data);
+        console.log(data['data']);
 
-        let matrix = [];
-        let nodes = data['data'].nodes;
-        let total_items = nodes.length;
+        // let matrix = [];
+        // let nodes = data['data'].nodes;
+        // let total_items = nodes.length;
 
     // Assign colors to the parties
     // let party = {
