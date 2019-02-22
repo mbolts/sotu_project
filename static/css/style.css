@@ -2,13 +2,13 @@
             background-color: #ccc;
             width: 100%;
         }
-        #chart{
+/*        #chart{
             background-color: #ccc;
             width: 1000px;
             height: 500px;
             margin: 50px auto;
             border: solid 1px #000;
-        }
+        }*/
         svg{
             background-color: #fff;
         }

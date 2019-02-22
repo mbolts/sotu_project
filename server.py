@@ -133,6 +133,17 @@ def get_pres_sim_2_data():
     return jsonify({'data': sim_json})
 
 
+@app.route("/sim_matrix.csv")
+def get_pres_sim_matrix():
+    """pass the word_context to d3"""
+   
+    f = open('static/sim_matrix.csv')
+    sim_matrix = f.read()
+
+    # render json to homepage
+    return sim_matrix
+
+
 @app.route('/wc_visualization')
 def show_wc_visualization():
     """Show visualization."""

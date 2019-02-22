@@ -208,5 +208,28 @@ def make_similarity_matrix():
     return sim_matrix
 
 
+def make_similarity_matrix_csv():    
+
+    presidents = President.query.all()
+
+    # ordered_names = [president.name for president in presidents]
+
+    with open('static/pres_sim.json') as f:
+
+        pres_sim = json.load(f)
+
+        sim_matrix = ''
+
+        for pres_1 in presidents:
+            for pres_2 in presidents:
+                row = (str(pres_1.pres_id) +','+
+                        str(pres_2.pres_id) +','+
+                        str(pres_sim[pres_1.name][pres_2.name]) + '\n')
+                sim_matrix += row
+
+    f = open('sim_matrix.csv', 'w')
+    f.write(sim_matrix)   
+
+    return sim_matrix
 
 
