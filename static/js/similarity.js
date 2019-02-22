@@ -1,5 +1,3 @@
-// let margin = 30, width = 1000, height = 500, rValues = [2,15];
-// let circles, xScale, yScale, xAxis, yAxis;
 
 
 
@@ -29,6 +27,7 @@ d3.csv('/sim_matrix.csv').then(function(data){
     const president1Labels = svg.selectAll(".president1Label")
           .data(presidents)
           .enter()
+          .append('g')
           .append("text")
             .text(function (d){ 
                 return d; })
@@ -44,6 +43,7 @@ d3.csv('/sim_matrix.csv').then(function(data){
     const president2Labels = svg.selectAll(".president2Label")
           .data(presidents)
           .enter()
+          .append('g')
           .append("text")
             .text(function(d){ 
                 return d; })
@@ -75,7 +75,7 @@ d3.csv('/sim_matrix.csv').then(function(data){
               .data(data, function(d){
                 return d.pres_1+':'+d.pres_2;});
 
-          cards.append("title");
+          // cards.append("title");
 
           cards.enter().append("rect")
               .attr("x", function(d){
@@ -89,6 +89,29 @@ d3.csv('/sim_matrix.csv').then(function(data){
               .attr("height", gridSize)
               .style("fill", function(d){
                 return colorScale(d.sim);
+              })
+              .on('mouseover', function(d){
+                // html = 'Similarity: ' + d.sim;
+                svg.append('rect')
+                    .attr('id', 'tooltip-rect'+d.pres_1+d.pres_2)
+                    .attr('x', d.pres_2 * gridSize)
+                    .attr('y', d.pres_1 * gridSize)
+                    .attr('width', gridSize * 10)
+                    .attr('height', gridSize)
+                    .attr('fill', 'orange')
+                    .style('opacity', .85);
+                svg.append('text')
+                    .attr('id', 'tooltip'+d.pres_1+d.pres_2)
+                    .attr('x', d.pres_2 * gridSize)
+                    .attr('y', d.pres_1 * gridSize + gridSize - 2)
+                    .text('Similarity: ' + d.sim)
+                    .style('opacity', .85)
+                    ;
+
+              })
+              .on('mouseout', function(d){
+                d3.select('#tooltip'+d.pres_1+d.pres_2).remove();
+                d3.select('#tooltip-rect'+d.pres_1+d.pres_2).remove();
               });
 
           // cards.transition().duration(1000)
@@ -96,7 +119,7 @@ d3.csv('/sim_matrix.csv').then(function(data){
 
           cards.select("title")
                 .text(function(d){ 
-                    return d.value; });
+                    return d.sim; });
           
           cards.exit().remove();
 
