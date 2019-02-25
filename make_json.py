@@ -1,19 +1,21 @@
+"""Used to make json files for d3 usage"""
+
 import json
-import datetime
-import numpy as np
+
+from flask_sqlalchemy import SQLAlchemy
 
 from model import President, Year, Speech, Word
 from model import connect_to_db, db
-from flask_sqlalchemy import SQLAlchemy
 from server import app
 from nlp import NLP, Doc
 connect_to_db(app)
 
 
-
-def make_json_freq():
+def make_json_freq(exclude=None):
     """
     Create a list of dictionaries of word frequencies
+    Takes an optional exclude argument of any president that
+    you want to exclude from the word freq count
 
     """
 
@@ -24,43 +26,19 @@ def make_json_freq():
 
     for word in words:
         # initiate an empty dictionary, and populate it
+        if exclude:
+            if word.get_first_use_president().name == exclude:
+                continue
+
         word_freq.append({'word': word.text,
-                            'first_user': word.get_first_use_president().name,
-                            'first_date': word.get_first_use_date().strftime('%B %d, %Y'),
-                            'freq': word.freq_corpus,
-                            'count': word.count,
-                            })
+                          'first_user': word.get_first_use_president().name,
+                          'first_date': word.get_first_use_date().strftime('%B %d, %Y'),
+                          'freq': word.freq_corpus,
+                          'count': word.count,
+                          })
 
-    f = open('static/word_freq.json', 'w')
-    f.write(json.dumps(word_freq))
-
-
-def make_json_freq_curated():
-    """
-    Create a list of dictionaries of word frequencies
-    excluding George Washington's speeches
-
-    """
-
-    word_freq = []
-
-    # get list of president objects
-    words = Word.query.all()
-
-    for word in words:
-        # initiate an empty dictionary, and populate it
-
-        if word.get_first_use_president().name != 'George Washington':
-
-            word_freq.append({'word': word.text,
-                                'first_user': word.get_first_use_president().name,
-                                'first_date': word.get_first_use_date().strftime('%B %d, %Y'),
-                                'freq': word.freq_corpus,
-                                'count': word.count,
-                                })
-
-    f = open('static/word_freq.json', 'w')
-    f.write(json.dumps(word_freq))
+    with open('static/word_freq.json', 'w') as f:
+        f.write(json.dumps(word_freq))
 
 
 def make_json_wc():
@@ -76,7 +54,7 @@ def make_json_wc():
 
     for president in presidents:
         # initiate an empty dictionary, and populate it
-        if len(president.years) > 0:
+        if president.years:
 
             word_counts.append({'name': president.name,
                                 'words_per': president.get_word_count_per_speech(),
@@ -89,7 +67,7 @@ def make_json_wc():
                                 'words_per': president.get_word_count_per_speech(),
                                 'total': president.get_total_word_count(),
                                 'first_year': 1841,
-                                'party': president.party_affiliation})            
+                                'party': president.party_affiliation})
 
         elif president.name == 'James A. Garfield':
             word_counts.append({'name': president.name,
@@ -98,8 +76,8 @@ def make_json_wc():
                                 'first_year': 1881,
                                 'party': president.party_affiliation})
 
-    f = open('static/word_counts.json', 'w')
-    f.write(json.dumps(word_countsm))
+    with open('static/word_counts.json', 'w') as f:
+        f.write(json.dumps(word_counts))
 
 
 def get_first_use_context():
@@ -107,7 +85,6 @@ def get_first_use_context():
 
     word_context = []
     vocab = NLP.vocab
-
 
     # get list of speech objects
     speeches = Speech.query.all()
@@ -132,43 +109,21 @@ def get_first_use_context():
 
                 # append the context and information to the word_context list
                 word_context.append({'word': word.text,
-                                    'first_user': word.get_first_use_president().name,
-                                    'first_date': word.get_first_use_date().strftime('%B %d, %Y'),
-                                    'sentence': sent.text,
-                                    })
+                                     'first_user': word.get_first_use_president().name,
+                                     'first_date': word.get_first_use_date().strftime('%B %d, %Y'),
+                                     'sentence': sent.text,
+                                     })
 
                 words.remove(word.text)
-                print('word (', word,') context: ', sent)
+                print(f'word ({word}) context: {sent}')
 
 
-
-    f = open('static/word_context.json', 'w')
-    f.write(json.dumps(word_context))
+    with open('static/word_context.json', 'w') as f:
+        f.write(json.dumps(word_context))
 
 
 def make_similarity_json():
-
-    presidents = President.query.all()
-
-    pres_sim = {}
-
-    for pres_1 in presidents:
-        pres_sim[pres_1.name] = {}
-        print(pres_1)
-
-        for pres_2 in presidents:
-            sim = pres_1.get_similarity(pres_2)
-
-            pres_sim[pres_1.name][pres_2.name] = sim
-
-    f = open('static/pres_sim.json', 'w')
-    f.write(json.dumps(pres_sim))
-
-    return pres_sim
-
-
-
-def make_similarity_json_2():
+    """Get a detailed listing of the similarities between presidents"""
 
     presidents = President.query.all()
 
@@ -176,43 +131,23 @@ def make_similarity_json_2():
 
     for pres_1 in presidents:
         pres_sim.append({'name': pres_1.name,
-            'similarity': [{pres_2.name: pres_1.get_similarity(pres_2)
-                            for pres_2 in presidents}][0],
-            'party': pres_1.party_affiliation,
-            'birth_decade': pres_1.decade_of_birth(),
-            'pres_id': pres_1.pres_id})
+                         'similarity': [{pres_2.name: pres_1.get_similarity(pres_2)
+                                         for pres_2 in presidents}][0],
+                         'party': pres_1.party_affiliation,
+                         'birth_decade': pres_1.decade_of_birth(),
+                         'pres_id': pres_1.pres_id})
         print(pres_1)
 
-    f = open('static/pres_sim_2.json', 'w')
-    f.write(json.dumps(pres_sim))
+    with open('static/pres_sim_2.json', 'w') as f:
+        f.write(json.dumps(pres_sim))
 
     return pres_sim
 
 
-def make_similarity_matrix():    
+def make_similarity_matrix_csv():
+    """Create a csv file of the similarity matrix between all presidents"""
 
     presidents = President.query.all()
-
-    ordered_names = [president.name for president in presidents]
-
-    with open('static/pres_sim.json') as f:
-
-        pres_sim = json.load(f)
-
-        sim_matrix = []
-
-        for pres in ordered_names:
-            sim_matrix.append([pres_sim[pres][name]
-                                for name in ordered_names])
-
-    return sim_matrix
-
-
-def make_similarity_matrix_csv():    
-
-    presidents = President.query.all()
-
-    # ordered_names = [president.name for president in presidents]
 
     with open('static/pres_sim.json') as f:
 
@@ -222,14 +157,17 @@ def make_similarity_matrix_csv():
 
         for pres_1 in presidents:
             for pres_2 in presidents:
-                row = (str(pres_1.pres_id) +','+
-                        str(pres_2.pres_id) +','+
-                        str(pres_sim[pres_1.name][pres_2.name]) + '\n')
+                row = (f'{pres_1.pres_id},{pres_2.pres_id},{pres_sim[pres_1.name][pres_2.name]}\n')
+
                 sim_matrix += row
 
-    f = open('sim_matrix.csv', 'w')
-    f.write(sim_matrix)   
+    with open('sim_matrix.csv', 'w') as f:
+        f.write(sim_matrix)
 
     return sim_matrix
+
+
+
+
 
 

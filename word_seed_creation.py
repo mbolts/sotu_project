@@ -1,11 +1,12 @@
-# Create spacy files on disk to speed load time on webapp
+""" Create spacy files on disk to speed load time on webapp"""
 
+from flask_sqlalchemy import SQLAlchemy
+from spacy.tokens import Doc
 
-from nlp import NLP, Doc
-from word_count import *
+import nlp
+import word_count
 from model import President, Year, Speech, Word
 from model import connect_to_db, db
-from flask_sqlalchemy import SQLAlchemy
 from server import app
 connect_to_db(app)
 # print("Connected to DB.")
@@ -15,23 +16,20 @@ all_speeches = Speech.query.all()
 
 one_speech = [Speech.query.first()]
 
-
-
 # Create the parsed files and save to speech_doc folder
 
-
-vocab = NLP.vocab
+VOCAB = nlp.NLP.vocab
 
 word_all_appearances_csv = open("words", "a")
 
 
 def find_word_first_appearance(speeches):
-# Dictionary of each word with the year they first appeared as the key
+    """Dictionary of each word with the year they first appeared as the key"""
     word_dict = {}
 
     for speech in speeches:
 
-        speech_doc = Doc(vocab).from_disk(speech.doc_path)
+        speech_doc = Doc(VOCAB).from_disk(speech.doc_path)
 
         for token in speech_doc:
 
@@ -53,12 +51,12 @@ def find_word_first_appearance(speeches):
 
 
 def find_word_appearance(speeches):
-# Dictionary of each word with the year they first appeared as the key
+    """Dictionary of each word with the year they first appeared as the key"""
     word_dict = {}
 
     for speech in speeches:
 
-        speech_doc = Doc(vocab).from_disk(speech.doc_path)
+        speech_doc = Doc(VOCAB).from_disk(speech.doc_path)
 
         for token in speech_doc:
 
@@ -75,18 +73,18 @@ def find_word_appearance(speeches):
                 word_dict[text][1].add(speech.date.strftime('%Y-%m-%d'))
 
             else:
-                word_dict[text] = [speech.date.strftime('%Y-%m-%d'), 
-                                    {speech.date.strftime('%Y-%m-%d'),}]
+                word_dict[text] = [speech.date.strftime('%Y-%m-%d'),
+                                   {speech.date.strftime('%Y-%m-%d'),}]
 
     return word_dict
 
 
 def write_words_to_file(speeches):
-
+    """Write the word frequencies to file for seeding database"""
     word_appearances = find_word_first_appearance(speeches)
     print('word_appearance finished')
 
-    word_freq = get_word_freq(word_count_all(speeches))
+    word_freq = word_count.get_word_freq(word_count.word_count_all(speeches))
     print('word_freq finished')
 
     for word in word_freq:
@@ -102,12 +100,3 @@ def write_words_to_file(speeches):
         print('row is ', row)
 
         word_all_appearances_csv.write(row)
-
-
-
-
-
-
-
-
-

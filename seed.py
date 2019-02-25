@@ -1,11 +1,11 @@
 """Utility file to seed ratings database from data in seed_data"""
 
-from sqlalchemy import func
+import datetime
+
 from model import President, Year, Speech, Word
 
 from model import connect_to_db, db
 from server import app
-import datetime
 
 
 def load_speeches():
@@ -14,7 +14,7 @@ def load_speeches():
     print("Speeches")
 
     # Delete all rows in table, so if we need to run this a second time,
-    # we won't be trying to add duplicate users
+    # we won't be trying to add duplicate speeches
     Speech.query.delete()
 
     # Data came from these sources:
@@ -44,28 +44,26 @@ def load_speeches():
 
         if year < 1900:
             date_time = datetime.datetime.strptime(date, "%b %d %Y")
-            speech = Speech(
-                        date=date_time,
-                        pres_id=pres_id,
-                        delivery=delivery,
-                        text=text,
-                        doc_path=doc_path,
-                        year=year,
-                        )
+            speech = Speech(date=date_time,
+                            pres_id=pres_id,
+                            delivery=delivery,
+                            text=text,
+                            doc_path=doc_path,
+                            year=year,
+                            )
 
         elif date == '':
             continue
 
         else:
             date_time = datetime.datetime.strptime(date, "%d-%b-%Y")
-            speech = Speech(
-                        date=date_time,
-                        pres_id=pres_id,
-                        delivery=delivery,
-                        text=text,
-                        doc_path=doc_path,
-                        year=year,
-                        )
+            speech = Speech(date=date_time,
+                            pres_id=pres_id,
+                            delivery=delivery,
+                            text=text,
+                            doc_path=doc_path,
+                            year=year,
+                            )
 
         # We need to add to the session or it won't ever be stored
         db.session.add(speech)
@@ -123,6 +121,7 @@ def load_years():
     # Once we're done, we should commit our work
     db.session.commit()
 
+
 def load_presidents():
     """Load presidents into database."""
 
@@ -153,9 +152,9 @@ def load_presidents():
                               pres_corpus=doc_path,
                               )
 
-        i += 1
-
         db.session.add(president)
+
+        i += 1
 
     file.close()
 
@@ -181,10 +180,10 @@ def load_words():
         speech = Speech.query.filter_by(date=first_use).one()
 
         word = Word(text=text,
-                      first_use=speech.speech_id,
-                      freq_corpus=float(freq_corpus),
-                      count=int(count),
-                      )
+                    first_use=speech.speech_id,
+                    freq_corpus=float(freq_corpus),
+                    count=int(count),
+                    )
 
         db.session.add(word)
 
@@ -193,6 +192,7 @@ def load_words():
     db.session.commit()
 
 
+####################################################
 if __name__ == "__main__":
     connect_to_db(app)
 
@@ -202,8 +202,6 @@ if __name__ == "__main__":
     # Import different types of data
     load_presidents()
     load_years()
-    load_speeches()    
+    load_speeches()
     load_words()
-
-
 

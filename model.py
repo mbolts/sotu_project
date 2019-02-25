@@ -1,3 +1,5 @@
+"""Set up the classes for the database"""
+
 from flask_sqlalchemy import SQLAlchemy
 import nlp
 
@@ -21,7 +23,7 @@ def connect_to_db(app):
 class President(db.Model):
     """President."""
 
-    __tablename__ = "presidents"
+    __tablename__ = 'presidents'
 
     pres_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     name = db.Column(db.String(100))
@@ -30,20 +32,18 @@ class President(db.Model):
     state_of_birth = db.Column(db.String(30))
     pres_corpus = db.Column(db.String(50))
 
-    years = db.relationship('Year',
-                            )
+    years = db.relationship('Year')
     speeches = db.relationship('Speech',
-                                backref=db.backref("president"))
-
+                               backref=db.backref('president'))
 
 
     def decade_of_birth(self):
-         
+        """Return the decade of birth for grouping"""
         return int(self.date_of_birth.year / 10) * 10
 
 
     def speech_text(self):
-
+        """Return a string of all the speeches of a given president"""
         pres_speeches = ''
 
         for speech in self.speeches:
@@ -59,7 +59,7 @@ class President(db.Model):
 
 
     def get_word_count_per_speech(self):
-
+        """Return a count of words per speech for a given president"""
         speech_count = len(self.speeches)
 
         if speech_count == 0:
@@ -71,12 +71,12 @@ class President(db.Model):
 
 
     def get_total_word_count(self):
-
+        """Return the total word count of a given president"""
         word_count = 0
 
         for speech in self.speeches:
 
-            speech_tokens = nlp.Doc(nlp.vocab).from_disk(speech.doc_path)
+            speech_tokens = nlp.Doc(nlp.VOCAB).from_disk(speech.doc_path)
 
             tokens = len(speech_tokens)
 
@@ -86,21 +86,26 @@ class President(db.Model):
 
 
     def get_corpus_doc(self):
-
-        speeches = nlp.Doc(nlp.vocab).from_disk(self.pres_corpus)
+        """Get a spaCy document for all of the given presidents speeches"""
+        speeches = nlp.Doc(nlp.VOCAB).from_disk(self.pres_corpus)
 
         return speeches
 
 
     def get_similarity(self, other_pres):
+        """Uses the similarity method from spaCy to get a similarity
+            score between two presidential speech corpuses
+        """
 
-        sim_score = nlp.get_doc_similarity(self.get_corpus_doc(), other_pres.get_corpus_doc())
+        sim_score = nlp.get_doc_similarity(self.get_corpus_doc(),
+                                           other_pres.get_corpus_doc(),
+                                           )
 
         return sim_score
 
 
     def __repr__(self):
-        return f"<President name={self.name} pres_id={self.pres_id}>"    
+        return f"<President name={self.name} pres_id={self.pres_id}>"
 
 
 class Year(db.Model):
@@ -116,15 +121,16 @@ class Year(db.Model):
     speeches = db.relationship('Speech')
     presidents = db.relationship('President')
 
-    def get_century(self):
 
+    def get_century(self):
+        """Return the century of the given year"""
         return int(self.year / 100) * 100
 
-    def get_decade(self):
 
+    def get_decade(self):
+        """Return the decade of the given year"""
         return int(self.year / 10) * 10
 
-    
 
 class Speech(db.Model):
     """Speech."""
@@ -137,7 +143,7 @@ class Speech(db.Model):
                      )
     date = db.Column(db.DateTime)
     pres_id = db.Column(db.Integer,
-                          db.ForeignKey('presidents.pres_id'))
+                        db.ForeignKey('presidents.pres_id'))
     delivery = db.Column(db.String(20))
     text = db.Column(db.Text)
     doc_path = db.Column(db.Text)
@@ -156,20 +162,21 @@ class Word(db.Model):
     word_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     text = db.Column(db.String(30))
     first_use = db.Column(db.Integer,
-                db.ForeignKey('speeches.speech_id'))
+                          db.ForeignKey('speeches.speech_id'))
     freq_corpus = db.Column(db.Float)
     count = db.Column(db.Integer)
-    
+
 
     def get_first_use_president(self):
-
+        """Get the president that first used a given word"""
         speech_obj = Speech.query.get(self.first_use)
         pres = President.query.get(speech_obj.pres_id)
 
         return pres
 
-    def get_first_use_date(self):
 
+    def get_first_use_date(self):
+        """Get the date of the first usage of a given word"""
         speech_obj = Speech.query.get(self.first_use)
         date = speech_obj.date
 
