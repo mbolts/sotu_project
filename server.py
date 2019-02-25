@@ -77,7 +77,7 @@ def compare_presidents():
 def get_word_count_data():
     """pass the word_counts to d3"""
    
-    f = open('static/word_counts.json')
+    f = open('static/data/word_counts.json')
     word_counts = f.read()
     wc_json = json.loads(word_counts)
 
@@ -89,7 +89,7 @@ def get_word_count_data():
 def get_word_freq_data():
     """create and pass the word_freq to d3"""
 
-    f = open('static/word_freq.json')
+    f = open('static/data/word_freq.json')
     word_freq = f.read()
     wf_json = json.loads(word_freq)
 
@@ -101,7 +101,7 @@ def get_word_freq_data():
 def get_word_context_data():
     """pass the word_context to d3"""
    
-    f = open('static/word_context.json')
+    f = open('static/data/word_context.json')
     word_context = f.read()
     wcon_json = json.loads(word_context)
 
@@ -113,7 +113,7 @@ def get_word_context_data():
 def get_pres_sim_data():
     """pass the word_context to d3"""
    
-    f = open('static/pres_sim.json')
+    f = open('static/data/pres_sim.json')
     pres_sim = f.read()
     sim_json = json.loads(pres_sim)
 
@@ -125,7 +125,7 @@ def get_pres_sim_data():
 def get_pres_sim_2_data():
     """pass the word_context to d3"""
    
-    f = open('static/pres_sim_2.json')
+    f = open('static/data/pres_sim_2.json')
     pres_sim = f.read()
     sim_json = json.loads(pres_sim)
 
@@ -137,7 +137,7 @@ def get_pres_sim_2_data():
 def get_pres_sim_matrix():
     """pass the word_context to d3"""
    
-    f = open('static/sim_matrix.csv')
+    f = open('static/data/sim_matrix.csv')
     sim_matrix = f.read()
 
     # render json to homepage
