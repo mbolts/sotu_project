@@ -1,6 +1,7 @@
 """Set up the classes for the database"""
 
 from flask_sqlalchemy import SQLAlchemy
+from spacy.tokens import Doc
 import nlp
 
 
@@ -76,7 +77,7 @@ class President(db.Model):
 
         for speech in self.speeches:
 
-            speech_tokens = nlp.Doc(nlp.VOCAB).from_disk(speech.doc_path)
+            speech_tokens = Doc(nlp.NLP.vocab).from_disk(speech.doc_path)
 
             tokens = len(speech_tokens)
 
@@ -87,7 +88,7 @@ class President(db.Model):
 
     def get_corpus_doc(self):
         """Get a spaCy document for all of the given presidents speeches"""
-        speeches = nlp.Doc(nlp.VOCAB).from_disk(self.pres_corpus)
+        speeches = Doc(nlp.NLP.vocab).from_disk(self.pres_corpus)
 
         return speeches
 
@@ -111,7 +112,7 @@ class President(db.Model):
 class Year(db.Model):
     """ Year. """
 
-    __tablename__ = "years"
+    __tablename__ = 'years'
 
     year = db.Column(db.Integer, primary_key=True, autoincrement=False)
     pres_id = db.Column(db.Integer,
@@ -135,7 +136,7 @@ class Year(db.Model):
 class Speech(db.Model):
     """Speech."""
 
-    __tablename__ = "speeches"
+    __tablename__ = 'speeches'
 
     speech_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     year = db.Column(db.Integer,
@@ -157,10 +158,10 @@ class Speech(db.Model):
 class Word(db.Model):
     """Word"""
 
-    __tablename__ = "words"
+    __tablename__ = 'words'
 
     word_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    text = db.Column(db.String(30))
+    text = db.Column(db.String(50))
     first_use = db.Column(db.Integer,
                           db.ForeignKey('speeches.speech_id'))
     freq_corpus = db.Column(db.Float)
@@ -185,6 +186,33 @@ class Word(db.Model):
 
     def __repr__(self):
         return f"<Word={self.text} word_id={self.word_id}>"
+
+
+class Token(db.Model):
+    """Token"""
+
+    __tablename__ = 'tokens'
+
+    token_id = db.Column(db.Integer,
+                         autoincrement=True,
+                         primary_key=True)
+    token = db.Column(db.String(50))
+    doc_id = db.Column(db.Integer)
+    lemma = db.Column(db.String(50))
+    sentence = db.Column(db.Text())
+    pos = db.Column(db.String(20))
+    tag = db.Column(db.String(20))
+    dep = db.Column(db.String(20))
+    sentiment = db.Column(db.Float)
+
+    pres = db.Column(db.Integer,
+                     db.ForeignKey('presidents.pres_id'))
+    speech = db.Column(db.Integer,
+                       db.ForeignKey('speeches.speech_id'))
+
+
+    def __repr__(self):
+        return f"<Token={self.token} token_id={self.token_id}>"
 
 
 ###############################################################################

@@ -29,3 +29,9 @@
             border: solid 1px #000;
             opacity: 0;
         }
+        .pres_1_name {
+            border-radius: 5px;
+        }
+        .pres_2_name {
+            border-radius: 5px;
+        }

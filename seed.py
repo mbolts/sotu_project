@@ -2,14 +2,16 @@
 
 import datetime
 
-from model import President, Year, Speech, Word
+from spacy.tokens import Doc
+import nlp
 
+from model import President, Year, Speech, Word, Token
 from model import connect_to_db, db
 from server import app
 
 
 def load_speeches():
-    """Load presidents into database."""
+    """Load speeches into database."""
 
     print("Speeches")
 
@@ -23,7 +25,7 @@ def load_speeches():
 
     file = open("seed_data/speeches.csv")
 
-    # Read u.user file and insert data
+    # Read speech file and insert data
     for row in file:
         row = row.rstrip()
 
@@ -162,7 +164,7 @@ def load_presidents():
 
 
 def load_words():
-    """Load presidents into database."""
+    """Load words into database."""
 
     print('Words')
 
@@ -192,6 +194,39 @@ def load_words():
     db.session.commit()
 
 
+def load_tokens():
+    """Load tokens into database."""
+
+    print('Tokens')
+
+    Token.query.delete()
+
+    speeches = Speech.query.all()
+
+    for speech in speeches:
+
+        speech_doc = Doc(nlp.NLP.vocab).from_disk(speech.doc_path)
+        print(speech)
+
+        for token in speech_doc:
+
+            token = Token(token=token.text,
+                          doc_id=token.i,
+                          lemma=token.lemma_,
+                          sentence=token.sent.text,
+                          pos=token.pos_,
+                          tag=token.tag_,
+                          dep=token.dep_,
+                          sentiment=token.sentiment,
+                          pres=speech.pres_id,
+                          speech=speech.speech_id,
+                          )
+
+            db.session.add(token)
+
+    db.session.commit()
+
+
 ####################################################
 if __name__ == "__main__":
     connect_to_db(app)
@@ -200,8 +235,9 @@ if __name__ == "__main__":
     db.create_all()
 
     # Import different types of data
-    load_presidents()
-    load_years()
-    load_speeches()
-    load_words()
+    # load_presidents()
+    # load_years()
+    # load_speeches()
+    # load_words()
+    load_tokens()
 

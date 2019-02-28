@@ -3,7 +3,7 @@
 from collections import Counter
 from flask_sqlalchemy import SQLAlchemy
 from spacy.tokens import Doc
-from model import President, Year, Speech, Word
+from model import President, Year, Speech, Word, Token
 from model import connect_to_db, db
 from server import app
 from nlp import NLP
@@ -13,7 +13,7 @@ all_speeches = Speech.query.all()
 two_speeches = all_speeches[:2]
 
 
-BORING_WORDS = set('the', 'in', 'and', 'if', 'then', 'but', 'than')
+BORING_WORDS = set(['the', 'in', 'and', 'if', 'then', 'but', 'than'])
 
 
 def word_count_all(speeches):

@@ -3,11 +3,12 @@
 import json
 
 from flask_sqlalchemy import SQLAlchemy
+from spacy.tokens import Doc
 
 from model import President, Year, Speech, Word
 from model import connect_to_db, db
 from server import app
-from nlp import NLP, Doc
+from nlp import NLP
 connect_to_db(app)
 
 
@@ -39,6 +40,44 @@ def make_json_freq(exclude=None):
 
     with open('static/word_freq.json', 'w') as f:
         f.write(json.dumps(word_freq))
+
+
+def make_json_speech_text():
+    """
+
+    """
+
+    parties = {'Unaffiliated' : 0,
+               'Federalist' : 1,
+               'Democratic-Republican' : 2,
+               'Democratic' : 3,
+               'Whig' : 4,
+               'Republican' : 5}
+
+    speech_text = []
+
+    for party in parties:
+        speech_text.append({'party': party, 'speeches': []})
+
+    # get list of president objects
+    speeches = Speech.query.all()
+
+    for speech in speeches:
+        text = open(speech.text)
+        party = President.query.get(speech.pres_id).party_affiliation
+
+        party_speeches = speech_text[parties[party]]['speeches']
+        party_speeches.append({'president': President.query.get(speech.pres_id).name,
+                               'date': speech.date.strftime('%B %d, %Y'),
+                               'text': text.read(),
+                               })
+
+        text.close()
+
+    with open('static/speech_text.json', 'w') as f:
+        f.write(json.dumps(speech_text))
+
+    return speech_text
 
 
 def make_json_wc():
@@ -167,7 +206,23 @@ def make_similarity_matrix_csv():
     return sim_matrix
 
 
+def update_similarity_matrix():
 
+    with open('./static/data/sim_matrix.csv', 'r') as input:
+        with open('./static/data/sim_matrix_updated.csv', 'w') as output:
+            for i, row in enumerate(input):
+                if i == 0: continue
+                pres_1_id, pres_2_id, sim = row.strip().split(',')
+                pres_1 = President.query.get(pres_1_id)
+                pres_2 = President.query.get(pres_2_id)
+
+                pres_1_party = pres_1.party_affiliation
+                pres_2_party = pres_2.party_affiliation
+
+                output.write(','.join([pres_1_id, pres_2_id, 
+                                       sim, pres_1_party,
+                                       pres_2_party]))
+                output.write('\n')
 
 
 

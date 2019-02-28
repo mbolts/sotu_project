@@ -76,6 +76,26 @@ def compare_presidents():
                            )
 
 
+@app.route('/speech_bubbles', methods=['GET'])
+def compare_speeches():
+    """"""
+
+    return render_template('speech_bubbles.html',
+                           )
+
+# Create a route that will get the speeches in text for the visualization
+@app.route("/speech_text.json")
+def get_speech_text_data():
+    """pass the speech text to d3"""
+
+    with open('static/data/speech_text.json') as f:
+        speech_text = f.read()
+        speeches = json.loads(speech_text)
+
+    # render json to homepage
+    return jsonify({'data': speeches})
+
+
 @app.route("/word_counts.json")
 def get_word_count_data():
     """pass the word_counts to d3"""
@@ -140,7 +160,7 @@ def get_pres_sim_2_data():
 def get_pres_sim_matrix():
     """pass the word_context to d3"""
 
-    with open('static/data/sim_matrix.csv') as f:
+    with open('static/data/sim_matrix_updated.csv') as f:
         sim_matrix = f.read()
 
     # render json to homepage
