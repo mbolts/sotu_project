@@ -13,7 +13,8 @@ all_speeches = Speech.query.all()
 two_speeches = all_speeches[:2]
 
 
-BORING_WORDS = set(['the', 'in', 'and', 'if', 'then', 'but', 'than'])
+BORING_WORDS = set(['the', 'in', 'and', 'if', 'then', 'but', 'than',
+                    'of', 'to', 'have', 'a'])
 
 
 def word_count_all(speeches):
@@ -41,6 +42,21 @@ def word_count_all(speeches):
     return word_count_text
 
 
+def get_decade_speeches(decade):
+    """Get a list of all the speech objects from the given decade"""
+
+    speech_list = []
+
+    years = Year.query.all()
+
+    for year in years:
+        if year.get_decade() == decade:
+            speeches = year.speeches
+            speech_list.extend(speeches)
+
+    return speech_list
+
+
 def lemma_word_count_all(speeches):
     """ Get the lemma word count for all speech objects passed in """
 
@@ -62,6 +78,9 @@ def lemma_word_count_all(speeches):
                     or token.like_num
                     or '\n' in token.text
                     or token.text == "$"):
+                continue
+
+            if token.is_stop:
                 continue
 
             if token.lemma_ in BORING_WORDS:

@@ -117,6 +117,9 @@ d3.csv('/sim_matrix.csv').then(function(data){
             d3.select('#tooltip-rect'+d.pres_1+d.pres_2).remove();
           })
         .on('click', function(d){
+          d3.select(this)
+            .style('stroke-width', 1.5)
+            .style('stroke', 'red');
           d3.select('.info_zone .pres_1_name')
             .text(presidents[d.pres_1 - 1])
             .style('background-color', party[d.pres_1_party])
