@@ -96,14 +96,14 @@ def load_years():
 
         pres = President.query.filter_by(name=president).first()
 
-        if pres is None or year in years:
-            continue
-
-        elif pres is None and year not in years:
+        if pres is None and year not in years:
             year = Year(year=year,
                         )
 
             years.append(year)
+
+        elif pres is None or year in years:
+            continue
 
         else:
 
@@ -235,9 +235,8 @@ if __name__ == "__main__":
     db.create_all()
 
     # Import different types of data
-    # load_presidents()
-    # load_years()
-    # load_speeches()
+    load_presidents()
+    load_years()
+    load_speeches()
     # load_words()
-    load_tokens()
-
+    # load_tokens()

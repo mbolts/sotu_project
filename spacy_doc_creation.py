@@ -52,4 +52,3 @@ def create_presidential_doc(presidents):
         pres_doc.to_disk('./president_doc/' + path_ending)
 
         # print(path_ending)
-

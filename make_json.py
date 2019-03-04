@@ -5,10 +5,12 @@ import json
 from flask_sqlalchemy import SQLAlchemy
 from spacy.tokens import Doc
 
+import word_count
 from model import President, Year, Speech, Word
 from model import connect_to_db, db
 from server import app
 from nlp import NLP
+
 connect_to_db(app)
 
 
@@ -47,12 +49,12 @@ def make_json_speech_text():
 
     """
 
-    parties = {'Unaffiliated' : 0,
-               'Federalist' : 1,
-               'Democratic-Republican' : 2,
-               'Democratic' : 3,
-               'Whig' : 4,
-               'Republican' : 5}
+    parties = {'Unaffiliated': 0,
+               'Federalist': 1,
+               'Democratic-Republican': 2,
+               'Democratic': 3,
+               'Whig': 4,
+               'Republican': 5}
 
     speech_text = []
 
@@ -156,7 +158,6 @@ def get_first_use_context():
                 words.remove(word.text)
                 print(f'word ({word}) context: {sent}')
 
-
     with open('static/word_context.json', 'w') as f:
         f.write(json.dumps(word_context))
 
@@ -211,7 +212,8 @@ def update_similarity_matrix():
     with open('./static/data/sim_matrix.csv', 'r') as input:
         with open('./static/data/sim_matrix_updated.csv', 'w') as output:
             for i, row in enumerate(input):
-                if i == 0: continue
+                if i == 0:
+                    continue
                 pres_1_id, pres_2_id, sim = row.strip().split(',')
                 pres_1 = President.query.get(pres_1_id)
                 pres_2 = President.query.get(pres_2_id)
@@ -219,10 +221,86 @@ def update_similarity_matrix():
                 pres_1_party = pres_1.party_affiliation
                 pres_2_party = pres_2.party_affiliation
 
-                output.write(','.join([pres_1_id, pres_2_id, 
+                output.write(','.join([pres_1_id, pres_2_id,
                                        sim, pres_1_party,
                                        pres_2_party]))
                 output.write('\n')
 
 
+def make_wc_by_decade_json():
+    """Create a json file of the word counts by decade"""
 
+    decades = [1790, 1800, 1810, 1820, 1830, 1840, 1850, 1860,
+               1870, 1880, 1890, 1900, 1910, 1920, 1930, 1940,
+               1950, 1960, 1970, 1980, 1990, 2000, 2010]
+
+    decade_word_count = {'name': 'decades', 'children': []}
+
+    for decade in decades:
+        print(decade)
+        speeches = word_count.get_decade_speeches(decade)
+        word_counter = word_count.lemma_word_count_all(speeches)
+        word_objects = []
+
+        for word in word_counter.most_common(40):
+            # print(word)
+            word_objects.append({'name': word[0], 'count': word[1]})
+
+        decade_word_count['children'].append({'name': decade,
+                                              'children': word_objects,
+                                              })
+
+    with open('./static/data/wc_by_decade.json', 'w') as f:
+        f.write(json.dumps(decade_word_count))
+
+    return decade_word_count
+
+
+def make_hierarchy_json():
+    """Create a json file of the word counts by decade by century by pres"""
+
+    centuries = {'1700s': [1790], '1800s': [1800, 1810, 1820, 1830, 1840, 1850,
+                 1860, 1870, 1880, 1890], '1900s': [1900, 1910, 1920, 1930,
+                 1940, 1950, 1960, 1970, 1980, 1990], '2000s': [2000, 2010]}
+
+    century_root = {'name': 'century', 'children': []}
+
+    for century in centuries:
+        century_root['children'].append({'name': century,
+                                         'children': centuries[century]})
+
+    for idx, century in enumerate(century_root['children']):
+        # print(century)
+
+        for i, decade in enumerate(century['children']):
+            decade_pres = set()
+            speeches = []
+            years = range(decade, decade + 10)
+            century['children'][i] = {'name': decade, 'children': []}
+
+            for year in years:
+                year_obj = Year.query.get(year)
+                if year_obj.speeches:
+                    speeches.extend(year_obj.speeches)
+                if year_obj.presidents:
+                    decade_pres.add(year_obj.presidents)
+
+            pres_nodes = []
+
+            for pres in decade_pres:
+                pres_speeches = []
+                for speech in speeches:
+                    if speech.pres_id == pres.pres_id:
+                        pres_speeches.append(speech)
+
+                pres_wc = word_count.lemma_word_count_all(pres_speeches).most_common(15)
+
+                wc_dict = [{'name': word[0], 'count': word[1]}
+                           for word in pres_wc]
+
+                pres_nodes.append({'name': pres.name, 'children': wc_dict})
+
+            century_root['children'][idx]['children'][i]['children'].extend(pres_nodes)
+
+    with open('./static/data/hierarchy.json', 'w') as f:
+        f.write(json.dumps(century_root))

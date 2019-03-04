@@ -46,5 +46,3 @@ def get_doc_similarity(doc1, doc2):
     similarity = doc1.similarity(doc2)
 
     return similarity
-
-

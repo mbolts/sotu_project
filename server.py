@@ -14,6 +14,8 @@ from flask import (Flask,
 from flask_debugtoolbar import DebugToolbarExtension
 from flask_sqlalchemy import SQLAlchemy
 
+# import word_count
+
 from model import connect_to_db, db, President, Year, Speech, Word
 
 
@@ -71,7 +73,7 @@ def compare_presidents():
     pres_2 = President.query.get(pres_2)
 
     return render_template('comparison.html',
-                           pres_1=pres_1, 
+                           pres_1=pres_1,
                            pres_2=pres_2,
                            )
 
@@ -82,6 +84,17 @@ def compare_speeches():
 
     return render_template('speech_bubbles.html',
                            )
+
+
+@app.route('/decade_speeches', methods=['GET'])
+def show_decade_speeches():
+
+    with open('static/data/wc_by_decade.json') as f:
+        words = f.read()
+        word_counts = json.loads(words)
+
+    return jsonify(word_counts)
+
 
 # Create a route that will get the speeches in text for the visualization
 @app.route("/speech_text.json")
@@ -106,6 +119,18 @@ def get_word_count_data():
 
     # render json to homepage
     return jsonify({'data': wc_json})
+
+
+@app.route("/pres_word_counts.json")
+def get_pres_word_count_data():
+    """pass the word_counts to d3"""
+
+    with open('static/data/hierarchy.json') as f:
+        hierarchy = f.read()
+        h_json = json.loads(hierarchy)
+
+    # render json
+    return jsonify(h_json)
 
 
 @app.route("/word_freq.json")

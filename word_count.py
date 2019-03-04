@@ -14,7 +14,8 @@ two_speeches = all_speeches[:2]
 
 
 BORING_WORDS = set(['the', 'in', 'and', 'if', 'then', 'but', 'than',
-                    'of', 'to', 'have', 'a'])
+                    'of', 'to', 'have', 'a', 'this', 'for', 'from',
+                    'there', "'s", "'ve", "n't", 'that'])
 
 
 def word_count_all(speeches):
@@ -77,7 +78,8 @@ def lemma_word_count_all(speeches):
             if (token.is_punct
                     or token.like_num
                     or '\n' in token.text
-                    or token.text == "$"):
+                    or token.text == "$"
+                    or token.is_space):
                 continue
 
             if token.is_stop:
@@ -116,6 +118,26 @@ def get_word_freq(word_count):
     word_frequency = sorted(word_frequency,
                             key=lambda word: word[1],
                             reverse=True)
+
+    return word_frequency
+
+
+def get_word_freq_dict(word_count):
+    """ Takes in a counter object and returns a dictionary
+        with the word and the freq number
+     """
+
+    word_total = sum(word_count.values())
+
+    word_frequency = {}
+
+    for word in word_count:
+
+        count = word_count[word]
+
+        normalized_wc = (count * 10000) / word_total
+
+        word_frequency[word] = [normalized_wc, count]
 
     return word_frequency
 
