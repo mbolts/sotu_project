@@ -15,7 +15,7 @@ two_speeches = all_speeches[:2]
 
 BORING_WORDS = set(['the', 'in', 'and', 'if', 'then', 'but', 'than',
                     'of', 'to', 'have', 'a', 'this', 'for', 'from',
-                    'there', "'s", "'ve", "n't", 'that'])
+                    'there', "'s", "'ve", "n't", 'that', 'be'])
 
 
 def word_count_all(speeches):
@@ -24,21 +24,22 @@ def word_count_all(speeches):
     # initialize the counter for use in the for loop
     word_count_text = Counter()
 
-    # retrieve the spaCy doc object from the file path
-    vocab = NLP.vocab
-    doc = Doc(vocab).from_disk(speeches.doc_path)
+    for speech in speeches:
+        # retrieve the spaCy doc object from the file path
+        vocab = NLP.vocab
+        doc = Doc(vocab).from_disk(speech.doc_path)
 
-    # create word count dict
-    word_list = []
+        # create word count dict
+        word_list = []
 
-    for token in doc:
+        for token in doc:
 
-        if token.is_punct or '\n' in token.text:
-            continue
+            if token.is_punct or '\n' in token.text:
+                continue
 
-        word_list.append(token.text.lower())
+            word_list.append(token.text.lower())
 
-    word_count_text += Counter(word_list)
+        word_count_text += Counter(word_list)
 
     return word_count_text
 
@@ -58,7 +59,7 @@ def get_decade_speeches(decade):
     return speech_list
 
 
-def lemma_word_count_all(speeches):
+def lemma_word_count_filtered(speeches):
     """ Get the lemma word count for all speech objects passed in """
 
     # initialize the counter for use in the for loop
@@ -89,6 +90,35 @@ def lemma_word_count_all(speeches):
                 continue
 
             if token.lemma_ == '-PRON-':
+                continue
+
+            lemma_list.append(token.lemma_)
+
+        word_count_lemmas += Counter(lemma_list)
+
+    return word_count_lemmas
+
+
+def lemma_word_count_all(speeches):
+    """ Get the lemma word count for all speech objects passed in """
+
+    # initialize the counter for use in the for loop
+    word_count_lemmas = Counter()
+
+    for speech in speeches:
+
+        # retrieve the spaCy doc object from the file path
+        vocab = NLP.vocab
+        doc = Doc(vocab).from_disk(speech.doc_path)
+
+        # create lemmas word count dict
+        lemma_list = []
+
+        for token in doc:
+
+            if (token.is_punct
+                    or '\n' in token.text
+                    or token.is_space):
                 continue
 
             lemma_list.append(token.lemma_)

@@ -234,26 +234,79 @@ def make_wc_by_decade_json():
                1870, 1880, 1890, 1900, 1910, 1920, 1930, 1940,
                1950, 1960, 1970, 1980, 1990, 2000, 2010]
 
-    decade_word_count = {'name': 'decades', 'children': []}
+    decade_word_freq = {'name': 'decades', 'children': []}
 
     for decade in decades:
         print(decade)
         speeches = word_count.get_decade_speeches(decade)
-        word_counter = word_count.lemma_word_count_all(speeches)
+        lemma_counter = word_count.lemma_word_count_filtered(speeches)
+        lemma_counts = word_count.lemma_word_count_all(speeches)
         word_objects = []
+        word_freq = word_count.get_word_freq_dict(lemma_counts)
 
-        for word in word_counter.most_common(40):
-            # print(word)
-            word_objects.append({'name': word[0], 'count': word[1]})
+        for word in lemma_counter.most_common(40):
+            print(word)
+            word_objects.append({'name': word[0],
+                                 'count': word[1],
+                                 'freq': word_freq[word[0]][0]})
 
-        decade_word_count['children'].append({'name': decade,
-                                              'children': word_objects,
-                                              })
+        decade_word_freq['children'].append({'name': decade,
+                                             'children': word_objects,
+                                             })
 
-    with open('./static/data/wc_by_decade.json', 'w') as f:
-        f.write(json.dumps(decade_word_count))
+    with open('./static/data/wf_by_decade.json', 'w') as f:
+        f.write(json.dumps(decade_word_freq))
 
-    return decade_word_count
+    return decade_word_freq
+
+
+def make_wc_by_decade_csv():
+    """Create a json file of the word counts by decade"""
+
+    decades = [1790, 1800, 1810, 1820, 1830, 1840, 1850, 1860,
+               1870, 1880, 1890, 1900, 1910, 1920, 1930, 1940,
+               1950, 1960, 1970, 1980, 1990, 2000, 2010]
+
+    rows = {}
+
+    count = 0
+
+    with open('./static/data/wf_by_decade.csv', 'w') as f:
+        f.write('word,')
+        f.write(','.join([str(decade) for decade in decades]))
+        f.write('\n')
+
+        for decade in decades:
+            print(decade)
+
+            speeches = word_count.get_decade_speeches(decade)
+            lemma_counter = word_count.lemma_word_count_filtered(speeches)
+            lemma_counts = word_count.lemma_word_count_all(speeches)
+            word_freq = word_count.get_word_freq_dict(lemma_counts)
+
+            for word in lemma_counter.most_common(25):
+                print(word)
+                if not rows.get(word[0]):
+                    zeroes = [0] * count
+                    rows[word[0]] = zeroes
+
+                elif len(rows.get(word[0])) < count:
+                    zeroes = count - len(rows.get(word[0]))
+                    rows[word[0]].extend([0] * zeroes)
+
+                rows[word[0]].append(str(word_freq[word[0]][0]))
+
+            count += 1
+
+        for row in rows:
+            if len(rows[row]) < count:
+                zeroes = count - len(rows[row])
+                rows[row].extend([0] * zeroes)
+            row = row + ',' + ','.join([str(r) for r in rows[row]])
+            f.write(row)
+            f.write('\n')
+
+    return rows
 
 
 def make_hierarchy_json():
