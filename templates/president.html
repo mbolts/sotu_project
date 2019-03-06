@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>State of the Union</h1>
+
+<h2>Speeches of {{ president.name }}</h2>
+
+{% if not president.speeches %}
+<div>
+    <p>
+        Unfortunately, {{ president.name }} was not in office long 
+        enough to give any State of the Union speeches.
+    </p>
+
+</div>
+
+{% endif %}
+<div class="speeches">
+{% for speech in president.speeches %}
+  <a href="/speech/{{ speech.speech_id }}"><p name="{{speech.speech_id}}" value="{{ speech.date }}">{{ speech.date.strftime('%B %d, %Y') }}</p></a>
+{% endfor %}
+</div>
+
+<div class="common_words" id="chart">
+    Here are {{ president.name }}'s most commonly used words.
+
+{% for word in president.top_words %}
+ <p name="{{ word[0] }}" value="{{ word[0] }}">{{ word }}</p></a>
+{% endfor %}
+
+</div>
+
+<br>
+<div class="presidents">
+    <h2>The Most Similar Speech-Givers</h2>
+    {% for president in similar_pres %}
+
+  <a href="/president?president={{ president[0].name }}&submit=Submit"><p name="{{president[0].name}}" value="{{ president[0].pres_id }}">{{ president[0].name }}</p></a>
+
+{% endfor %}
+
+</div>
+
+
+{% endblock %}

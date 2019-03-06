@@ -6,4 +6,7 @@ secrets.py
 speech_doc/
 .DS_Store
 president_doc/
-zoomable_circle.js
+.coverage
+node_modules/
+package-lock.json
+Makefile

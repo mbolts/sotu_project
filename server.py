@@ -2,7 +2,6 @@
 
 import json
 
-from secrets import secret_key
 from jinja2 import StrictUndefined
 from flask import (Flask,
                    render_template,
@@ -14,9 +13,8 @@ from flask import (Flask,
 from flask_debugtoolbar import DebugToolbarExtension
 from flask_sqlalchemy import SQLAlchemy
 
-# import word_count
-
-from model import connect_to_db, db, President, Year, Speech, Word
+from sotu.secrets import secret_key
+from sotu.model import connect_to_db, db, President, Year, Speech, Word
 
 
 app = Flask(__name__)
@@ -40,14 +38,36 @@ def index():
     return render_template("homepage.html", presidents=presidents)
 
 
-@app.route('/speeches', methods=['GET'])
+@app.route('/president', methods=['GET'])
 def show_speeches():
     """ Display all of the speeches given by the selected president """
 
     president_name = request.args.get('president')
     president = President.query.filter_by(name=president_name).one()
 
-    return render_template("speeches.html", president=president)
+    top_word_list = president.top_words
+
+    print(top_word_list)
+
+    similar_pres = []
+    with open('static/data/sim_matrix_updated.csv') as f:
+        sim_matrix = f.read()
+        sim_matrix = sim_matrix.split('\n')[1:]
+
+        for line in sim_matrix:
+            line = line.split(',')
+            if (int(line[0]) == president.pres_id
+               and int(line[1]) != president.pres_id):
+                pres_obj = President.query.get(int(line[1]))
+                similar_pres.append((pres_obj, line[2]))
+
+    similar_pres = sorted(similar_pres, key=lambda x: x[1], reverse=True)
+    # print(similar_pres)
+    similar_pres = similar_pres[:5]
+
+    return render_template("president.html",
+                           president=president,
+                           similar_pres=similar_pres,)
 
 
 @app.route('/speech/<int:speech_id>')
@@ -83,6 +103,14 @@ def compare_speeches():
     """"""
 
     return render_template('speech_bubbles.html',
+                           )
+
+
+@app.route('/word_freq', methods=['GET'])
+def wf_by_decade():
+    """"""
+
+    return render_template('wf_visualization.html',
                            )
 
 
@@ -129,20 +157,19 @@ def get_pres_word_count_data():
         hierarchy = f.read()
         h_json = json.loads(hierarchy)
 
-    # render json
+    # render json to homepage
     return jsonify(h_json)
 
 
-@app.route("/word_freq.json")
+@app.route("/word_freq.csv")
 def get_word_freq_data():
     """create and pass the word_freq to d3"""
 
-    with open('static/data/word_freq.json') as f:
+    with open('static/data/wf_by_decade.csv') as f:
         word_freq = f.read()
-        wf_json = json.loads(word_freq)
 
     # render json to homepage
-    return jsonify({'data': wf_json})
+    return word_freq
 
 
 @app.route("/word_context.json")

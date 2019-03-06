@@ -5,7 +5,7 @@
 
 <h3>View Speeches of Specific Presidents:</h3>
 
-<form action="/speeches" method="GET">
+<form action="/president" method="GET">
 
 <select name="president">
 {% for president in presidents %}
@@ -14,11 +14,11 @@
 </select>
 
 <input type="submit" name="submit">
+</form>
 <br><br>
 
-<h3>Compare the Speeches of Two Presidents</h3>
+<h3>Compare the Presidential State of the Unions</h3>
 
-</form>
 
 <form action="/comparison" method="GET">
     <select name="pres_1">

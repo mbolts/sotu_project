@@ -2,7 +2,8 @@
 
 from flask_sqlalchemy import SQLAlchemy
 from spacy.tokens import Doc
-import nlp
+
+from sotu import nlp
 
 
 # This is the connection to the PostgreSQL database; we're getting this through
@@ -33,6 +34,10 @@ class President(db.Model):
     date_of_birth = db.Column(db.DateTime)
     state_of_birth = db.Column(db.String(30))
     pres_corpus = db.Column(db.String(50))
+    img = db.Column(db.Text)
+    top_words = db.Column(db.JSON)
+    total_words = db.Column(db.Integer)
+    words_per_speech = db.Column(db.Float)
 
     years = db.relationship('Year')
     speeches = db.relationship('Speech',
@@ -98,6 +103,12 @@ class President(db.Model):
                                            )
 
         return sim_score
+
+    def get_top_words(self):
+        import word_count
+        lemma_count = word_count.lemma_word_count_filtered(self.speeches)
+
+        return lemma_count.most_common(25)
 
     def __repr__(self):
         return f"<President name={self.name} pres_id={self.pres_id}>"

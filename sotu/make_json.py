@@ -5,11 +5,12 @@ import json
 from flask_sqlalchemy import SQLAlchemy
 from spacy.tokens import Doc
 
-import word_count
-from model import President, Year, Speech, Word
-from model import connect_to_db, db
+from sotu import word_count
+from sotu.model import President, Year, Speech, Word
+from sotu.model import connect_to_db, db
+from sotu.nlp import NLP
+
 from server import app
-from nlp import NLP
 
 connect_to_db(app)
 
@@ -267,6 +268,8 @@ def make_wc_by_decade_csv():
                1870, 1880, 1890, 1900, 1910, 1920, 1930, 1940,
                1950, 1960, 1970, 1980, 1990, 2000, 2010]
 
+    # decades = [1790, 1890, 1990]
+
     rows = {}
 
     count = 0
@@ -284,8 +287,8 @@ def make_wc_by_decade_csv():
             lemma_counts = word_count.lemma_word_count_all(speeches)
             word_freq = word_count.get_word_freq_dict(lemma_counts)
 
-            for word in lemma_counter.most_common(25):
-                print(word)
+            for word in lemma_counter.most_common(10):
+                # print(word)
                 if not rows.get(word[0]):
                     zeroes = [0] * count
                     rows[word[0]] = zeroes
@@ -302,6 +305,29 @@ def make_wc_by_decade_csv():
             if len(rows[row]) < count:
                 zeroes = count - len(rows[row])
                 rows[row].extend([0] * zeroes)
+
+        decade_count = 1
+
+        for decade in decades:
+            print(decade)
+
+            speeches = word_count.get_decade_speeches(decade)
+            lemma_counts = word_count.lemma_word_count_all(speeches)
+            word_freq = word_count.get_word_freq_dict(lemma_counts)
+
+            for word in rows:
+                word_list = rows[word]
+                for idx, cell in enumerate(word_list):
+                    if idx != decade_count:
+                        continue
+                    elif word_freq.get(word, 0) == 0:
+                        continue
+                    elif cell == 0:
+                        word_list[idx] = word_freq[word][0]
+
+            decade_count += 1
+
+        for row in rows:
             row = row + ',' + ','.join([str(r) for r in rows[row]])
             f.write(row)
             f.write('\n')

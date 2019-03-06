@@ -22,7 +22,7 @@ const party = {
     'Democratic': 'blue',
     'Whig': '#e8ce3b', // yellow
     'Republican': 'red'
-}
+};
 
 function printIds(id1, id2) {
   console.log(id1, id2);
@@ -35,10 +35,10 @@ d3.csv('/sim_matrix.csv').then(function(data){
 
     const margin = { top: 175, right: 100, bottom: 50, left: 175 },
           gridSize = 20,
-          number_of_pres = 44
+          number_of_pres = 44,
           width = gridSize * number_of_pres,
           height = gridSize * number_of_pres,          
-          legendElementWidth = gridSize*2;
+          legendElementWidth = gridSize * 2;
           
         
     const svg = d3.select('#chart')
@@ -49,7 +49,7 @@ d3.csv('/sim_matrix.csv').then(function(data){
         .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
 
-    const pres1LablesGroup = svg.append('g')
+    const pres1LablesGroup = svg.append('g');
 
     const president1Labels = pres1LablesGroup.selectAll(".president1Label")
         .data(presidents)
@@ -62,7 +62,7 @@ d3.csv('/sim_matrix.csv').then(function(data){
             .attr("transform", "translate(-6," + gridSize / 1.5 + ")")
             .attr("class", "president1Label mono axis");
 
-    const pres2LablesGroup = svg.append('g')
+    const pres2LablesGroup = svg.append('g');
 
     const president2Labels = pres2LablesGroup.selectAll(".president2Label")
         .data(presidents)
@@ -117,14 +117,19 @@ d3.csv('/sim_matrix.csv').then(function(data){
             d3.select('#tooltip-rect'+d.pres_1+d.pres_2).remove();
           })
         .on('click', function(d){
-          d3.select(this)
-            .style('stroke-width', 1.5)
-            .style('stroke', 'red');
           d3.select('.info_zone .pres_1_name')
             .text(presidents[d.pres_1 - 1])
             .style('background-color', party[d.pres_1_party])
             .style('color', 'white');
+          d3.select('.comparison .pres_1_name')
+            .text(presidents[d.pres_1 - 1])
+            .style('background-color', party[d.pres_1_party])
+            .style('color', 'white');
           d3.select('.info_zone .pres_2_name')
+            .text(presidents[d.pres_2 - 1])
+            .style('background-color', party[d.pres_2_party])
+            .style('color', 'white');
+          d3.select('.comparison .pres_2_name')
             .text(presidents[d.pres_2 - 1])
             .style('background-color', party[d.pres_2_party])
             .style('color', 'white');

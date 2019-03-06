@@ -1,13 +1,16 @@
 """Create word count items for d3 usage later"""
 
 from collections import Counter
+
 from flask_sqlalchemy import SQLAlchemy
 from spacy.tokens import Doc
-from model import President, Year, Speech, Word, Token
-from model import connect_to_db, db
+
+from sotu.model import President, Year, Speech, Word, Token
+from sotu.model import connect_to_db, db
+from sotu.nlp import NLP
 from server import app
-from nlp import NLP
-connect_to_db(app)
+
+# connect_to_db(app)
 
 all_speeches = Speech.query.all()
 two_speeches = all_speeches[:2]

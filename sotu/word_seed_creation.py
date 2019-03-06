@@ -3,10 +3,11 @@
 from flask_sqlalchemy import SQLAlchemy
 from spacy.tokens import Doc
 
-import nlp
-import word_count
-from model import President, Year, Speech, Word
-from model import connect_to_db, db
+from sotu import nlp
+from sotu import word_count
+from sotu.model import President, Year, Speech, Word
+from sotu.model import connect_to_db, db
+
 from server import app
 connect_to_db(app)
 # print("Connected to DB.")

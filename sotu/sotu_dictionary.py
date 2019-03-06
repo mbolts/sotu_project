@@ -1,11 +1,12 @@
 """Create dictionaries from the state of the union speeches"""
 
 from flask_sqlalchemy import SQLAlchemy
-from model import connect_to_db, db
-from model import Speech, President, Year
+from sotu.model import connect_to_db, db
+from sotu.model import Speech, President, Year
+
 from server import app
 
-import nlp
+from sotu import nlp
 
 connect_to_db(app)
 

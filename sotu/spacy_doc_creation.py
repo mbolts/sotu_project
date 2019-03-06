@@ -2,10 +2,10 @@
 
 from flask_sqlalchemy import SQLAlchemy
 
-import nlp
+from sotu import nlp
 
-from model import President, Year, Speech, Word
-from model import connect_to_db, db
+from sotu.model import President, Year, Speech, Word
+from sotu.model import connect_to_db, db
 from server import app
 connect_to_db(app)
 
@@ -50,5 +50,3 @@ def create_presidential_doc(presidents):
         pres_doc = nlp.NLP(pres_speeches)
 
         pres_doc.to_disk('./president_doc/' + path_ending)
-
-        # print(path_ending)

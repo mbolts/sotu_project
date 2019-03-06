@@ -5,8 +5,9 @@ import datetime
 from spacy.tokens import Doc
 import nlp
 
-from model import President, Year, Speech, Word, Token
-from model import connect_to_db, db
+from sotu.model import President, Year, Speech, Word, Token
+from sotu.model import connect_to_db, db
+
 from server import app
 
 
@@ -138,7 +139,7 @@ def load_presidents():
     for row in file:
         row = row.rstrip()
 
-        name, party_affiliation, dob, state = row.split(',')[:4]
+        name, party_affiliation, dob, state, img_path = row.split(',')
 
         datetime_dob = datetime.datetime.strptime(dob, "%B %d %Y")
 
@@ -152,6 +153,7 @@ def load_presidents():
                               date_of_birth=datetime_dob,
                               state_of_birth=state,
                               pres_corpus=doc_path,
+                              img=img_path,
                               )
 
         db.session.add(president)
@@ -159,6 +161,26 @@ def load_presidents():
         i += 1
 
     file.close()
+
+    db.session.commit()
+
+
+def update_presidents():
+    """Load presidents into database."""
+
+    print('Update Presidents')
+
+    presidents = President.query.all()
+
+    for pres in presidents:
+
+        total = pres.get_total_word_count()
+        words_per = pres.get_word_count_per_speech()
+        top_words = pres.get_top_words()
+
+        pres.total_words = total
+        pres.words_per_speech = words_per
+        pres.top_words = top_words
 
     db.session.commit()
 
@@ -235,8 +257,9 @@ if __name__ == "__main__":
     db.create_all()
 
     # Import different types of data
-    load_presidents()
-    load_years()
-    load_speeches()
+    # load_presidents()
+    # load_years()
+    # load_speeches()
     # load_words()
     # load_tokens()
+    update_presidents()
