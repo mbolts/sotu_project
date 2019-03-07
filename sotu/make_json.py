@@ -349,7 +349,7 @@ def make_hierarchy_json():
                                          'children': centuries[century]})
 
     for idx, century in enumerate(century_root['children']):
-        # print(century)
+        print(century)
 
         for i, decade in enumerate(century['children']):
             decade_pres = set()
@@ -372,7 +372,7 @@ def make_hierarchy_json():
                     if speech.pres_id == pres.pres_id:
                         pres_speeches.append(speech)
 
-                pres_wc = word_count.lemma_word_count_all(pres_speeches).most_common(15)
+                pres_wc = word_count.lemma_word_count_filtered(pres_speeches).most_common(15)
 
                 wc_dict = [{'name': word[0], 'count': word[1]}
                            for word in pres_wc]

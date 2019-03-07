@@ -44,7 +44,7 @@ pack = data => d3.pack()
       .on("click", d => focus !== d && (zoom(d), d3.event.stopPropagation()));
 
   const label = svg.append("g")
-      .style("font", "10px sans-serif")
+      .style("font", "24px sans-serif")
       .attr("pointer-events", "none")
       .attr("text-anchor", "middle")
     .selectAll("text")

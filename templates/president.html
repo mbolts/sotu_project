@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>State of the Union</h1>
 
 <h2>Speeches of {{ president.name }}</h2>
 
@@ -21,13 +20,22 @@
 {% endfor %}
 </div>
 
-<div class="common_words" id="chart">
-    Here are {{ president.name }}'s most commonly used words.
-
-{% for word in president.top_words %}
- <p name="{{ word[0] }}" value="{{ word[0] }}">{{ word }}</p></a>
-{% endfor %}
-
+<div class="common_words">
+    Here are {{ president.name }}'s most commonly used words:
+<br>
+<div class="data" hidden>{{ president.top_words }}</div>
+<ul id="list">
+  <li data-username="shawnbot">Shawn Allen</li>
+  <li data-username="mbostock">Mike Bostock</li>
+</ul>
+<script type="text/javascript">
+    d3.select('#list').datum(function() { 
+        console.log(this.dataset);
+        return this.dataset; 
+    });
+</script>
+<script src="./static/js/pres_top_words.js"type="text/javascript">
+</script>
 </div>
 
 <br>

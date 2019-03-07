@@ -2,18 +2,10 @@
 
 from collections import Counter
 
-from flask_sqlalchemy import SQLAlchemy
 from spacy.tokens import Doc
 
-from sotu.model import President, Year, Speech, Word, Token
-from sotu.model import connect_to_db, db
+from sotu.model import Year
 from sotu.nlp import NLP
-from server import app
-
-# connect_to_db(app)
-
-all_speeches = Speech.query.all()
-two_speeches = all_speeches[:2]
 
 
 BORING_WORDS = set(['the', 'in', 'and', 'if', 'then', 'but', 'than',

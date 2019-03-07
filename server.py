@@ -45,10 +45,6 @@ def show_speeches():
     president_name = request.args.get('president')
     president = President.query.filter_by(name=president_name).one()
 
-    top_word_list = president.top_words
-
-    print(top_word_list)
-
     similar_pres = []
     with open('static/data/sim_matrix_updated.csv') as f:
         sim_matrix = f.read()
@@ -68,6 +64,16 @@ def show_speeches():
     return render_template("president.html",
                            president=president,
                            similar_pres=similar_pres,)
+
+
+@app.route('/presidents', methods=['GET'])
+def show_presidents():
+    """ Display all of the speeches given by the selected president """
+
+    presidents = President.query.all()
+
+    return render_template("presidents.html",
+                           presidents=presidents,)
 
 
 @app.route('/speech/<int:speech_id>')
@@ -114,7 +120,21 @@ def wf_by_decade():
                            )
 
 
-@app.route('/decade_speeches', methods=['GET'])
+@app.route('/wc_visualization')
+def show_wc_visualization():
+    """Show visualization."""
+
+    return render_template("wc_visualization.html")
+
+
+@app.route('/wf_visualization')
+def show_wf_visualization():
+    """Show visualization."""
+
+    return render_template("wf_visualization.html")
+
+
+@app.route('/decade_speeches.json', methods=['GET'])
 def show_decade_speeches():
 
     with open('static/data/wc_by_decade.json') as f:
@@ -217,20 +237,6 @@ def get_pres_sim_matrix():
 
     # render json to homepage
     return sim_matrix
-
-
-@app.route('/wc_visualization')
-def show_wc_visualization():
-    """Show visualization."""
-
-    return render_template("wc_visualization.html")
-
-
-@app.route('/wf_visualization')
-def show_wf_visualization():
-    """Show visualization."""
-
-    return render_template("wf_visualization.html")
 
 
 #################################################################

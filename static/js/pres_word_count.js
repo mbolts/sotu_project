@@ -46,11 +46,11 @@ d3.json('/word_counts.json').then(function (data) {
                 configGraph.height - configGraph.margin - 15]) // Range of scale
                 ;
 
-    circles = svg.selectAll('.dot')
+    circles = svg.selectAll('.counts')
         .data(data['data'])
         .enter()
         .append('circle')
-        .attr('class', 'dot')
+        .attr('class', 'counts')
         .attr('cx', d => xScale(d.first_year))
         .attr('cy', d => yScale(d.words_per))
         .attr('r',10)

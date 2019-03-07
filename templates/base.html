@@ -5,11 +5,34 @@
 </head>
 
 <body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="./static/css/style.css">
 
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link" href="/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/presidents">Presidents</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="comparison?pres_1=1&pres_2=1&submit=Submit">Comparisons</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="speech_bubbles">Words by Decade</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="word_freq">Word Frequencies</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="wc_visualization">Word Counts</a>
+  </li>
+</ul>
 
+<h1>State of the Union</h1>
+<br>
 
   {% with messages = get_flashed_messages() %}
       {% for message in messages %}

@@ -2,7 +2,7 @@
             background-color: #ccc;
             width: 100%;
         }
-/*        #chart{
+        /*        #chart{
             background-color: #ccc;
             width: 1000px;
             height: 500px;
@@ -12,7 +12,7 @@
         svg{
             background-color: #fff;
         }
-        .dot{
+        .counts{
             stroke: #000;
             stroke-width: 1px;
         }
@@ -34,4 +34,26 @@
         }
         .pres_2_name {
             border-radius: 5px;
+        }
+
+        .line {
+            fill: none;
+            stroke: #ffab00;
+            stroke-width: 3;
+        }
+          
+        .overlay {
+          fill: none;
+          pointer-events: all;
+        }
+
+        /* Style the dots by assigning a fill and stroke */
+        .dot {
+            fill: #ffab00;
+            stroke: #fff;
+        }
+          
+          .focus circle {
+          fill: none;
+          stroke: steelblue;
         }

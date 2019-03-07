@@ -1,5 +1,6 @@
 import unittest
 from collections import Counter
+
 from sotu.word_count import get_word_freq
 
 
@@ -17,4 +18,6 @@ class DescribeTests(unittest.TestCase):
 
         result = get_word_freq(counter)
 
-        unittest.assertEquals(result, [['a', 5000.0, 2], ['b', 2500.0, 1], ['c', 2500.0, 1]])
+        unittest.assertEquals(result, [['a', 5000.0, 2],
+                                       ['b', 2500.0, 1],
+                                       ['c', 2500.0, 1]])
