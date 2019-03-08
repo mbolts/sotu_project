@@ -23,22 +23,25 @@
 <div class="common_words">
     Here are {{ president.name }}'s most commonly used words:
 <br>
-<div class="data" hidden>{{ president.top_words }}</div>
-<ul id="list">
-  <li data-username="shawnbot">Shawn Allen</li>
-  <li data-username="mbostock">Mike Bostock</li>
-</ul>
+
+<div id="tooltip"></div>
+
 <script type="text/javascript">
-    d3.select('#list').datum(function() { 
-        console.log(this.dataset);
-        return this.dataset; 
-    });
+let words = JSON.parse('{{ president.top_words | tojson }}');
+let total = JSON.parse('{{ president.total_words }}');
+let president = '{{ president.name }}'
+
+for (var i = words.length - 1; i >= 0; i--) {
+    words[i][1] = words[i][1] / total;
+}
+
 </script>
+
 <script src="./static/js/pres_top_words.js"type="text/javascript">
 </script>
 </div>
 
-<br>
+<br><br>
 <div class="presidents">
     <h2>The Most Similar Speech-Givers</h2>
     {% for president in similar_pres %}

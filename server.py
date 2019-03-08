@@ -61,9 +61,16 @@ def show_speeches():
     # print(similar_pres)
     similar_pres = similar_pres[:5]
 
+    print(president.top_words)
+
+    top_words = jsonify(president.top_words)
+
+    print(top_words)
+
     return render_template("president.html",
                            president=president,
-                           similar_pres=similar_pres,)
+                           similar_pres=similar_pres,
+                           top_words=top_words)
 
 
 @app.route('/presidents', methods=['GET'])

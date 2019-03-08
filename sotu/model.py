@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from spacy.tokens import Doc
 
 from sotu import nlp
+from sotu import word_count
 
 
 # This is the connection to the PostgreSQL database; we're getting this through
@@ -105,7 +106,8 @@ class President(db.Model):
         return sim_score
 
     def get_top_words(self):
-        import word_count
+        from sotu import word_count
+
         lemma_count = word_count.lemma_word_count_filtered(self.speeches)
 
         return lemma_count.most_common(25)

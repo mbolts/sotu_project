@@ -3,7 +3,7 @@
 import datetime
 
 from spacy.tokens import Doc
-import nlp
+from sotu import nlp
 
 from sotu.model import President, Year, Speech, Word, Token
 from sotu.model import connect_to_db, db
