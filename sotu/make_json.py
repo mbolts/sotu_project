@@ -262,7 +262,11 @@ def make_wc_by_decade_json():
 
 
 def make_wc_by_decade_csv():
-    """Create a json file of the word counts by decade"""
+    """Create a json file of the word counts by decade
+    This is used to make the line_chart.js visualaztion at the
+    wf_visualization page
+
+    """
 
     decades = [1790, 1800, 1810, 1820, 1830, 1840, 1850, 1860,
                1870, 1880, 1890, 1900, 1910, 1920, 1930, 1940,

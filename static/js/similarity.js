@@ -24,11 +24,6 @@ const party = {
     'Republican': 'red'
 };
 
-function printIds(id1, id2) {
-  console.log(id1, id2);
-}
-
-
 
 d3.csv('/sim_matrix.csv').then(function(data){
     console.log(data); 
@@ -104,67 +99,38 @@ d3.csv('/sim_matrix.csv').then(function(data){
                 .attr('width', gridSize * 7)
                 .attr('height', gridSize)
                 .attr('fill', 'orange')
-                .style('opacity', .85);
+                .style('opacity', 0.85);
             svg.append('text')
                 .attr('id', 'tooltip'+d.pres_1+d.pres_2)
                 .attr('x', d.pres_2 * gridSize)
                 .attr('y', d.pres_1 * gridSize + gridSize - 2)
                 .text('Similarity: ' + numFormat(d.sim))
-                .style('opacity', .85);
+                .style('opacity', 0.85);
           })
         .on('mouseout', function(d){
             d3.select('#tooltip'+d.pres_1+d.pres_2).remove();
             d3.select('#tooltip-rect'+d.pres_1+d.pres_2).remove();
           })
         .on('click', function(d){
-          d3.select('.info_zone .pres_1_name')
-            .text(presidents[d.pres_1 - 1])
-            .style('background-color', party[d.pres_1_party])
-            .style('color', 'white');
           d3.select('.comparison .pres_1_name')
             .text(presidents[d.pres_1 - 1])
             .style('background-color', party[d.pres_1_party])
             .style('color', 'white');
-          d3.select('.info_zone .pres_2_name')
-            .text(presidents[d.pres_2 - 1])
-            .style('background-color', party[d.pres_2_party])
-            .style('color', 'white');
+          d3.select('.comparison .of')
+            .text('of');
+          d3.select('.comparison .and')
+            .text('and');            
           d3.select('.comparison .pres_2_name')
             .text(presidents[d.pres_2 - 1])
             .style('background-color', party[d.pres_2_party])
             .style('color', 'white');
           d3.select(".info_zone .pres_similarity")
             .text(d.sim);
+          d3.select(".info_zone")
+            .style('display', 'contents');
         });
 
-          // cards.transition().duration(1000)
-          //     .style("fill", function(d) { return colorScale(d.value); });
 
-    //     cards.select("title")
-    //         .text(d => d.sim)
-          
-    //     cards.exit().remove();
-
-    // const legend = svg.selectAll(".legend")
-    //           .data(data.concat(colorScale), function(d) { return d; });
-
-    //       legend.append("rect").enter()
-    //           .attr("class", "legend");
-
-    //       legend
-    //         .attr("x", gridSize)
-    //         .attr("y", height + gridSize)
-    //         .attr("width", gridSize)
-    //         .attr("height", gridSize / 2)
-    //         .style("fill", function(d, i) { return colors[i]; });
-
-    //       legend.append("text")
-    //         .attr("class", "mono")
-    //         .text(function(d) { return "≥ " + Math.round(d); })
-    //         .attr("x", function(d, i) { return gridSize * i; })
-    //         .attr("y", height + gridSize);
-
-    //       legend.exit().remove();
 
         });
 
