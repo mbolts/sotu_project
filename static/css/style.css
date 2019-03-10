@@ -37,6 +37,11 @@
             border-radius: 5px;
         }
 
+        .card-img-top {
+            height:60vh;
+            object-fit: cover;
+        }
+
         .line {
             fill: none;
             stroke: #ffab00;

@@ -99,23 +99,23 @@ def show_speech(speech_id):
 def compare_presidents():
     """Compare two selected presidents"""
 
-    pres_1 = request.args.get('pres_1')
-    pres_2 = request.args.get('pres_2')
+    # pres_1 = request.args.get('pres_1')
+    # pres_2 = request.args.get('pres_2')
 
-    pres_1 = President.query.get(pres_1)
-    pres_2 = President.query.get(pres_2)
+    # pres_1 = President.query.get(pres_1)
+    # pres_2 = President.query.get(pres_2)
 
     return render_template('comparison.html',
-                           pres_1=pres_1,
-                           pres_2=pres_2,
+                           # pres_1=pres_1,
+                           # pres_2=pres_2,
                            )
 
 
-@app.route('/speech_bubbles', methods=['GET'])
-def compare_speeches():
-    """"""
+@app.route('/words_by_decade', methods=['GET'])
+def show_words_by_decade():
+    """Show the words by decade bubble visualization"""
 
-    return render_template('speech_bubbles.html',
+    return render_template('words_by_decade.html',
                            )
 
 

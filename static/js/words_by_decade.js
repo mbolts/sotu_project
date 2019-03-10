@@ -1,3 +1,5 @@
+// Creates the nested bubbles 
+
 
 width = 932;
 height = width;
