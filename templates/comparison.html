@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2 class="comparison">Comparison of State of the Union Speeches <span class="of"></span> <span class="pres_1_name">  </span> <span class="and"></span> <span class="pres_2_name"> </span></h2>
+
+
+<h3 class="info_zone" style="display: none!important">
+
+The semantic similarity estimate between these two is: 
+<span class="pres_similarity">{{ pres_1.get_similarity(pres_2) }} </span>
+
+</h3>
+
+
+<div id="chart"></div>
+
+
+<script src="./static/js/similarity.js"type="text/javascript"></script>  
+
+{% endblock %}
+

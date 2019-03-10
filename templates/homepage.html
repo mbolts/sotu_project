@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h3>View Speeches of Specific Presidents:</h3>
+
+<form action="/president" method="GET">
+
+<select name="president">
+{% for president in presidents %}
+  <option value="{{ president.name }}">{{ president.name }}</option>
+{% endfor %}
+</select>
+
+<input type="submit" name="submit">
+</form>
+<br><br>
+
+<h3>Compare the Presidential State of the Unions</h3>
+
+
+<form action="/comparison" method="GET">
+    <select name="pres_1">
+    {% for president in presidents %}
+      <option value="{{ president.pres_id }}">{{ president.name }}</option>
+    {% endfor %}
+    </select>
+
+    <select name="pres_2">
+    {% for president in presidents %}
+      <option value="{{ president.pres_id }}">{{ president.name }}</option>
+    {% endfor %}
+    </select>
+
+    <input type="submit" name="submit">
+
+</form>
+
+
+
+
+{% endblock %}

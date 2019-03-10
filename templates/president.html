@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<h2>Speeches of {{ president.name }}</h2>
+
+{% if not president.speeches %}
+<div>
+    <p>
+        Unfortunately, {{ president.name }} was not in office long 
+        enough to give any State of the Union speeches.
+    </p>
+
+</div>
+
+{% endif %}
+<div class="speeches">
+{% for speech in president.speeches %}
+  <a href="/speech/{{ speech.speech_id }}"><p name="{{speech.speech_id}}" value="{{ speech.date }}">{{ speech.date.strftime('%B %d, %Y') }}</p></a>
+{% endfor %}
+</div>
+
+<div class="common_words">
+    Here are {{ president.name }}'s most commonly used words:
+<br>
+
+<div id="tooltip"></div>
+
+<script type="text/javascript">
+let words = JSON.parse('{{ president.top_words | tojson }}');
+let total = JSON.parse('{{ president.total_words }}');
+let president = '{{ president.name }}'
+
+for (var i = words.length - 1; i >= 0; i--) {
+    words[i][1] = words[i][1] / total;
+}
+
+</script>
+
+<script src="./static/js/pres_top_words.js"type="text/javascript">
+</script>
+</div>
+
+<br><br>
+<div class="presidents">
+    <h2>The Most Similar Speech-Givers</h2>
+    {% for president in similar_pres %}
+
+  <a href="/president?president={{ president[0].name }}&submit=Submit"><p name="{{president[0].name}}" value="{{ president[0].pres_id }}">{{ president[0].name }}</p></a>
+
+{% endfor %}
+
+</div>
+
+
+{% endblock %}

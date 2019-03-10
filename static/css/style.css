@@ -1,0 +1,60 @@
+        body{
+            background-color: #ccc;
+            width: 100%;
+            padding: 40px;
+        }
+        /*        #chart{
+            background-color: #ccc;
+            width: 1000px;
+            height: 500px;
+            margin: 50px auto;
+            border: solid 1px #000;
+        }*/
+        svg{
+            background-color: #fff;
+        }
+        .counts{
+            stroke: #000;
+            stroke-width: 1px;
+        }
+        .axis line, .axis path{
+            stroke: #bbb;
+        }
+        .axis text{
+            fill: #bbb;
+        }
+        #tooltip{
+            position: absolute;
+            background-color: #fff;
+            padding: 20px;
+            border: solid 1px #000;
+            opacity: 0;
+        }
+        .pres_1_name {
+            border-radius: 5px;
+        }
+        .pres_2_name {
+            border-radius: 5px;
+        }
+
+        .line {
+            fill: none;
+            stroke: #ffab00;
+            stroke-width: 3;
+        }
+          
+        .overlay {
+          fill: none;
+          pointer-events: all;
+        }
+
+        /* Style the dots by assigning a fill and stroke */
+        .dot {
+            fill: #ffab00;
+            stroke: #fff;
+        }
+          
+          .focus circle {
+          fill: none;
+          stroke: steelblue;
+        }

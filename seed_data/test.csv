@@ -1,0 +1,323 @@
+<table class="wikitable sortable jquery-tablesorter">
+
+<thead><tr>
+<th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Date of birth</th>
+<th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">President</th>
+<th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Birthplace</th>
+<th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">State<sup><b><img alt="dagger" src="//upload.wikimedia.org/wikipedia/commons/3/37/Dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14"></b></sup> of birth</th>
+<th class="headerSort headerSortUp" tabindex="0" role="columnheader button" title="Sort descending">In office
+</th></tr></thead><tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+<td><span data-sort-value="000000001732-02-22-0000" style="white-space:nowrap">February 22, 1732</span></td>
+<td><span data-sort-value="Washington, George"><span class="vcard"><span class="fn"><a href="/wiki/George_Washington" title="George Washington">George Washington</a></span></span></span></td>
+<td><a href="/wiki/Westmoreland_County,_Virginia" title="Westmoreland County, Virginia">Westmoreland County</a></td>
+<td><span data-sort-value="virga&nbsp;!"><a href="/wiki/Colony_of_Virginia" title="Colony of Virginia">Virginia</a></span><sup><img alt="dagger" src="//upload.wikimedia.org/wikipedia/commons/3/37/Dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14"></sup></td>
+<td><span data-sort-value="01&nbsp;!">(1st) April 30, 1789 – March 4, 1797</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001735-10-30-0000" style="white-space:nowrap">October 30, 1735</span></td>
+<td><span data-sort-value="Adams, John"><span class="vcard"><span class="fn"><a href="/wiki/John_Adams" title="John Adams">John Adams</a></span></span></span></td>
+<td><a href="/wiki/Braintree,_Massachusetts" title="Braintree, Massachusetts">Braintree</a></td>
+<td><span data-sort-value="Massaa&nbsp;!"><a href="/wiki/Province_of_Massachusetts_Bay" title="Province of Massachusetts Bay">Massachusetts</a></span><sup><img alt="dagger" src="//upload.wikimedia.org/wikipedia/commons/3/37/Dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14"></sup></td>
+<td><span data-sort-value="02&nbsp;!">(2nd) March 4, 1797 – March 4, 1801</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001743-04-13-0000" style="white-space:nowrap">April 13, 1743</span></td>
+<td><span data-sort-value="Jefferson, Thomas"><span class="vcard"><span class="fn"><a href="/wiki/Thomas_Jefferson" title="Thomas Jefferson">Thomas Jefferson</a></span></span></span></td>
+<td><a href="/wiki/Shadwell,_Virginia" title="Shadwell, Virginia">Shadwell</a></td>
+<td><span data-sort-value="virgb&nbsp;!">Virginia</span><sup><img alt="dagger" src="//upload.wikimedia.org/wikipedia/commons/3/37/Dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14"></sup></td>
+<td><span data-sort-value="03&nbsp;!">(3rd) March 4, 1801 – March 4, 1809</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001751-03-16-0000" style="white-space:nowrap">March 16, 1751</span></td>
+<td><span data-sort-value="Madison, James"><span class="vcard"><span class="fn"><a href="/wiki/James_Madison" title="James Madison">James Madison</a></span></span></span></td>
+<td><a href="/wiki/Port_Conway,_Virginia" title="Port Conway, Virginia">Port Conway</a></td>
+<td><span data-sort-value="virgc&nbsp;!">Virginia</span><sup><img alt="dagger" src="//upload.wikimedia.org/wikipedia/commons/3/37/Dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14"></sup></td>
+<td><span data-sort-value="04&nbsp;!">(4th) March 4, 1809 – March 4, 1817</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001758-04-28-0000" style="white-space:nowrap">April 28, 1758</span></td>
+<td><span data-sort-value="Monroe, James"><span class="vcard"><span class="fn"><a href="/wiki/James_Monroe" title="James Monroe">James Monroe</a></span></span></span></td>
+<td><a href="/wiki/Monroe_Hall,_Virginia" title="Monroe Hall, Virginia">Monroe Hall</a></td>
+<td><span data-sort-value="virgd&nbsp;!">Virginia</span><sup><img alt="dagger" src="//upload.wikimedia.org/wikipedia/commons/3/37/Dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14"></sup></td>
+<td><span data-sort-value="05&nbsp;!">(5th) March 4, 1817 – March 4, 1825</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001767-07-11-0000" style="white-space:nowrap">July 11, 1767</span></td>
+<td><span data-sort-value="Adams, John Quincy"><span class="vcard"><span class="fn"><a href="/wiki/John_Quincy_Adams" title="John Quincy Adams">John Quincy Adams</a></span></span></span></td>
+<td>Braintree</td>
+<td><span data-sort-value="Massab&nbsp;!">Massachusetts</span><sup><img alt="dagger" src="//upload.wikimedia.org/wikipedia/commons/3/37/Dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14"></sup></td>
+<td><span data-sort-value="06&nbsp;!">(6th) March 4, 1825 – March 4, 1829</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001767-03-15-0000" style="white-space:nowrap">March 15, 1767</span></td>
+<td><span data-sort-value="Jackson, Andrew"><span class="vcard"><span class="fn"><a href="/wiki/Andrew_Jackson" title="Andrew Jackson">Andrew Jackson</a></span></span></span></td>
+<td><a href="/wiki/Waxhaws" title="Waxhaws">Waxhaws Region</a></td>
+<td><span data-sort-value="Sou&nbsp;!"><a href="/wiki/Province_of_South_Carolina" title="Province of South Carolina">South</a>/<a href="/wiki/Province_of_North_Carolina" class="mw-redirect" title="Province of North Carolina">North Carolina</a></span><sup><img alt="dagger" src="//upload.wikimedia.org/wikipedia/commons/3/37/Dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14"></sup></td>
+<td><span data-sort-value="07&nbsp;!">(7th) March 4, 1829 – March 4, 1837</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001782-12-05-0000" style="white-space:nowrap">December 5, 1782</span></td>
+<td><span data-sort-value="Van Buren, Martin"><span class="vcard"><span class="fn"><a href="/wiki/Martin_Van_Buren" title="Martin Van Buren">Martin Van Buren</a></span></span></span></td>
+<td><a href="/wiki/Kinderhook_(town),_New_York" title="Kinderhook (town), New York">Kinderhook</a></td>
+<td><a href="/wiki/New_York_(state)" title="New York (state)">New York</a></td>
+<td><span data-sort-value="08&nbsp;!">(8th) March 4, 1837 – March 4, 1841</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001773-02-09-0000" style="white-space:nowrap">February 9, 1773</span></td>
+<td><span data-sort-value="Harrison, William Henry"><span class="vcard"><span class="fn"><a href="/wiki/William_Henry_Harrison" title="William Henry Harrison">William Henry Harrison</a></span></span></span></td>
+<td><a href="/wiki/Charles_City_County,_Virginia" title="Charles City County, Virginia">Charles City County</a></td>
+<td><span data-sort-value="virge&nbsp;!">Virginia</span><sup><img alt="dagger" src="//upload.wikimedia.org/wikipedia/commons/3/37/Dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14"></sup></td>
+<td><span data-sort-value="09&nbsp;!">(9th) March 4, 1841 – April 4, 1841</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001790-03-29-0000" style="white-space:nowrap">March 29, 1790</span></td>
+<td><span data-sort-value="Tyler, John"><span class="vcard"><span class="fn"><a href="/wiki/John_Tyler" title="John Tyler">John Tyler</a></span></span></span></td>
+<td>Charles City County</td>
+<td><span data-sort-value="virgg&nbsp;!">Virginia</span></td>
+<td><span data-sort-value="10&nbsp;!">(10th) April 4, 1841 – March 4, 1845</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001795-11-02-0000" style="white-space:nowrap">November 2, 1795</span></td>
+<td><span data-sort-value="Polk, James K."><span class="vcard"><span class="fn"><a href="/wiki/James_K._Polk" title="James K. Polk">James K. Polk</a></span></span></span></td>
+<td><a href="/wiki/Pineville,_North_Carolina" title="Pineville, North Carolina">Pineville</a></td>
+<td><a href="/wiki/North_Carolina" title="North Carolina">North Carolina</a></td>
+<td><span data-sort-value="11&nbsp;!">(11th) March 4, 1845 – March 4, 1849</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001784-11-24-0000" style="white-space:nowrap">November 24, 1784</span></td>
+<td><span data-sort-value="Taylor, Zachary"><span class="vcard"><span class="fn"><a href="/wiki/Zachary_Taylor" title="Zachary Taylor">Zachary Taylor</a></span></span></span></td>
+<td><a href="/wiki/Barboursville,_Virginia" title="Barboursville, Virginia">Barboursville</a></td>
+<td><span data-sort-value="virgf&nbsp;!">Virginia</span></td>
+<td><span data-sort-value="12&nbsp;!">(12th) March 4, 1849 – July 9, 1850</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001800-01-07-0000" style="white-space:nowrap">January 7, 1800</span></td>
+<td><span data-sort-value="Fillmore, Millard"><span class="vcard"><span class="fn"><a href="/wiki/Millard_Fillmore" title="Millard Fillmore">Millard Fillmore</a></span></span></span></td>
+<td><a href="/wiki/Summerhill,_New_York" title="Summerhill, New York">Summerhill</a></td>
+<td>New York</td>
+<td><span data-sort-value="13&nbsp;!">(13th) July 9, 1850 – March 4, 1853</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001804-11-23-0000" style="white-space:nowrap">November 23, 1804</span></td>
+<td><span data-sort-value="Pierce, Franklin"><span class="vcard"><span class="fn"><a href="/wiki/Franklin_Pierce" title="Franklin Pierce">Franklin Pierce</a></span></span></span></td>
+<td><a href="/wiki/Hillsborough,_New_Hampshire" title="Hillsborough, New Hampshire">Hillsborough</a></td>
+<td><a href="/wiki/New_Hampshire" title="New Hampshire">New Hampshire</a></td>
+<td><span data-sort-value="14&nbsp;!">(14th) March 4, 1853 – March 4, 1857</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001791-04-23-0000" style="white-space:nowrap">April 23, 1791</span></td>
+<td><span data-sort-value="Buchanan, James"><span class="vcard"><span class="fn"><a href="/wiki/James_Buchanan" title="James Buchanan">James Buchanan</a></span></span></span></td>
+<td><a href="/wiki/Cove_Gap,_Pennsylvania" title="Cove Gap, Pennsylvania">Cove Gap</a></td>
+<td><a href="/wiki/Pennsylvania" title="Pennsylvania">Pennsylvania</a></td>
+<td><span data-sort-value="15&nbsp;!">(15th) March 4, 1857 – March 4, 1861</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001809-02-12-0000" style="white-space:nowrap">February 12, 1809</span></td>
+<td><span data-sort-value="Lincoln, Abraham"><span class="vcard"><span class="fn"><a href="/wiki/Abraham_Lincoln" title="Abraham Lincoln">Abraham Lincoln</a></span></span></span></td>
+<td><span data-sort-value="Sinking&nbsp;!"><a href="/wiki/Hodgenville,_Kentucky" title="Hodgenville, Kentucky">Sinking Spring</a></span></td>
+<td><a href="/wiki/Kentucky" title="Kentucky">Kentucky</a></td>
+<td><span data-sort-value="16&nbsp;!">(16th) March 4, 1861 – April 15, 1865</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001808-12-29-0000" style="white-space:nowrap">December 29, 1808</span></td>
+<td><span data-sort-value="Johnson, Andrew"><span class="vcard"><span class="fn"><a href="/wiki/Andrew_Johnson" title="Andrew Johnson">Andrew Johnson</a></span></span></span></td>
+<td><a href="/wiki/Raleigh,_North_Carolina" title="Raleigh, North Carolina">Raleigh</a></td>
+<td>North Carolina</td>
+<td><span data-sort-value="17&nbsp;!">(17th) April 15, 1865 – March 4, 1869</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001822-04-27-0000" style="white-space:nowrap">April 27, 1822</span></td>
+<td><span data-sort-value="Grant, Ulysses S."><span class="vcard"><span class="fn"><a href="/wiki/Ulysses_S._Grant" title="Ulysses S. Grant">Ulysses S. Grant</a></span></span></span></td>
+<td><a href="/wiki/Point_Pleasant,_Ohio" title="Point Pleasant, Ohio">Point Pleasant</a></td>
+<td><a href="/wiki/Ohio" title="Ohio">Ohio</a></td>
+<td><span data-sort-value="18&nbsp;!">(18th) March 4, 1869 – March 4, 1877</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001822-10-04-0000" style="white-space:nowrap">October 4, 1822</span></td>
+<td><span data-sort-value="Hayes, Rutherford B."><span class="vcard"><span class="fn"><a href="/wiki/Rutherford_B._Hayes" title="Rutherford B. Hayes">Rutherford B. Hayes</a></span></span></span></td>
+<td><a href="/wiki/Delaware,_Ohio" title="Delaware, Ohio">Delaware</a></td>
+<td>Ohio</td>
+<td><span data-sort-value="19&nbsp;!">(19th) March 4, 1877 – March 4, 1881</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001831-11-19-0000" style="white-space:nowrap">November 19, 1831</span></td>
+<td><span data-sort-value="Garfield, James A."><span class="vcard"><span class="fn"><a href="/wiki/James_A._Garfield" title="James A. Garfield">James A. Garfield</a></span></span></span></td>
+<td><a href="/wiki/Moreland_Hills,_Ohio" title="Moreland Hills, Ohio">Moreland Hills</a></td>
+<td>Ohio</td>
+<td><span data-sort-value="20&nbsp;!">(20th) March 4, 1881 – September 19, 1881</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001829-10-05-0000" style="white-space:nowrap">October 5, 1829</span></td>
+<td><span data-sort-value="Arthur, Chester A."><span class="vcard"><span class="fn"><a href="/wiki/Chester_A._Arthur" title="Chester A. Arthur">Chester A. Arthur</a></span></span></span></td>
+<td><a href="/wiki/Fairfield,_Vermont" title="Fairfield, Vermont">Fairfield</a></td>
+<td><a href="/wiki/Vermont" title="Vermont">Vermont</a></td>
+<td><span data-sort-value="21&nbsp;!">(21st) September 19, 1881 – March 4, 1885</span>
+</td></tr><tr>
+<td rowspan="1"><span data-sort-value="000000001837-03-18-0000" style="white-space:nowrap">March 18, 1837</span></td>
+<td rowspan="1"><span data-sort-value="Cleveland, Grover"><span class="vcard"><span class="fn"><a href="/wiki/Grover_Cleveland" title="Grover Cleveland">Grover Cleveland</a></span></span></span></td>
+<td rowspan="1"><a href="/wiki/Caldwell,_New_Jersey" title="Caldwell, New Jersey">Caldwell</a></td>
+<td rowspan="1"><a href="/wiki/New_Jersey" title="New Jersey">New Jersey</a></td>
+<td><span data-sort-value="22&nbsp;!">(22nd) March 4, 1885 – March 4, 1889</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001833-08-20-0000" style="white-space:nowrap">August 20, 1833</span></td>
+<td><span data-sort-value="Harrison, Benjamin"><span class="vcard"><span class="fn"><a href="/wiki/Benjamin_Harrison" title="Benjamin Harrison">Benjamin Harrison</a></span></span></span></td>
+<td><a href="/wiki/North_Bend,_Ohio" title="North Bend, Ohio">North Bend</a></td>
+<td>Ohio</td>
+<td><span data-sort-value="23&nbsp;!">(23rd) March 4, 1889 – March 4, 1893</span>
+</td></tr><tr>
+<td rowspan="1"><span data-sort-value="000000001837-03-18-0000" style="white-space:nowrap">March 18, 1837</span></td><td rowspan="1"><span data-sort-value="Cleveland, Grover"><span class="vcard"><span class="fn"><a href="/wiki/Grover_Cleveland" title="Grover Cleveland">Grover Cleveland</a></span></span></span></td><td rowspan="1"><a href="/wiki/Caldwell,_New_Jersey" title="Caldwell, New Jersey">Caldwell</a></td><td rowspan="1"><a href="/wiki/New_Jersey" title="New Jersey">New Jersey</a></td><td><span data-sort-value="24&nbsp;!">(24th) March 4, 1893 – March 4, 1897</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001843-01-29-0000" style="white-space:nowrap">January 29, 1843</span></td>
+<td><span data-sort-value="McKinley, William"><span class="vcard"><span class="fn"><a href="/wiki/William_McKinley" title="William McKinley">William McKinley</a></span></span></span></td>
+<td><a href="/wiki/Niles,_Ohio" title="Niles, Ohio">Niles</a></td>
+<td>Ohio</td>
+<td><span data-sort-value="25&nbsp;!">(25th) March 4, 1897 – September 14, 1901</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001858-10-27-0000" style="white-space:nowrap">October 27, 1858</span></td>
+<td><span data-sort-value="Roosevelt, Theodore"><span class="vcard"><span class="fn"><a href="/wiki/Theodore_Roosevelt" title="Theodore Roosevelt">Theodore Roosevelt</a></span></span></span></td>
+<td><a href="/wiki/New_York_City" title="New York City">New York City</a></td>
+<td>New York</td>
+<td><span data-sort-value="26&nbsp;!">(26th) September 14, 1901 – March 4, 1909</span>
+</td></tr><tr>
+<td nowrap=""><span data-sort-value="000000001857-09-15-0000" style="white-space:nowrap">September 15, 1857</span></td>
+<td><span data-sort-value="Taft, William H."><span class="vcard"><span class="fn"><a href="/wiki/William_Howard_Taft" title="William Howard Taft">William H. Taft</a></span></span></span></td>
+<td><a href="/wiki/Cincinnati" title="Cincinnati">Cincinnati</a></td>
+<td>Ohio</td>
+<td><span data-sort-value="27&nbsp;!">(27th) March 4, 1909 – March 4, 1913</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001856-12-28-0000" style="white-space:nowrap">December 28, 1856</span></td>
+<td><span data-sort-value="Wilson, Woodrow"><span class="vcard"><span class="fn"><a href="/wiki/Woodrow_Wilson" title="Woodrow Wilson">Woodrow Wilson</a></span></span></span></td>
+<td><a href="/wiki/Staunton,_Virginia" title="Staunton, Virginia">Staunton</a></td>
+<td><span data-sort-value="virgh&nbsp;!">Virginia</span></td>
+<td><span data-sort-value="28&nbsp;!">(28th) March 4, 1913 – March 4, 1921</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001865-11-02-0000" style="white-space:nowrap">November 2, 1865</span></td>
+<td><span data-sort-value="Harding, Warren G."><span class="vcard"><span class="fn"><a href="/wiki/Warren_G._Harding" title="Warren G. Harding">Warren G. Harding</a></span></span></span></td>
+<td><a href="/wiki/Blooming_Grove,_Ohio" title="Blooming Grove, Ohio">Blooming Grove</a></td>
+<td>Ohio</td>
+<td><span data-sort-value="29&nbsp;!">(29th) March 4, 1921 – August 2, 1923</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001872-07-04-0000" style="white-space:nowrap">July 4, 1872</span></td>
+<td><span data-sort-value="Coolidge, Calvin"><span class="vcard"><span class="fn"><a href="/wiki/Calvin_Coolidge" title="Calvin Coolidge">Calvin Coolidge</a></span></span></span></td>
+<td><a href="/wiki/Plymouth,_Vermont" title="Plymouth, Vermont">Plymouth</a></td>
+<td>Vermont</td>
+<td><span data-sort-value="30&nbsp;!">(30th) August 2, 1923 – March 4, 1929</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001874-08-10-0000" style="white-space:nowrap">August 10, 1874</span></td>
+<td><span data-sort-value="Hoover, Herbert"><span class="vcard"><span class="fn"><a href="/wiki/Herbert_Hoover" title="Herbert Hoover">Herbert Hoover</a></span></span></span></td>
+<td><a href="/wiki/West_Branch,_Iowa" title="West Branch, Iowa">West Branch</a></td>
+<td><a href="/wiki/Iowa" title="Iowa">Iowa</a></td>
+<td><span data-sort-value="31&nbsp;!">(31st) March 4, 1929 – March 4, 1933</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001882-01-30-0000" style="white-space:nowrap">January 30, 1882</span></td>
+<td><span data-sort-value="Roosevelt, Franklin D."><span class="vcard"><span class="fn"><a href="/wiki/Franklin_D._Roosevelt" title="Franklin D. Roosevelt">Franklin D. Roosevelt</a></span></span></span></td>
+<td><a href="/wiki/Hyde_Park,_New_York" title="Hyde Park, New York">Hyde Park</a></td>
+<td>New York</td>
+<td><span data-sort-value="32&nbsp;!">(32nd) March 4, 1933 – April 12, 1945</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001884-05-08-0000" style="white-space:nowrap">May 8, 1884</span></td>
+<td><span data-sort-value="Truman, Harry S."><span class="vcard"><span class="fn"><a href="/wiki/Harry_S._Truman" title="Harry S. Truman">Harry S. Truman</a></span></span></span></td>
+<td><a href="/wiki/Lamar,_Missouri" title="Lamar, Missouri">Lamar</a></td>
+<td><a href="/wiki/Missouri" title="Missouri">Missouri</a></td>
+<td><span data-sort-value="33&nbsp;!">(33rd) April 12, 1945 – January 20, 1953</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001890-10-14-0000" style="white-space:nowrap">October 14, 1890</span></td>
+<td><span data-sort-value="Eisenhower, Dwight D."><span class="vcard"><span class="fn"><a href="/wiki/Dwight_D._Eisenhower" title="Dwight D. Eisenhower">Dwight D. Eisenhower</a></span></span></span></td>
+<td><a href="/wiki/Denison,_Texas" title="Denison, Texas">Denison</a></td>
+<td><a href="/wiki/Texas" title="Texas">Texas</a></td>
+<td><span data-sort-value="34&nbsp;!">(34th) January 20, 1953 – January 20, 1961</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001917-05-29-0000" style="white-space:nowrap">May 29, 1917</span></td>
+<td><span data-sort-value="Kennedy, John F."><span class="vcard"><span class="fn"><a href="/wiki/John_F._Kennedy" title="John F. Kennedy">John F. Kennedy</a></span></span></span></td>
+<td><a href="/wiki/Brookline,_Massachusetts" title="Brookline, Massachusetts">Brookline</a></td>
+<td>Massachusetts</td>
+<td><span data-sort-value="35&nbsp;!">(35th) January 20, 1961 – November 22, 1963</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001908-08-27-0000" style="white-space:nowrap">August 27, 1908</span></td>
+<td><span data-sort-value="Johnson, Lyndon B."><span class="vcard"><span class="fn"><a href="/wiki/Lyndon_B._Johnson" title="Lyndon B. Johnson">Lyndon B. Johnson</a></span></span></span></td>
+<td><a href="/wiki/Stonewall,_Texas" title="Stonewall, Texas">Stonewall</a></td>
+<td>Texas</td>
+<td><span data-sort-value="36&nbsp;!">(36th) November 22, 1963 – January 20, 1969</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001913-01-09-0000" style="white-space:nowrap">January 9, 1913</span></td>
+<td><span data-sort-value="Nixon, Richard"><span class="vcard"><span class="fn"><a href="/wiki/Richard_Nixon" title="Richard Nixon">Richard Nixon</a></span></span></span></td>
+<td><a href="/wiki/Yorba_Linda,_California" title="Yorba Linda, California">Yorba Linda</a></td>
+<td><a href="/wiki/California" title="California">California</a></td>
+<td><span data-sort-value="37&nbsp;!">(37th) January 20, 1969 – August 9, 1974</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001913-07-14-0000" style="white-space:nowrap">July 14, 1913</span></td>
+<td><span data-sort-value="Ford, Gerald"><span class="vcard"><span class="fn"><a href="/wiki/Gerald_Ford" title="Gerald Ford">Gerald Ford</a></span></span></span></td>
+<td><a href="/wiki/Omaha,_Nebraska" title="Omaha, Nebraska">Omaha</a></td>
+<td><a href="/wiki/Nebraska" title="Nebraska">Nebraska</a></td>
+<td><span data-sort-value="38&nbsp;!">(38th) August 9, 1974 – January 20, 1977</span>
+</td></tr><tr style="background:#ffffff;">
+<td><span data-sort-value="000000001924-10-01-0000" style="white-space:nowrap">October 1, 1924</span></td>
+<td><span data-sort-value="Carter, Jimmy"><span class="vcard"><span class="fn"><a href="/wiki/Jimmy_Carter" title="Jimmy Carter">Jimmy Carter</a></span></span></span></td>
+<td><a href="/wiki/Plains,_Georgia" title="Plains, Georgia">Plains</a></td>
+<td><a href="/wiki/Georgia_(U.S._state)" title="Georgia (U.S. state)">Georgia</a></td>
+<td><span data-sort-value="39&nbsp;!">(39th) January 20, 1977 – January 20, 1981</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001911-02-06-0000" style="white-space:nowrap">February 6, 1911</span></td>
+<td><span data-sort-value="Reagan, Ronald"><span class="vcard"><span class="fn"><a href="/wiki/Ronald_Reagan" title="Ronald Reagan">Ronald Reagan</a></span></span></span></td>
+<td><a href="/wiki/Tampico,_Illinois" title="Tampico, Illinois">Tampico</a></td>
+<td><a href="/wiki/Illinois" title="Illinois">Illinois</a></td>
+<td><span data-sort-value="40&nbsp;!">(40th) January 20, 1981 – January 20, 1989</span>
+</td></tr><tr>
+<td><span data-sort-value="000000001924-06-12-0000" style="white-space:nowrap">June 12, 1924</span></td>
+<td><span data-sort-value="Bush, George H. W."><span class="vcard"><span class="fn"><a href="/wiki/George_H._W._Bush" title="George H. W. Bush">George H. W. Bush</a></span></span></span></td>
+<td><a href="/wiki/Milton,_Massachusetts" title="Milton, Massachusetts">Milton</a></td>
+<td>Massachusetts</td>
+<td><span data-sort-value="41&nbsp;!">(41st) January 20, 1989 – January 20, 1993</span>
+</td></tr><tr style="background:#ffffff;">
+<td><span data-sort-value="000000001946-08-19-0000" style="white-space:nowrap">August 19, 1946</span></td>
+<td><span data-sort-value="Clinton, Bill"><span class="vcard"><span class="fn"><a href="/wiki/Bill_Clinton" title="Bill Clinton">Bill Clinton</a></span></span></span></td>
+<td><a href="/wiki/Hope,_Arkansas" title="Hope, Arkansas">Hope</a></td>
+<td><a href="/wiki/Arkansas" title="Arkansas">Arkansas</a></td>
+<td><span data-sort-value="42&nbsp;!">(42nd) January 20, 1993 – January 20, 2001</span>
+</td></tr><tr style="background:#ffffff;">
+<td><span data-sort-value="000000001946-07-06-0000" style="white-space:nowrap">July 6, 1946</span></td>
+<td><span data-sort-value="Bush, George W."><span class="vcard"><span class="fn"><a href="/wiki/George_W._Bush" title="George W. Bush">George W. Bush</a></span></span></span></td>
+<td><a href="/wiki/New_Haven,_Connecticut" title="New Haven, Connecticut">New Haven</a></td>
+<td><a href="/wiki/Connecticut" title="Connecticut">Connecticut</a></td>
+<td><span data-sort-value="43&nbsp;!">(43rd) January 20, 2001 – January 20, 2009</span>
+</td></tr><tr style="background:#ffffff;">
+<td><span data-sort-value="000000001961-08-04-0000" style="white-space:nowrap">August 4, 1961</span></td>
+<td><span data-sort-value="Obama, Barack"><span class="vcard"><span class="fn"><a href="/wiki/Barack_Obama" title="Barack Obama">Barack Obama</a></span></span></span></td>
+<td><a href="/wiki/Honolulu" title="Honolulu">Honolulu</a></td>
+<td><a href="/wiki/Hawaii" title="Hawaii">Hawaii</a></td>
+<td><span data-sort-value="44&nbsp;!">(44th) January 20, 2009 – January 20, 2017</span>
+</td></tr><tr style="background:#ffffff;">
+<td><span data-sort-value="000000001946-06-14-0000" style="white-space:nowrap">June 14, 1946</span></td>
+<td><span data-sort-value="Trump, Donald"><span class="vcard"><span class="fn"><a href="/wiki/Donald_Trump" title="Donald Trump">Donald Trump</a></span></span></span></td>
+<td><a href="/wiki/Queens" title="Queens">Queens</a></td>
+<td>New York</td>
+<td><span data-sort-value="45&nbsp;!">(45th) January 20, 2017 – <a href="/wiki/Incumbent" title="Incumbent">Incumbent</a></span>
+</td></tr><tr>
+<td colspan="5"><center><small><b>Note: <sup><img alt="Colony, pre American Revolution" src="//upload.wikimedia.org/wikipedia/commons/3/37/Dagger-14-plain.png" decoding="async" width="9" height="14" data-file-width="9" data-file-height="14"></sup> = Colony, pre–1776, rather than state.</b></small></center>
+</td></tr></tbody><tfoot></tfoot></table>
