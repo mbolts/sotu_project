@@ -1,20 +1,29 @@
 <!doctype html>
 <html>
 <head>
+
   <title>State of the Union</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Overpass" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./static/css/style.css">
+
 </head>
 
 <body>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://d3js.org/d3.v5.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="./static/css/style.css">
 
-<ul class="nav justify-content-end">
-  <li class="nav-item">
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+ <a> 
+  <h1>State of the Union</h1> 
+ </a>
+<ul class="navbar-nav ml-auto">
+  <li class="nav-item text-right">
     <a class="nav-link" href="/">Home</a>
   </li>
-  <li class="nav-item">
+  <li class="nav-item text-right">
     <a class="nav-link" href="/presidents">Presidents</a>
   </li>
   <li class="nav-item">
@@ -30,8 +39,11 @@
     <a class="nav-link" href="wc_visualization">Word Counts</a>
   </li>
 </ul>
+</div>
+</nav>
 
-<h1>State of the Union</h1>
+<div style="margin-top: 9px;"></div>
+
 <br>
 
   {% with messages = get_flashed_messages() %}

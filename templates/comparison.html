@@ -1,19 +1,30 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h2 class="comparison">Comparison of State of the Union Speeches <span class="of"></span> <span class="pres_1_name">  </span> <span class="and"></span> <span class="pres_2_name"> </span></h2>
+<div class="row">
+
+    <div class="col-lg-8 offset-lg-2 compdiv" style="padding-bottom: 50px;">
+<h2 class="comparison text-center" style="margin-top: 40px;">Comparison of State of the Union Speeches 
+<br>
+
+    <span class="of"></span> <span class="pres_1_name">  </span> <span class="and"></span> <span class="pres_2_name"> </span></h2>
 
 
-<h3 class="info_zone" style="display: none!important">
+<h3 class="info_zone text-center" style="display: none!important">
 
 The semantic similarity estimate between these two is: 
 <span class="pres_similarity"> </span>
 
 </h3>
+<br>
+<br>
 
 
 <div id="chart"></div>
 
+</div>
+</div>
+<div id="tooltip"></div>
 
 <script src="./static/js/similarity.js"type="text/javascript"></script>  
 

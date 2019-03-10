@@ -3,19 +3,42 @@
             width: 100%;
             padding: 40px;
         }
-        /*        #chart{
-            background-color: #ccc;
-            width: 1000px;
-            height: 500px;
-            margin: 50px auto;
-            border: solid 1px #000;
-        }*/
+
         svg{
             background-color: #fff;
+            display: block;
+            margin: auto;
         }
+
+        text {
+            font-family: 'Overpass', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Merriweather', serif;
+        }
+
+        h1 {
+            font-weight: 700;
+        }
+        h2 {
+            font-weight: 400;
+        }
+        h3 {
+            font-weight: 300;
+        }
+
+        nav.navbar {
+            padding: 25px,0px;
+        }
+
+
         .counts{
             stroke: #000;
             stroke-width: 1px;
+        }
+
+        .compdiv{
+            background-color: #e7ecf1;
         }
         .axis line, .axis path{
             stroke: #bbb;
@@ -41,6 +64,7 @@
             height:60vh;
             object-fit: cover;
         }
+ 
 
         .line {
             fill: none;

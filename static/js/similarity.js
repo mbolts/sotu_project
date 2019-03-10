@@ -28,7 +28,7 @@ const party = {
 d3.csv('/sim_matrix.csv').then(function(data){
     console.log(data); 
 
-    const margin = { top: 175, right: 100, bottom: 50, left: 175 },
+    const margin = { top: 175, right: 10, bottom: 10, left: 175 },
           gridSize = 20,
           number_of_pres = 44,
           width = gridSize * number_of_pres,
@@ -64,8 +64,8 @@ d3.csv('/sim_matrix.csv').then(function(data){
         .enter()
         .append("text")
             .text(d => d)
-            .attr("x", 0)
-            .attr("y", (d, i) => i * gridSize)
+            .attr("x", 3)
+            .attr("y", (d, i) => i * gridSize + 5)
             .style("text-anchor", "left")
             .attr("transform", "translate(" + gridSize / 2 + ", 0), rotate(-90)")
             .attr("class", "president2Label mono axis");
@@ -92,24 +92,20 @@ d3.csv('/sim_matrix.csv').then(function(data){
             .attr("height", gridSize)
             .style("fill", d => colorScale(d.sim))
         .on('mouseover', function(d){
-            svg.append('rect')
-                .attr('id', 'tooltip-rect'+d.pres_1+d.pres_2)
-                .attr('x', d.pres_2 * gridSize)
-                .attr('y', d.pres_1 * gridSize)
-                .attr('width', gridSize * 7)
-                .attr('height', gridSize)
-                .attr('fill', 'orange')
-                .style('opacity', 0.85);
-            svg.append('text')
-                .attr('id', 'tooltip'+d.pres_1+d.pres_2)
-                .attr('x', d.pres_2 * gridSize)
-                .attr('y', d.pres_1 * gridSize + gridSize - 2)
-                .text('Similarity: ' + numFormat(d.sim))
+            html = `
+                   ${presidents[d.pres_1 - 1]}, ${d.pres_1_party} <br>
+                   ${presidents[d.pres_2 - 1]}, ${d.pres_2_party} <br>
+                   Similarity: ${d.sim}
+                   `;
+            d3.select('#tooltip')
+                .style('left', d3.event.pageX - 100 + 'px')
+                .style('top', d3.event.pageY - 140 + 'px')
+                .html(html)
                 .style('opacity', 0.85);
           })
         .on('mouseout', function(d){
-            d3.select('#tooltip'+d.pres_1+d.pres_2).remove();
-            d3.select('#tooltip-rect'+d.pres_1+d.pres_2).remove();
+            d3.select('#tooltip')
+              .style('opacity', 0);
           })
         .on('click', function(d){
           d3.select('.comparison .pres_1_name')
@@ -127,7 +123,7 @@ d3.csv('/sim_matrix.csv').then(function(data){
           d3.select(".info_zone .pres_similarity")
             .text(d.sim);
           d3.select(".info_zone")
-            .style('display', 'contents');
+            .style('display', 'inherit');
         });
 
 
