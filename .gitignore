@@ -1,0 +1,12 @@
+env/
+*.pyc
+__pycache__
+secrets.py
+.swp
+speech_doc/
+.DS_Store
+president_doc/
+.coverage
+node_modules/
+package-lock.json
+Makefile
