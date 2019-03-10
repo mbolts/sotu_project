@@ -4,14 +4,26 @@
 <h2>Presidents of the United States</h2>
 
 <div class="presidents">
+<div class="row">
 {% for president in presidents %}
-  <a href="president?president={{ president.name }}&submit=Submit"><p name="{{president.name}}" value="{{ president.pres_id }}">{{ president.name }}</p></a>
-  <ul>
+<div class="col-lg-3">
+<div class="card">
+  <img class="card-img-top" src="{{ president.img }}" alt="Image of {{ president.name }}">
+  <div class="card-body">
+    <h5 class="card-title">{{ president.name }}</h5>
+    <p class="card-text">
+   <ul>
       <li>Party Affiliation: {{ president.party_affiliation }}</li>
       <li>Date of Birth: {{ president.date_of_birth.strftime('%A, %B %d, %Y') }}</li>
-  </ul>
+  </ul>       
+    </p>
+    <a href="president?president={{ president.name }}&submit=Submit" class="btn btn-primary">Learn more about {{ president.name }}</a>
+  </div>
 
+</div>
+</div>
 {% endfor %}
+</div>
 </div>
 <br>
 

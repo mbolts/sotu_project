@@ -1,7 +1,5 @@
 
 
-
-
 function transformCSV(data) {
 
   const word = data.word;
@@ -14,16 +12,6 @@ function transformCSV(data) {
     values
   };
 }
-
-
-    d3.selection.prototype.moveToBack = function() {  
-        return this.each(function() { 
-            var firstChild = this.parentNode.firstChild; 
-            if (firstChild) { 
-                this.parentNode.insertBefore(this, firstChild); 
-            } 
-        });
-    };
 
 
 d3.csv("/word_freq.csv", transformCSV).then(function (dataset) {
@@ -53,8 +41,11 @@ d3.csv("/word_freq.csv", transformCSV).then(function (dataset) {
               .style("width", width)
               .style("height", height);
 
+xMin = d3.extent(data.dates)[0];
+xMax = d3.extent(data.dates)[1];
+
 x = d3.scaleTime()
-    .domain(d3.extent(data.dates))
+    .domain([new Date(xMin,0,0), new Date(xMax,0,0)])
     .range([margin.left, width - margin.right]);
 
 y = d3.scalePoint()
@@ -86,7 +77,7 @@ yAxis = g => g
 area = d3.area()
     .curve(d3.curveBasis)
     .defined(d => !isNaN(d))
-    .x((d, i) => x(data.dates[i]))
+    .x((d, i) => x(new Date(data.dates[i],0,0)))
     .y0(0)
     .y1(d => z(d))
 

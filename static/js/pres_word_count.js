@@ -1,6 +1,6 @@
 
 const configGraph = {
-    margin: 30,
+    margin: 50,
     width: 1000,
     height: 500,
 };
@@ -24,19 +24,21 @@ d3.json('/word_counts.json').then(function (data) {
         'Democratic': 'blue',
         'Whig': '#ffe761', // yellow
         'Republican': 'red'
-    }
+    };
 
-    yMin = d3.min(data['data'], d => d.words_per);
+    yMin = d3.min(data.data, d => d.words_per);
             
-    yMax = d3.max(data['data'], d => d.words_per);
+    yMax = d3.max(data.data, d => d.words_per);
 
-    xMin = d3.min(data['data'], d => d.first_year);
+    xMin = d3.min(data.data, d => d.first_year);
             
-    xMax = d3.max(data['data'], d => d.first_year);
+    xMax = d3.max(data.data, d => d.first_year);
 
-    xScale = d3.scaleLinear()
-                .domain([xMin, xMax]) // Input values to scale
-                .range([configGraph.margin + 15, 
+    console.log(xMax, xMin);
+
+    xScale = d3.scaleTime()
+               .domain([new Date(xMin, 0, 0), new Date(xMax, 0, 0)])
+               .range([configGraph.margin + 15, 
                 configGraph.width - configGraph.margin - 15]) // Range of scale
                 ;
 
@@ -47,11 +49,11 @@ d3.json('/word_counts.json').then(function (data) {
                 ;
 
     circles = svg.selectAll('.counts')
-        .data(data['data'])
+        .data(data.data)
         .enter()
         .append('circle')
         .attr('class', 'counts')
-        .attr('cx', d => xScale(d.first_year))
+        .attr('cx', d => xScale(new Date(d.first_year, 0, 0)))
         .attr('cy', d => yScale(d.words_per))
         .attr('r',10)
         .attr('fill', d => party[d.party])
@@ -72,14 +74,17 @@ d3.json('/word_counts.json').then(function (data) {
         .on('mouseout', function(){
             d3.select('#tooltip')
                 .style('left', '-1000px')
-                .style('opacity', 0)
+                .style('opacity', 0);
         });
 
+    format = d3.timeFormat("%Y");
 
     // Create the x and y axis
-    xAxis = d3.axisBottom(xScale).tickValues([xMin, xMax]);
+    xAxis = d3.axisBottom(xScale)
+              .ticks(xMax / 100);
 
-    yAxis = d3.axisLeft(yScale).tickValues([yMin, yMax]);
+
+    yAxis = d3.axisLeft(yScale);
 
 
     // Add the x and y axis to the svg element and assign them a class
@@ -96,7 +101,7 @@ d3.json('/word_counts.json').then(function (data) {
         .attr('transform', `translate(0,${configGraph.height - configGraph.margin})`); // First number is x axis move, second number is y axis move
 
     yAxisG.call(yAxis)
-        .attr('transform', 'translate(30,0)'); // First number is x axis move, second number is y axis move
+        .attr('transform', 'translate(50,0)'); // First number is x axis move, second number is y axis move
 });
 
 
