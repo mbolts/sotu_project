@@ -27,9 +27,9 @@
             font-weight: 300;
         }
 
-        nav.navbar {
+/*        nav.navbar {
             padding: 25px,0px;
-        }
+        }*/
 
 
         .counts{
@@ -40,12 +40,15 @@
         .compdiv{
             background-color: #e7ecf1;
         }
+
         .axis line, .axis path{
             stroke: #bbb;
         }
+
         .axis text{
             fill: #bbb;
         }
+
         #tooltip{
             position: absolute;
             background-color: #fff;
@@ -53,9 +56,11 @@
             border: solid 1px #000;
             opacity: 0;
         }
+
         .pres_1_name {
             border-radius: 5px;
         }
+
         .pres_2_name {
             border-radius: 5px;
         }
@@ -65,7 +70,6 @@
             object-fit: cover;
         }
  
-
         .line {
             fill: none;
             stroke: #ffab00;
@@ -83,7 +87,7 @@
             stroke: #fff;
         }
           
-          .focus circle {
+        .focus circle {
           fill: none;
           stroke: steelblue;
         }

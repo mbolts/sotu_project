@@ -31,11 +31,11 @@ d3.csv("/word_freq.csv", transformCSV).then(function (dataset) {
   width = height;
   overlap = 1;
 
-  margin = ({top: 125, right: 20, bottom: 30, left: 120});
+  margin = ({top: 125, right: 20, bottom: 30, left: 90});
 
   const svg = d3.select('#chart')
               .append('svg')
-              // .attr("viewBox", `-${width / 2} -${height / 2} ${width} ${height}`)
+              // .attr("viewBox", `240 0 ${width - 0} ${height}`)
               .style("display", "block")
               .style("margin", "0 -14px")
               .style("width", width)
@@ -105,7 +105,7 @@ line = area.lineY1()
             .style('opacity', 1);
         svg.append('text')
            .attr('id', 'tooltip-'+d.name)
-           .attr('x', d3.event.pageX)
+           .attr('x', d3.event.pageX - margin.left - 50)
            .attr('y', d3.event.pageY - margin.top - 50)
            .text(d.name);
         })

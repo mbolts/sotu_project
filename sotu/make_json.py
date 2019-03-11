@@ -387,3 +387,46 @@ def make_hierarchy_json():
 
     with open('./static/data/hierarchy.json', 'w') as f:
         f.write(json.dumps(century_root))
+
+
+def make_hierarchy_json_2():
+    """Create a json file of the word counts by decade by century by pres"""
+
+    centuries = {'1700s': [1790], '1800s': [1800, 1810, 1820, 1830, 1840, 1850,
+                 1860, 1870, 1880, 1890], '1900s': [1900, 1910, 1920, 1930,
+                 1940, 1950, 1960, 1970, 1980, 1990], '2000s': [2000, 2010]}
+
+    century_root = {'name': 'century', 'children': []}
+
+    # Add the decades as children in each century
+    for century in centuries:
+        century_root['children'].append({'name': century,
+                                         'children': centuries[century]})
+
+    # Going through each century
+    for idx, century in enumerate(century_root['children']):
+        print(century)
+
+        # Going through each decade within the given century
+        for i, decade in enumerate(century['children']):
+            # Initialize a speeches list, a years range to iterate over
+            speeches = []
+            years = range(decade, decade + 10)
+            century['children'][i] = {'name': decade, 'children': []}
+            decade_node = century['children'][i]
+
+            # Loop through each year and add the speeches in each year
+            for year in years:
+                year_obj = Year.query.get(year)
+                if year_obj.speeches:
+                    speeches.extend(year_obj.speeches)
+
+            decade_wc = word_count.lemma_word_count_filtered(speeches).most_common(15)
+
+            wc_dict = [{'name': word[0], 'count': word[1]}
+                       for word in decade_wc]
+
+            decade_node['children'].append(wc_dict)
+
+    with open('./static/data/hierarchy_2.json', 'w') as f:
+        f.write(json.dumps(century_root))

@@ -39,8 +39,8 @@ def index():
 
 
 @app.route('/president', methods=['GET'])
-def show_speeches():
-    """ Display all of the speeches given by the selected president """
+def show_president_details():
+    """ Display all of the details of the selected president """
 
     president_name = request.args.get('president')
     president = President.query.filter_by(name=president_name).one()
@@ -58,14 +58,10 @@ def show_speeches():
                 similar_pres.append((pres_obj, line[2]))
 
     similar_pres = sorted(similar_pres, key=lambda x: x[1], reverse=True)
-    # print(similar_pres)
+
     similar_pres = similar_pres[:5]
 
-    print(president.top_words)
-
     top_words = jsonify(president.top_words)
-
-    print(top_words)
 
     return render_template("president.html",
                            president=president,
@@ -96,18 +92,10 @@ def show_speech(speech_id):
 
 
 @app.route('/comparison', methods=['GET'])
-def compare_presidents():
-    """Compare two selected presidents"""
-
-    # pres_1 = request.args.get('pres_1')
-    # pres_2 = request.args.get('pres_2')
-
-    # pres_1 = President.query.get(pres_1)
-    # pres_2 = President.query.get(pres_2)
+def compare_speeches():
+    """Compare the presidents speeches"""
 
     return render_template('comparison.html',
-                           # pres_1=pres_1,
-                           # pres_2=pres_2,
                            )
 
 
@@ -132,13 +120,6 @@ def show_wc_visualization():
     """Show visualization."""
 
     return render_template("wc_visualization.html")
-
-
-@app.route('/wf_visualization')
-def show_wf_visualization():
-    """Show visualization."""
-
-    return render_template("wf_visualization.html")
 
 
 @app.route('/decade_speeches.json', methods=['GET'])
