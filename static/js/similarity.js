@@ -29,7 +29,7 @@ d3.csv('/sim_matrix.csv').then(function(data){
     console.log(data); 
 
     const margin = { top: 175, right: 10, bottom: 10, left: 175 },
-          gridSize = 20,
+          gridSize = 18,
           number_of_pres = 44,
           width = gridSize * number_of_pres,
           height = gridSize * number_of_pres,          

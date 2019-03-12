@@ -37,7 +37,7 @@ d3.csv("/word_freq.csv", transformCSV).then(function (dataset) {
               .append('svg')
               // .attr("viewBox", `240 0 ${width - 0} ${height}`)
               .style("display", "block")
-              .style("margin", "0 -14px")
+              .style("margin", "0 0px")
               .style("width", width)
               .style("height", height);
 

@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
+<div class="container">
 
 <h2>Speeches of {{ president.name }}</h2>
 
@@ -29,7 +30,7 @@
 <script type="text/javascript">
 let words = JSON.parse('{{ president.top_words | tojson }}');
 let total = JSON.parse('{{ president.total_words }}');
-let president = '{{ president.name }}'
+let president = '{{ president.name }}';
 
 for (var i = words.length - 1; i >= 0; i--) {
     words[i][1] = words[i][1] / total;
@@ -51,6 +52,6 @@ for (var i = words.length - 1; i >= 0; i--) {
 {% endfor %}
 
 </div>
-
+</div>
 
 {% endblock %}

@@ -13,6 +13,7 @@
         text {
             font-family: 'Overpass', sans-serif;
         }
+
         h1, h2, h3 {
             font-family: 'Merriweather', serif;
         }
@@ -20,17 +21,14 @@
         h1 {
             font-weight: 700;
         }
+
         h2 {
             font-weight: 400;
         }
+        
         h3 {
             font-weight: 300;
         }
-
-/*        nav.navbar {
-            padding: 25px,0px;
-        }*/
-
 
         .counts{
             stroke: #000;
@@ -66,7 +64,7 @@
         }
 
         .card-img-top {
-            height:60vh;
+            height: 350px;
             object-fit: cover;
         }
  

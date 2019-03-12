@@ -3,51 +3,60 @@
 <head>
 
   <title>State of the Union</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://d3js.org/d3.v5.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Overpass" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="./static/css/style.css">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Overpass" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./static/css/style.css">
 
 </head>
 
 <body>
+  <div class="container-fluid" style="margin-bottom: 40px";>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
- <a> 
-  <h1>State of the Union</h1> 
- </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a> 
+          <h2>State of the Union</h2> 
+        </a>
 
-<ul class="navbar-nav ml-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="/">Home</a>
-  </li>
-  <li class="nav-itemt">
-    <a class="nav-link" href="/presidents">Presidents</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="comparison">Comparisons</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="words_by_decade">Words by Decade</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="word_freq">Word Frequencies</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="wc_visualization">Word Counts</a>
-  </li>
-</ul>
-</div>
-</nav>
+        <ul class="navbar-nav ml-auto">
 
-<div style="margin-top: 9px;"></div>
-
-<br>
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/presidents">
+              Presidents </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison">
+              Comparisons </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="words_by_decade">
+              Words by Decade </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="word_freq">
+            Word Frequencies </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wc_visualization">
+            Word Counts </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
   {% with messages = get_flashed_messages() %}
       {% for message in messages %}
