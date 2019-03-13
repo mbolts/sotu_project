@@ -39,6 +39,31 @@
             background-color: #e7ecf1;
         }
 
+       .svg-container-count {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            padding-bottom: 50%; /* aspect ratio */
+            vertical-align: top;
+            overflow: hidden;
+        }
+
+
+       .svg-container-freq {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%; /* aspect ratio */
+            vertical-align: top;
+            overflow: hidden;
+        }
+        .svg-content-responsive {
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 0;
+        }
+
         .axis line, .axis path{
             stroke: #bbb;
         }

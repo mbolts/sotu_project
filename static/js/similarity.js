@@ -91,7 +91,9 @@ d3.csv('/sim_matrix.csv').then(function(data){
             .attr("width", gridSize)
             .attr("height", gridSize)
             .style("fill", d => colorScale(d.sim))
-        .on('mouseover', function(d){
+
+
+        cards.on('mouseover', function(d){
             html = `
                    ${presidents[d.pres_1 - 1]}, ${d.pres_1_party} <br>
                    ${presidents[d.pres_2 - 1]}, ${d.pres_2_party} <br>
