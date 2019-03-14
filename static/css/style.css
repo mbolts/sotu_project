@@ -72,10 +72,17 @@
             fill: #bbb;
         }
 
+        .carousel-caption {
+            max-width: 100%;
+            width:100%;
+            background-color: #f8f9fa;
+            left: 0;
+        }
+
         #tooltip{
             position: absolute;
             background-color: #fff;
-            padding: 20px;
+            padding: 15px;
             border: solid 1px #000;
             opacity: 0;
         }

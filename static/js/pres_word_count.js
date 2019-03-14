@@ -7,20 +7,18 @@ const configGraph = {
 let circles, xScale, yScale, xAxis, yAxis;
 
 
-   //responsive SVG needs these 2 attributes and no width and height attr
-
-   //class to make it responsive
-
-
-
 const svg = d3.select('#chart')
    .append("div")
    .classed("svg-container-count", true) //container class to make it responsive
    .append("svg")
    .attr("preserveAspectRatio", "xMinYMin meet")
    .attr("viewBox", "0 0 1000 500")
-   .classed("svg-content-responsive", true); 
+   .classed("svg-content-responsive", true);
 
+// svg.append("rect")
+//     .attr("width", "100%")
+//     .attr("height", "100%")
+//     .attr("fill", "#e7ecf1");
 
 d3.json('/word_counts.json').then(function (data) {
     console.log(data);
