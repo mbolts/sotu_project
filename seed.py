@@ -2,7 +2,6 @@
 
 import datetime
 
-from spacy.tokens import Doc
 from sotu import nlp
 
 from sotu.model import President, Year, Speech, Word, Token
@@ -257,9 +256,9 @@ if __name__ == "__main__":
     db.create_all()
 
     # Import different types of data
-    # load_presidents()
-    # load_years()
-    # load_speeches()
-    # load_words()
-    # load_tokens()
+    load_presidents()
+    load_years()
+    load_speeches()
+    load_words()
+    load_tokens()
     update_presidents()

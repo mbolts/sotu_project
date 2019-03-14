@@ -2,7 +2,7 @@
 
 from collections import Counter
 
-from spacy.tokens import Doc
+# from spacy.tokens import Doc
 
 # from sotu.model import Year
 from sotu.nlp import NLP

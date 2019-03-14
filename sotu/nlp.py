@@ -1,8 +1,8 @@
 """Natural Language Processing helper functions"""
 
-import spacy
+# import spacy
 
-NLP = spacy.load('en')
+# NLP = spacy.load('en')
 
 
 def open_file(filepath):

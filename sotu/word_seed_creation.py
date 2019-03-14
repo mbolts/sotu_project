@@ -1,7 +1,7 @@
 """ Create spacy files on disk to speed load time on webapp"""
 
 from flask_sqlalchemy import SQLAlchemy
-from spacy.tokens import Doc
+# from spacy.tokens import Doc
 
 from sotu import nlp
 from sotu import word_count
