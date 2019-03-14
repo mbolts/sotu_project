@@ -48,7 +48,6 @@
             overflow: hidden;
         }
 
-
        .svg-container-freq {
             display: inline-block;
             position: relative;
@@ -64,14 +63,6 @@
             left: 0;
         }
 
-        .axis line, .axis path{
-            stroke: #bbb;
-        }
-
-        .axis text{
-            fill: #696767;
-        }
-
         .carousel-caption {
             max-width: 100%;
             width:100%;
@@ -79,12 +70,9 @@
             left: 0;
         }
 
-        #tooltip{
-            position: absolute;
-            background-color: #fff;
-            padding: 15px;
-            border: solid 1px #000;
-            opacity: 0;
+        .dropdown-menu{
+           max-height:300px;
+           overflow-y: scroll;
         }
 
         .pres_1_name {
@@ -111,13 +99,50 @@
           pointer-events: all;
         }
 
-        /* Style the dots by assigning a fill and stroke */
         .dot {
             fill: #ffab00;
             stroke: #fff;
+        }
+
+/*        .footnote-item.footnote-item-displayed {
+            display: block
+        }
+
+        .footnote-item.footnote-item-expanded {
+            max-height: 3100px;
+            width: 100%;
+            opacity: 1;
+            -webkit-transition: max-height .5s ease-in .01s,width .01s ease-in 0s,opacity .2s ease-in-out .21s;
+            transition: max-height .5s ease-in .01s,width .01s ease-in 0s,opacity .2s ease-in-out .21s
+        }
+
+        .footnote-item .footnote-item-inner {
+            text-align: center
+            margin: 17px auto;
+        }*/
+
+/*        a.footnote-link.footnote-item-expanded sup,.footnote-link.footnote-item-expanded sup {
+            vertical-align: text-top
+        }*/
+
+        .axis line, .axis path{
+            stroke: #bbb;
+        }
+
+        .axis text{
+            fill: #696767;
         }
           
         .focus circle {
           fill: none;
           stroke: steelblue;
+        }
+
+
+        #tooltip{
+            position: absolute;
+            background-color: #fff;
+            padding: 15px;
+            border: solid 1px #000;
+            opacity: 0;
         }

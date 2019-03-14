@@ -5,7 +5,7 @@
 
   <div class="row">
     <div class="col">
-
+        <div class="row">
       <h2>Speeches of {{ president.name }}</h2>
 
       {% if not president.speeches %}
@@ -17,7 +17,8 @@
 
       </div>
 
-      {% endif %}
+
+      {% else %}
       <div class="speeches">
         {% for speech in president.speeches %}
           <a href="/speech/{{ speech.speech_id }}"><p name="{{speech.speech_id}}" value="{{ speech.date }}">{{ speech.date.strftime('%B %d, %Y') }}</p></a>
@@ -25,7 +26,8 @@
       </div>
     </div>
 
-    <div class="col">
+
+        <div class="row">
       <div class="presidents">
         <h2>The Most Similar Speech-Givers</h2>
         {% for president in similar_pres %}
@@ -36,15 +38,15 @@
       </div>
     </div>
 
-  </div>
+</div>
 
 <br>
-  <div class="row">
-    <div class="col">
-    <div class="common_words">
-      <p>Here are {{ president.name }}'s most commonly used words: </p>
 
-      <div id="tooltip"></div>
+    <div class="col">
+      <div class="common_words">
+      <h3>Here are {{ president.name }}'s most commonly used words: </h3>
+
+      <div id="chart"></div>
 
         <script type="text/javascript">
         let words = JSON.parse('{{ president.top_words | tojson }}');
@@ -59,8 +61,9 @@
 
         <script src="./static/js/pres_top_words_bar.js"type="text/javascript">
         </script>
+        </div>
     </div>
-    </div>
+          {% endif %}
   </div>
 
 </div>

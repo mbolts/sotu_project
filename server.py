@@ -42,6 +42,8 @@ def index():
 def show_president_details():
     """ Display all of the details of the selected president """
 
+    presidents = President.query.all()
+
     president_name = request.args.get('president')
     president = President.query.filter_by(name=president_name).one()
 
@@ -66,7 +68,9 @@ def show_president_details():
     return render_template("president.html",
                            president=president,
                            similar_pres=similar_pres,
-                           top_words=top_words)
+                           top_words=top_words,
+                           presidents=presidents,
+                           )
 
 
 @app.route('/presidents', methods=['GET'])
@@ -83,19 +87,27 @@ def show_presidents():
 def show_speech(speech_id):
     """ Display all of the speeches given by the selected president """
 
+    presidents = President.query.all()
+
     speech = Speech.query.filter_by(speech_id=speech_id).one()
 
     with open(speech.text) as f:
         speech_text = f.read()
 
-    return render_template("speech_text.html", speech=speech_text)
+    return render_template("speech_text.html",
+                           speech=speech_text,
+                           presidents=presidents,
+                           )
 
 
 @app.route('/comparison', methods=['GET'])
 def compare_speeches():
     """Compare the presidents speeches"""
 
+    presidents = President.query.all()
+
     return render_template('comparison.html',
+                           presidents=presidents,
                            )
 
 
@@ -103,7 +115,10 @@ def compare_speeches():
 def show_words_by_decade():
     """Show the words by decade bubble visualization"""
 
+    presidents = President.query.all()
+
     return render_template('words_by_decade.html',
+                           presidents=presidents,
                            )
 
 
@@ -111,15 +126,21 @@ def show_words_by_decade():
 def wf_by_decade():
     """"""
 
+    presidents = President.query.all()
+
     return render_template('wf_visualization.html',
-                           )
+                           presidents=presidents)
 
 
 @app.route('/wc_visualization')
 def show_wc_visualization():
     """Show visualization."""
 
-    return render_template("wc_visualization.html")
+    presidents = President.query.all()
+
+    return render_template("wc_visualization.html",
+                           presidents=presidents,
+                           )
 
 
 @app.route('/decade_speeches.json', methods=['GET'])

@@ -10,3 +10,4 @@ president_doc/
 node_modules/
 package-lock.json
 Makefile
+htmlcov/

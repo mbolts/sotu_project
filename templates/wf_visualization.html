@@ -9,8 +9,14 @@
 
       <h2 class="text-center" style="margin-top: 40px;">
         Word Frequency over Time
-      </h2>
+        <a class="footnote-link" id="fn-1" data-footnote-content="<p>Explanation of chart</p>"><sup class="text-primary" id="ss-1">1</sup>
 
+        </a>
+      </h2>
+      <span class="footnote-item footnote-item-displayed footnote-item-expanded">
+          <span class="footnote-item-inner text-center" id="fn-1-inner">
+          </span>
+      </span>
       <br>
 
       <div id="chart"></div>
@@ -23,6 +29,28 @@
 <div id="tooltip"></div>
 
 <script src="./static/js/word_freq.js"type="text/javascript">
+</script>
+
+<script type="text/javascript">
+    
+document.getElementById("fn-1").addEventListener("click", function(){
+    let fn_inner = document.getElementById("fn-1-inner");
+    let fn_text = document.getElementById("fn-1").getAttribute("data-footnote-content");
+    fn_inner.innerHTML = fn_text;
+    let sup = document.getElementById("ss-1");
+    sup.innerText = "x";
+    });
+
+document.getElementById("ss-1").addEventListener("mouseover", function(){
+    let fn_number = document.getElementById("ss-1");
+    fn_number.classList.add("text-danger");
+    });
+
+document.getElementById("ss-1").addEventListener("mouseout", function(){
+    let fn_number = document.getElementById("ss-1");
+    fn_number.classList.remove("text-danger");
+    });
+
 </script>
 
 {% endblock %}

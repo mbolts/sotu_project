@@ -61,7 +61,7 @@ color = d3.scaleSequential(d3.interpolateYlGnBu)
           .domain([0, d3.max(data.series, d => d3.extent(d.values))[1]]);
 
 
-console.log(x);
+// console.log(x);
 
 xAxis = g => g
   .attr("transform", `translate(0,${height - margin.bottom})`)
