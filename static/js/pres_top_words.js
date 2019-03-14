@@ -1,5 +1,5 @@
 
-// 2. Use the margin convention practice 
+
 var margin = {top: 50, right: 50, bottom: 50, left: 50}, 
     width = window.innerWidth * 0.7 - margin.left - margin.right, // Use the window's width 
     height = window.innerHeight * 0.5 - margin.top - margin.bottom; // Use the window's height
@@ -7,14 +7,16 @@ var margin = {top: 50, right: 50, bottom: 50, left: 50},
 // The number of datapoints
 var n = 25;
 
-yMax = d3.max(words, d => d[1])
+console.log(words);
 
-// 5. X scale will use the index of our data
+yMax = d3.max(words, d => d[1]);
+
+// X scale will use the index of our data
 var xScale = d3.scaleLinear()
     .domain([0, n-1]) // input
     .range([0, width]); // output
 
-// 6. Y scale will use the randomly generate number 
+// Y scale will use the randomly generate number 
 
 var yScale = d3.scaleLinear()
     .domain([0, yMax]) // input 

@@ -114,7 +114,8 @@ line = area.lineY1()
       .on('mouseout', function(d){
         d3.select(this).attr('fill', color(d.values[1]))
             .style('opacity', 0.6);
-        d3.select('#tooltip-'+d.name).remove();
+        d3.select('#tooltip')
+                .style('opacity', 0);
       });
 
   group.append("path")
