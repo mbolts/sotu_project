@@ -2,6 +2,8 @@
 
 import datetime
 
+from spacy.tokens import Doc
+
 from sotu import nlp
 
 from sotu.model import President, Year, Speech, Word, Token

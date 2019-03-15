@@ -3,7 +3,7 @@
 import json
 
 from flask_sqlalchemy import SQLAlchemy
-# from spacy.tokens import Doc
+from spacy.tokens import Doc
 
 from sotu import word_count
 from sotu.model import President, Year, Speech, Word
