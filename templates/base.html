@@ -39,7 +39,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             {% for president in presidents %}
-            <a class="dropdown-item" href="president?president={{ president.name }}&submit=Submit">{{ president.name }}</a>
+            <a class="dropdown-item" href="/president?president={{ president.name }}&submit=Submit">{{ president.name }}</a>
             {% endfor %}
             </div>
           </li>
@@ -49,19 +49,19 @@
               Presidents </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="comparison">
+            <a class="nav-link" href="/comparison">
               Comparisons </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="words_by_decade">
+            <a class="nav-link" href="/words_by_decade">
               Words by Decade </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="word_freq">
+            <a class="nav-link" href="/word_freq">
             Word Frequencies </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="wc_visualization">
+            <a class="nav-link" href="/wc_visualization">
             Word Counts </a>
           </li>
         </ul>
