@@ -2,7 +2,7 @@
 
 # import spacy
 
-# NLP = spacy.load('en')
+NLP = 1 # spacy.load('en')
 
 
 def open_file(filepath):
