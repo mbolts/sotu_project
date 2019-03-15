@@ -104,6 +104,7 @@
             stroke: #fff;
         }
 
+
 /*        .footnote-item.footnote-item-displayed {
             display: block
         }
@@ -124,6 +125,11 @@
 /*        a.footnote-link.footnote-item-expanded sup,.footnote-link.footnote-item-expanded sup {
             vertical-align: text-top
         }*/
+
+        .carousel-caption {
+           position: absolute;
+           bottom:0px;
+        }
 
         .axis line, .axis path{
             stroke: #bbb;

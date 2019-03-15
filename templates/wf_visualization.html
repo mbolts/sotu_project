@@ -15,6 +15,7 @@
       </h2>
       <span class="footnote-item footnote-item-displayed footnote-item-expanded">
           <span class="footnote-item-inner text-center" id="fn-1-inner">
+            <!-- <p id="fn-p">Explanation of chart</p> -->
           </span>
       </span>
       <br>
@@ -32,6 +33,20 @@
 </script>
 
 <script type="text/javascript">
+
+function changeText(idElement) {
+    let element = document.getElementById('element' + idElement);
+    if (idElement === 1 || idElement === 2) {
+        if (element.innerHTML === 'Read More...') element.innerHTML = 'Close';
+        else {
+            element.innerHTML = 'Read More...';
+        }
+    }
+}
+
+// $("#ss-1").click(function(){
+//         $("#fn-p").fadeToggle("slow", "linear");
+//     });
     
 document.getElementById("fn-1").addEventListener("click", function(){
     let fn_inner = document.getElementById("fn-1-inner");
