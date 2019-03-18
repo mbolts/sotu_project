@@ -10,12 +10,11 @@
       <h2 class="text-center" style="margin-top: 40px;">
         Word Frequency over Time
         <a class="footnote-link" id="fn-1" data-footnote-content="<p>Explanation of chart</p>"><sup class="text-primary" id="ss-1">1</sup>
-
         </a>
       </h2>
       <span class="footnote-item footnote-item-displayed footnote-item-expanded">
           <span class="footnote-item-inner text-center" id="fn-1-inner">
-            <!-- <p id="fn-p">Explanation of chart</p> -->
+
           </span>
       </span>
       <br>
@@ -34,27 +33,32 @@
 
 <script type="text/javascript">
 
-function changeText(idElement) {
-    let element = document.getElementById('element' + idElement);
-    if (idElement === 1 || idElement === 2) {
-        if (element.innerHTML === 'Read More...') element.innerHTML = 'Close';
+
+function changeText() {
+    let element = document.getElementById("fn-1-inner");
+    let text = document.getElementById("fn-1").getAttribute("data-footnote-content");
+        if (element.innerHTML === text) element.innerHTML = '';
         else {
-            element.innerHTML = 'Read More...';
+            element.innerHTML = text;
         }
     }
-}
 
-// $("#ss-1").click(function(){
-//         $("#fn-p").fadeToggle("slow", "linear");
-//     });
+// function changeFootnote() {
+//     let element = document.getElementById("ss-1");
+
+//         if (element.innerText === "1") element.innerText = "x";
+//         else {
+//             element.innerText = "1";
+//         }
+//     }
     
 document.getElementById("fn-1").addEventListener("click", function(){
-    let fn_inner = document.getElementById("fn-1-inner");
-    let fn_text = document.getElementById("fn-1").getAttribute("data-footnote-content");
-    fn_inner.innerHTML = fn_text;
-    let sup = document.getElementById("ss-1");
-    sup.innerText = "x";
+    changeText();
     });
+
+// document.getElementById("ss-1").addEventListener("class", function(){
+//     changeFootnote();
+// });
 
 document.getElementById("ss-1").addEventListener("mouseover", function(){
     let fn_number = document.getElementById("ss-1");

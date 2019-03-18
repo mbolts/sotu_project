@@ -7,7 +7,15 @@
 
     <div class="col mx-auto compdiv" style="padding-bottom: 50px;">
 
-      <h2 class="text-center" style="margin-top: 40px;">Presidential Words Per Speech</h2>
+      <h2 class="text-center" style="margin-top: 40px;">Presidential Words Per Speech
+        <a class="footnote-link" id="fn-1" data-footnote-content="<p>Explanation of chart</p>"><sup class="text-primary" id="ss-1">1</sup>
+        </a>
+      </h2>
+      <span class="footnote-item footnote-item-displayed footnote-item-expanded">
+          <span class="footnote-item-inner text-center" id="fn-1-inner">
+
+          </span>
+      </span>
       <br>
 
       <div id="chart" class="graph" style="background-color: white";></div>
@@ -22,5 +30,35 @@
 <script src="./static/js/pres_word_count.js"type="text/javascript">
     
 </script>  
+
+<script type="text/javascript">
+
+
+function changeText() {
+    let element = document.getElementById("fn-1-inner");
+    let text = document.getElementById("fn-1").getAttribute("data-footnote-content");
+        if (element.innerHTML === text) element.innerHTML = '';
+        else {
+            element.innerHTML = text;
+        }
+    }
+
+    
+document.getElementById("fn-1").addEventListener("click", function(){
+    changeText();
+    });
+
+
+document.getElementById("ss-1").addEventListener("mouseover", function(){
+    let fn_number = document.getElementById("ss-1");
+    fn_number.classList.add("text-danger");
+    });
+
+document.getElementById("ss-1").addEventListener("mouseout", function(){
+    let fn_number = document.getElementById("ss-1");
+    fn_number.classList.remove("text-danger");
+    });
+
+</script>
 
 {% endblock %}

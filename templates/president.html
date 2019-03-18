@@ -20,9 +20,13 @@
 
       {% else %}
       <div class="speeches">
+        <ul class="preslist">
         {% for speech in president.speeches %}
+        <li>
           <a href="/speech/{{ speech.speech_id }}"><p name="{{speech.speech_id}}" value="{{ speech.date }}">{{ speech.date.strftime('%B %d, %Y') }}</p></a>
+        </li>
         {% endfor %}
+      </ul>
       </div>
     </div>
 
@@ -30,11 +34,14 @@
         <div class="row">
       <div class="presidents">
         <h2>The Most Similar Speech-Givers</h2>
+            <ul class="preslist">
+
         {% for president in similar_pres %}
-
+          <li>
         <a href="/president?president={{ president[0].name }}&submit=Submit"><p name="{{president[0].name}}" value="{{ president[0].pres_id }}">{{ president[0].name }}</p></a>
-
+          </li>
         {% endfor %}
+           </ul>
       </div>
     </div>
 

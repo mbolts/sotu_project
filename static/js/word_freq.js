@@ -38,8 +38,6 @@ d3.csv("/word_freq.csv", transformCSV).then(function (dataset) {
    .append("svg")
    .attr("preserveAspectRatio", "xMinYMin meet")
    .attr("viewBox", `0 0 ${width} ${height}`)
-   // .style("width", width)
-   // .style("height", height)
    .classed("svg-content-responsive", true); 
 
 xMin = d3.extent(data.dates)[0];

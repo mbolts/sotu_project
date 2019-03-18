@@ -2,12 +2,14 @@
 {% block content %}
 
 <div class="container">
-  <h2>Speech</h2>
 
   <div class="row justify-content-center">
-    <div class="col-6">
+
+    <div class="col-8">
+      <h2 class="text-center">{{ speech.date.strftime('%B %d, %Y') }} Speech of {{ president.name }}</h2>
+      <br>
     
-    {{ speech }}
+      {{ speech_text }}
 
     </div>
   </div>

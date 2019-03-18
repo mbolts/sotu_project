@@ -126,6 +126,11 @@
             vertical-align: text-top
         }*/
 
+        .preslist{
+            list-style-type: none;
+
+        }
+
         .carousel-caption {
            position: absolute;
            bottom:0px;

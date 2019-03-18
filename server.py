@@ -90,12 +90,15 @@ def show_speech(speech_id):
     presidents = President.query.all()
 
     speech = Speech.query.filter_by(speech_id=speech_id).one()
+    president = President.query.get(speech.pres_id)
 
     with open(speech.text) as f:
         speech_text = f.read()
 
     return render_template("speech_text.html",
-                           speech=speech_text,
+                           speech_text=speech_text,
+                           speech=speech,
+                           president=president,
                            presidents=presidents,
                            )
 
