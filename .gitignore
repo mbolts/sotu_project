@@ -1,7 +1,6 @@
 env/
 *.pyc
 __pycache__
-secrets.py
 .swp
 speech_doc/
 .DS_Store
