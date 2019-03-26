@@ -16,11 +16,11 @@ This app brings visualizations to the analysis of language in the State of the U
 
 
 ### Comparisons of Presidential Speeches
-![Comparison of Speeches](/static/img/comparison.svg)
+![Comparison of Speeches](/static/img/comparison.gif)
 
 
 ### Word Frequency over Time
-![Word Frequency](/static/img/word_freq.svg)
+![Word Frequency](/static/img/frequency.gif)
 
 
 ### Popular Words by Decade and President
