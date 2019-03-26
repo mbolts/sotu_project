@@ -12,7 +12,7 @@ This app brings visualizations to the analysis of language in the State of the U
 
 
 ### Average Words per Speech
-![Words per Speech](/static/img/word_count_1.svg)
+![Words per Speech](/static/img/words_per_speech.png)
 
 
 ### Comparisons of Presidential Speeches
@@ -36,7 +36,7 @@ This app brings visualizations to the analysis of language in the State of the U
 * **Front-End:** HTML/CSS, Bootstrap, JQuery, JavaScript, AJAX, d3
 
 ## <a name="setup"></a>Setup/ Installation
-Please be sure to have Python 3.6 and PostgreSQL downloaded before you clone this repository. 
+Python 3.6 (or higher) and PostgreSQL are required.
 
 Create a virtual environment:
 ```
@@ -46,20 +46,22 @@ Create a virtual environment:
 
 Install dependencies:
 ```
-> pip install -r requirements.txt 
+> pip3 install -r requirements.txt 
 ```
 
 Create database:
 ```
-$createdb SOTU
+> createdb SOTU
 ```
 
 Build database tables and seed file:
 ```
-$ python3 seed.py
+> python3 seed.py
 ```
 Run the app via command line:
 ```
-$ python3 server.py
+> python3 server.py
 ```
+
+Head to (127.0.0.1/5000) on your computer to explore the app in depth!
 
