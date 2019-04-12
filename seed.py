@@ -261,6 +261,6 @@ if __name__ == "__main__":
     load_presidents()
     load_years()
     load_speeches()
-    load_words()
-    load_tokens()
+    # load_words()
+    # load_tokens()
     update_presidents()

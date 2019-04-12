@@ -1,3 +1,11 @@
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+
 
 ## SOTU - State of the Union
 
@@ -33,7 +41,13 @@ This app brings visualizations to the analysis of language in the State of the U
 
 ## <a name="tech-stack"></a>Tech Stack
 * **Back-End:** Python, Flask, Jinja, SQLAlchemy, PostgreSQL
+<i class="devicon-python-plain"></i> 
+<i class="devicon-postgresql-plain"></i>
 * **Front-End:** HTML/CSS, Bootstrap, JQuery, JavaScript, AJAX, d3
+<i class="devicon-html5-plain-wordmark"></i> 
+<i class="devicon-javascript-plain"></i> 
+<i class="devicon-d3js-plain"></i>
+<i class="devicon-jquery-plain-wordmark"></i>
 
 ## <a name="setup"></a>Setup/ Installation
 Python 3.6 (or higher) and PostgreSQL are required.
@@ -63,5 +77,5 @@ Run the app via command line:
 > python3 server.py
 ```
 
-Head to (127.0.0.1/5000) on your computer to explore the app in depth!
+Head to [the web](127.0.0.1:5000) on your computer to explore the app in depth!
 
