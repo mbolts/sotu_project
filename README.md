@@ -10,6 +10,7 @@
 ## SOTU - State of the Union
 
 This app brings visualizations to the analysis of language in the State of the Union Speeches of American presidents.
+You can visit it here : <http://madelainebolton.com>
 
 ### List of Presidents
 ![Presidents](/static/img/presidents.png)
@@ -77,5 +78,5 @@ Run the app via command line:
 > python3 server.py
 ```
 
-Head to [the web](127.0.0.1:5000) on your computer to explore the app in depth!
+Head to <127.0.0.1:5000> on your computer to explore the app in depth!
 
