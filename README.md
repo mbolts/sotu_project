@@ -78,5 +78,5 @@ Run the app via command line:
 > python3 server.py
 ```
 
-Head to <127.0.0.1:5000> on your computer to explore the app in depth!
+Head to <http://127.0.0.1:5000> on your computer to explore the app in depth!
 
