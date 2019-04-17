@@ -11,3 +11,5 @@ package-lock.json
 Makefile
 htmlcov/
 Procfile
+log
+nginx.conf
