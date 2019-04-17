@@ -13,3 +13,4 @@ Makefile
 htmlcov/
 log
 nginx.conf
+flask.log
