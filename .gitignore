@@ -10,6 +10,6 @@ node_modules/
 package-lock.json
 Makefile
 htmlcov/
-Procfile
 log
 nginx.conf
+flask.log
