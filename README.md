@@ -10,7 +10,7 @@
 ## SOTU - State of the Union
 
 This app brings visualizations to the analysis of language in the State of the Union Speeches of American presidents.
-You can visit it here : <http://madelainebolton.com>
+You can visit it here : <http://www.madelainebolton.com/sotu/>
 
 ### List of Presidents
 ![Presidents](/static/img/presidents.png)
