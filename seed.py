@@ -1,4 +1,4 @@
-"""Utility file to seed ratings database from data in seed_data"""
+"""Utility file to seed from data in seed_data"""
 
 import datetime
 
@@ -12,6 +12,11 @@ from sotu.model import connect_to_db, db
 from server import app
 
 
+# Data came from these sources:
+# https://www.presidency.ucsb.edu/documents/presidential-documents-archive-guidebook/annual-messages-congress-the-state-the-union
+# https://www.kaggle.com/rtatman/state-of-the-union-corpus-1989-2017
+
+
 def load_speeches():
     """Load speeches into database."""
 
@@ -20,10 +25,6 @@ def load_speeches():
     # Delete all rows in table, so if we need to run this a second time,
     # we won't be trying to add duplicate speeches
     Speech.query.delete()
-
-    # Data came from these sources:
-    # https://www.presidency.ucsb.edu/documents/presidential-documents-archive-guidebook/annual-messages-congress-the-state-the-union
-    # https://www.kaggle.com/rtatman/state-of-the-union-corpus-1989-2017
 
     file = open("seed_data/speeches.csv")
 
@@ -69,12 +70,12 @@ def load_speeches():
                             year=year,
                             )
 
-        # We need to add to the session or it won't ever be stored
+        # Add speech to database session
         db.session.add(speech)
 
     file.close()
 
-    # Once we're done, we should commit our work
+    # Commit to the database
     db.session.commit()
 
 
@@ -117,12 +118,12 @@ def load_years():
                         pres_id=pres_id,
                         )
 
-        # We need to add to the session or it won't ever be stored
+        # Add speech to database session
         db.session.add(year)
 
     file.close()
 
-    # Once we're done, we should commit our work
+    # Commit to the database
     db.session.commit()
 
 
@@ -157,12 +158,14 @@ def load_presidents():
                               img=img_path,
                               )
 
+        # Add speech to database session
         db.session.add(president)
 
         i += 1
 
     file.close()
 
+    # Commit to the database
     db.session.commit()
 
 
@@ -183,6 +186,7 @@ def update_presidents():
         pres.words_per_speech = words_per
         pres.top_words = top_words
 
+    # Commit to the database
     db.session.commit()
 
 
@@ -210,10 +214,12 @@ def load_words():
                     count=int(count),
                     )
 
+        # Add speech to database session
         db.session.add(word)
 
     file.close()
 
+    # Commit to the database
     db.session.commit()
 
 
@@ -229,7 +235,6 @@ def load_tokens():
     for speech in speeches:
 
         speech_doc = Doc(nlp.NLP.vocab).from_disk(speech.doc_path)
-        print(speech)
 
         for token in speech_doc:
 
@@ -245,8 +250,10 @@ def load_tokens():
                           speech=speech.speech_id,
                           )
 
+            # Add speech to database session
             db.session.add(token)
 
+    # Commit to the database
     db.session.commit()
 
 
