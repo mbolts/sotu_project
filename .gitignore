@@ -13,3 +13,4 @@ htmlcov/
 Procfile
 log
 nginx.conf
+.idea/*
