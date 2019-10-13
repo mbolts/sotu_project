@@ -5,20 +5,19 @@ from spacy.tokens import Doc
 
 from sotu import nlp
 from sotu import word_count
-from sotu.model import President, Year, Speech, Word
+from sotu.model import Speech
 from sotu.model import connect_to_db, db
 
 from server import app
 connect_to_db(app)
-# print("Connected to DB.")
 
-# All the speech filepaths
+# All the speech file paths
 all_speeches = Speech.query.all()
 
+# One speech file for testing
 one_speech = [Speech.query.first()]
 
 # Create the parsed files and save to speech_doc folder
-
 VOCAB = nlp.NLP.vocab
 
 word_all_appearances_csv = open("words", "a")
@@ -52,7 +51,7 @@ def find_word_first_appearance(speeches):
 
 
 def find_word_appearance(speeches):
-    """Dictionary of each word with the year they first appeared as the key"""
+    """Dictionary of each word with all the years they appear in as the key"""
     word_dict = {}
 
     for speech in speeches:
@@ -89,7 +88,7 @@ def write_words_to_file(speeches):
     print('word_freq finished')
 
     for word in word_freq:
-        print('word is ', word)
+        # print('word is ', word)
 
         row = '\n'
 
